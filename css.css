@@ -1,0 +1,17 @@
+.member_info {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    clear: both;
+}
+
+.image {
+    margin-bottom: 0.7em;
+    max-width: 25%;
+    margin-right: 0.7em;
+    border-radius: 50px;
+    float: left;
+    clear: both;
+}
