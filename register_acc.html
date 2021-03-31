@@ -44,26 +44,27 @@
             <label for="store_owner">Store owner</label><br>
 
             <input type="radio" id="shopper" onclick="acc_type()" name="account_type" value="shopper">
-            <label for="shopper">Shopper</label><br>
+            <label for="shopper">Shopper</label><br><br>
 
+            <div id="ifOwner" style="visibility: hidden;">Please input your Store's information: <br><br>
+                <label for="business_name">Business name:</label><br>
+                <input type="text" id="business_name" name="business_name"><br><br>
+    
+                <label for="store_name">Store name:</label><br>
+                <input type="text" id="store_name" name="store_name"><br><br>
+    
+                <label for="store_catergory">Store Category:</label><br>
+                <select id="store_category" name="store_category" size="4">
+                    <option value="technology">Technology</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="accessory">Accessory</option>
+                </select>
+            </div>
         </form>
 
-        <div id="ifOwner" style="visibility: hidden;">Please input your Store's information: 
-            <label for="business_name">Business name:</label><br><br>
-            <input type="text" id="business_name" name="business_name">
 
-            <label for="store_name">Store name:</label><br><br>
-            <input type="text" id="store_name" name="store_name">
 
-            <label for="store_catergory">Store Category:</label><br><br>
-            <select id="category" name="category" size="4">
-                <option value="technology">Technology</option>
-                <option value="clothes">Clothes</option>
-                <option value="grocery">Grocery</option>
-                <option value="accessory">Accessory</option>
-            </select>
-        </div>
-        
         <script>
             function acc_type() {
                 if (document.getElementById("store_owner").checked) {
