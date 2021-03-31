@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-08">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <header></header>
+        <form action="register_acc.html" method="get">
+            <label for="fname:">First name:</label><br>
+            <input type="text" placeholder="First name" id="fname" name="fname"><br><br>
+
+            <label for="lname:">Last name:</label><br>
+            <input type="text" placeholder="Last name" id="lname" name="lname"><br><br>
+
+            <label for="email">Email address:</label><br>
+            <input type="email" placeholder="Email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" placeholder="Phone number" id="phone" name="phone"><br><br>
+
+            <label for="password" placeholder="Password">Password:</label><br>
+            <input type="password" placeholder="Password" id="password" name="password"><br><br>
+
+            <label for="re_pass">Retype password:</label><br>
+            <input type="password" placeholder="Confirm Password" id="re_pass" name="re_pass"><br><br>
+
+            <label for="address">Address</label><br>
+            <input type="password" placeholder="Address" id="address" name="address"><br><br>
+
+            <label for="prof_pic">Profile picture</label><br>
+            <input type="prof_pic" id="prof_pic" name="prof_pic"><br><br>
+
+            <label for="country">Country:</label><br>
+            <input list="countries" placeholder="Choose your country" name="country" id="country">
+            <datalist id="countries">
+                <option value="Japan">
+                <option value="Vietnam">
+                <option value="Korea">
+            </datalist><br><br>
+
+            <p>Your Account type:</p>
+            <input type="radio" id="store_owner" onclick="acc_type()" name="account_type" value="store_owner">
+            <label for="store_owner">Store owner</label><br>
+
+            <input type="radio" id="shopper" onclick="acc_type()" name="account_type" value="shopper">
+            <label for="shopper">Shopper</label><br>
+
+        </form>
+
+        <div id="ifOwner" style="visibility: hidden;">Please input your Store's information: 
+            <label for="business_name">Business name:</label><br><br>
+            <input type="text" id="business_name" name="business_name">
+
+            <label for="store_name">Store name:</label><br><br>
+            <input type="text" id="store_name" name="store_name">
+
+            <label for="store_catergory">Store Category:</label><br><br>
+            <select id="category" name="category" size="4">
+                <option value="technology">Technology</option>
+                <option value="clothes">Clothes</option>
+                <option value="grocery">Grocery</option>
+                <option value="accessory">Accessory</option>
+            </select>
+        </div>
+        
+        <script>
+            function acc_type() {
+                if (document.getElementById("store_owner").checked) {
+                    document.getElementById("ifOwner").style.visibility = "visible";
+                } else {
+                    document.getElementById("ifOwner").style.visibility = "hidden";
+                }
+        </script>
+    </body>
+</html>
