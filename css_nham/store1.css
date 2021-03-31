@@ -4,6 +4,7 @@
     width: 50%;
 
 }
+
 .coverpage1{
     overflow: hidden;
     display: block;
@@ -17,6 +18,30 @@
 }
 .spring,.summer,.autumn, .winter,.casual{
     width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+
+}
+.heading{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+
+}
+.product_display{
+    overflow: hidden;
+    display: block;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    position: center;
+}
+.pic_product_display{
+    width: 25%;
     text-align: center;
     box-sizing: border-box;
     float:left;

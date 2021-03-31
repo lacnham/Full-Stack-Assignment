@@ -4,3 +4,6 @@ PICS:
 -   Autumn cover: https://theconversation.com/why-climate-change-will-dull-autumn-leaf-displays-114750
 -   Winter cover: https://www.popsugar.com/smart-living/Best-Winter-Photos-38843416
 -   Casual cover: https://wallpaperaccess.com/hi-res-sky
+-   Spring&Summer collection: https://hypebeast.com/2018/12/uniqlo-u-lemaire-spring-summer-2019-lookbook-collection
+-   Autumn&Winter collection: https://www.uniqlo.com/uniqlo-u/20fw/au/
+-   Casual collection: https://www.uniqlo.com/ines/21ss/vn/lookbook/
