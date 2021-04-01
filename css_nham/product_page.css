@@ -21,3 +21,50 @@
     float:left;
 
 }
+a:active {
+color: pink;
+}
+a:visited{
+color: pink;
+}
+
+.title2{
+text-align: center;
+margin: auto;
+width: 50%;
+}
+.introimg{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro1{
+    text-align: center;
+    background-color: rgb(243, 197, 204);
+    margin-top: 2%;
+
+}
+.intro2{
+    text-align: center;
+    background-color: rgb(252, 170, 77);
+    margin-top: 2%;
+}
+.intro3{
+    text-align: center;
+    background-color: rgb(223, 159, 116);
+    margin-top: 2%;
+}
+.intro4{
+    text-align: center;
+    background-color: rgb(70, 95, 163);
+    margin-top: 2%;
+}
+.intro5{
+    text-align: center;
+    background-color: rgb(127, 206, 189);
+    margin-top: 2%;
+}
+
+
