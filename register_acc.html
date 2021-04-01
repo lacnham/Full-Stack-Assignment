@@ -40,13 +40,14 @@
             </datalist><br><br>
 
             <p>Your Account type:</p>
-            <input type="radio" id="store_owner" onclick="acc_type()" name="account_type" value="store_owner">
+            <input type="radio" id="storeowner" onclick="acctype()" name="account_type" value="storeowner">
             <label for="store_owner">Store owner</label><br>
 
-            <input type="radio" id="shopper" onclick="acc_type()" name="account_type" value="shopper">
+            <input type="radio" id="shopper" onclick="acctype()" name="account_type" value="shopper">
             <label for="shopper">Shopper</label><br><br>
 
-            <div id="ifOwner" style="visibility: hidden;">Please input your Store's information: <br><br>
+
+            <div id="ifOwner" style="display:none">Please input your Store's information: <br><br>
                 <label for="business_name">Business name:</label><br>
                 <input type="text" id="business_name" name="business_name"><br><br>
     
@@ -60,18 +61,23 @@
                     <option value="grocery">Grocery</option>
                     <option value="accessory">Accessory</option>
                 </select>
-            </div>
+            </div>        
+            
+            
+            <button type="submit" class="submit" value="submit">Submit</button>
+            <button type="reset" name="reset" value="reset">Reset</button>
         </form>
 
 
 
-        <script>
-            function acc_type() {
-                if (document.getElementById("store_owner").checked) {
-                    document.getElementById("ifOwner").style.visibility = "visible";
+        <script type="text/javascript">
+            function acctype() {
+                if (document.getElementById("storeowner").checked) {
+                    document.getElementById("ifOwner").style.display = "block";
                 } else {
-                    document.getElementById("ifOwner").style.visibility = "hidden";
+                    document.getElementById("ifOwner").style.display = "none";
                 }
         </script>
+
     </body>
 </html>
