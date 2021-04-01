@@ -9,3 +9,4 @@ PICS:
 -   Casual collection: https://www.uniqlo.com/ines/21ss/vn/lookbook/
 https://www.reddit.com/r/wallpaper/comments/6m6wn9/autumn_wallpaper19201080/
 https://id.pinterest.com/pin/858428378955785089/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true
+https://undraw.co/search
