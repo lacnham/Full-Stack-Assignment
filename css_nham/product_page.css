@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Cedarville+Cursive&family=Herr+Von+Muellerhoff&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Rye&display=swap');
 .title{
     text-align: center;
     margin: auto;
@@ -33,6 +36,10 @@ text-align: center;
 margin: auto;
 width: 50%;
 }
+.title1{
+    font-family: 'Rye', cursive;
+    font-size: 30;
+}
 .introimg{
     max-width: 100%;
     height: auto;
@@ -44,25 +51,73 @@ width: 50%;
     text-align: center;
     background-color: rgb(243, 197, 204);
     margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
 
 }
 .intro2{
     text-align: center;
     background-color: rgb(252, 170, 77);
     margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
 }
 .intro3{
     text-align: center;
     background-color: rgb(223, 159, 116);
     margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
 }
 .intro4{
     text-align: center;
     background-color: rgb(70, 95, 163);
     margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
 }
 .intro5{
     text-align: center;
     background-color: rgb(127, 206, 189);
     margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
 }
+.note{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 40;
+    letter-spacing: 10px;
+}
+.descriptionspring{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(225, 163, 233);
+}
+.descriptionsummer{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(243, 188, 137);
+}
+.descriptionautumn{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(138, 104, 72);
+}
+.descriptionwinter{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(174, 171, 224);
+}
+.descriptioncasual{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(64, 150, 155);
+}
+
+
+
