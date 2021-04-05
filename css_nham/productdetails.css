@@ -1,10 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+.product_details{
+  display: inline-flex;
+}
+.image{
+    flex-basis: 40%;
+}
 .detailpic {
-    max-width: 30%;
-    margin-left: 5%;
+    max-width: 100%;
+    left: 0px;
+    width: 300px;
     float: left;
-    clear: both;
+    padding: 10px;
 }
-.info {
-    margin-left: 5%;
+.information {
+    max-width: 100%;
+    font-size: 20;
+    padding-left: 10%;
+    font-family: 'Manjari', sans-serif;
 }
-
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Manjari', sans-serif;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+  }
+#button1,#button2{
+    display: inline-block;
+    font-family: 'Manjari', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+}
+#button1{background-color: rgb(216, 127, 91);}
+#button2{background-color:rgb(176, 233, 150);}

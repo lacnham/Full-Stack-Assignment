@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Cedarville+Cursive&family=Herr+Von+Muellerhoff&family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Monoton&family=Staatliches&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Rye&display=swap');
 .title{
     text-align: center;
     margin: auto;
     width: 50%;
+}
+.logo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
 }
 .product_display{
     overflow: hidden;
@@ -16,6 +22,8 @@
     padding: 5px;
     background-color: white;
     position: center;
+    font-family: 'Cardo', serif;
+    padding:1%;
 }
 .pic_product_display{
     width: 25%;
@@ -24,13 +32,10 @@
     float:left;
 
 }
-a:active {
-color: pink;
+.pic{
+    max-width: 100%;
+    height: auto;
 }
-a:visited{
-color: pink;
-}
-
 .title2{
 text-align: center;
 margin: auto;
@@ -118,6 +123,30 @@ width: 50%;
     font-size: 25;
     background-color:rgb(64, 150, 155);
 }
+.titlespring, .titlesummer,.titleautumn, .titlewinter, .titlecasual{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 40;
+    max-width: 100%;
+}
+.titlespring{color:rgb(238, 164, 175);}
+.titlesummer{color:rgb(219, 149, 69);}
+.titleautumn{color:rgb(122, 91, 45);}
+.titlewinter{color:rgb(137, 162, 243);}
+.titlecasual{color:rgb(147, 238, 215);}
 
-
-
+.pro{
+    text-decoration: none;
+}
+.pro:link{
+    color:black;
+}
+.pro:visited{
+    color:black;
+}
+.pro:hover{
+    color:rgb(133, 48, 48);
+    background: rgb(167, 66, 35);
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+}
