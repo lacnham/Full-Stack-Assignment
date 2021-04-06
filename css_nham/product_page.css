@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Cedarville+Cursive&family=Herr+Von+Muellerhoff&family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=Monoton&family=Staatliches&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Work+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Rye&display=swap');
 .title{
     text-align: center;
@@ -22,7 +23,7 @@
     padding: 5px;
     background-color: white;
     position: center;
-    font-family: 'Cardo', serif;
+    font-family: 'Work Sans', sans-serif;
     padding:1%;
 }
 .pic_product_display{
@@ -149,4 +150,10 @@ width: 50%;
     background: rgb(167, 66, 35);
     filter: grayscale(60%);
     -webkit-filter: grayscale(60%);
+}
+.price{
+    font-size: 13;
+    color:grey;
+    position: relative;
+    bottom:18px;
 }

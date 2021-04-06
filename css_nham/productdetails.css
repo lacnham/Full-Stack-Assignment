@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Work+Sans:wght@300;500&display=swap');
+.logo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
+}
 .product_details{
   display: inline-flex;
 }
@@ -8,7 +15,7 @@
 .detailpic {
     max-width: 100%;
     left: 0px;
-    width: 300px;
+    width: 320px;
     float: left;
     padding: 10px;
 }
@@ -16,7 +23,7 @@
     max-width: 100%;
     font-size: 20;
     padding-left: 10%;
-    font-family: 'Manjari', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 table, th, td {
     border: 1px solid black;
@@ -32,9 +39,34 @@ th, td {
     font-family: 'Manjari', sans-serif;
     font-size: 20px;
     cursor: pointer;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     margin: 4px 2px;
+    border-radius: 50px;
 }
 #button1{background-color: rgb(216, 127, 91);}
 #button2{background-color:rgb(176, 233, 150);}
+.pro{
+    text-decoration: none;
+}
+
+.pro:link{
+    color:rgb(151, 60, 60);
+}
+.pro:visited{
+    color:rgb(151, 60, 60);
+}
+.price{
+    font-size: 20;
+    color: grey;
+}
+.square {
+    height: 15px;
+    width: 15px;
+    background-color: tan;
+    display: inline-block;
+  }
+.description{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40;
+}

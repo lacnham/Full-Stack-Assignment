@@ -5,23 +5,36 @@
     <link rel='stylesheet' href='css_nham/productdetails.css'>
 </head>
 <body>
+    <a href='store1.html'>
+        <img class='logo' src='pics_nham/logo.jpg'>
+    </a>
     <section class='product_details'> 
         <div class='image'>
             <img class='detailpic' src='pics_nham/spring1.jpg' alt="Tan Pants"> 
         </div>
         <div class='information'>
             <h1 class='protitle'>Tan Pants</h1>
-            <p>Categories: Spring Collection</p>
-            <p>Rating:</p>
-            <p>Color: Tan</p>
+            <p class='price'>350.000VND</p>
+            <p>Categories:
+                <a class = 'pro'href="spring.html" >Spring Collection</a>  
+            </p>
+            <div>Color: Tan
+                <div class="square"></div>
+            </div>
+
             <p>Gender: Unisex</p>
             <p>Stock: 30</p>
+            <p>Size:
+                <button type="button S" id="S" >S</button>
+                <button type="button M" id="M">M</button>
+                <button type="button L" id="L">L</button>
+            </p>
             <button type="button buy-now" id="button1" >Buy Now</button>
             <button type="button add-to-cart" id="button2">Add to cart</button>
         </div>   
     </section>
     <section>
-        <h1>Detail Description</h1>
+        <p class='description'>Detail Description</p>
         <table style='width: 100%'>
             <tr>
                 <th>Brand</th>
