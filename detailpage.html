@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Collection</title>
-    <link rel='stylesheet' href='css_nham/productdetails.css'>
+    <link rel='stylesheet' href='css_uniqlo/productdetails.css'>
 </head>
 <body>
     <a href='store1.html'>
@@ -24,11 +24,15 @@
 
             <p>Gender: Unisex</p>
             <p>Stock: 30</p>
-            <p>Size:
-                <button type="button S" id="S" >S</button>
-                <button type="button M" id="M">M</button>
-                <button type="button L" id="L">L</button>
-            </p>
+            <div class='size'>Size:</div>
+            <div>
+            <input type="radio" id="S" name="size" value="S">
+            <label for="S">S</label><br>
+            <input type="radio" id="M" name="size" value="M">
+            <label for="M">M</label><br>
+            <input type="radio" id="L" name="size" value="L">
+            <label for="L">L</label> 
+            </div>
             <button type="button buy-now" id="button1" >Buy Now</button>
             <button type="button add-to-cart" id="button2">Add to cart</button>
         </div>   
