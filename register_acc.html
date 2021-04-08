@@ -3,51 +3,59 @@
         <meta charset="utf-08">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="css.css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header></header>
+        <header>
+            <div class="black-logo"> 
+                <a href="#">
+                    <img class="logo" src="image/shop-logo.png" alt="TaoHu"></a>    
+            </div>
+            <p>Create your Account</p>
+            <a href="#">Home page</a>
+        </header>
+
         <form action="register_acc.html" method="get">
-            <label for="fname:">First name:</label><br>
+            <p>BASIC INFO:</p>
+
             <input type="text" placeholder="First name" id="fname" name="fname"><br><br>
 
-            <label for="lname:">Last name:</label><br>
             <input type="text" placeholder="Last name" id="lname" name="lname"><br><br>
 
-            <label for="email">Email address:</label><br>
-            <input type="email" placeholder="Email" id="email" name="email"><br><br>
-
-            <label for="phone">Phone number:</label><br>
-            <input type="tel" placeholder="Phone number" id="phone" name="phone"><br><br>
-
-            <label for="password" placeholder="Password">Password:</label><br>
             <input type="password" placeholder="Password" id="password" name="password"><br><br>
 
-            <label for="re_pass">Retype password:</label><br>
+            <label for="re_pass"></label><br>
             <input type="password" placeholder="Confirm Password" id="re_pass" name="re_pass"><br><br>
 
-            <label for="address">Address</label><br>
+            <label for="prof_pic">Profile picture</label><br>
+            <input type="prof_pic" id="prof_pic" name="prof_pic"><br><br>    
+
             <input type="password" placeholder="Address" id="address" name="address"><br><br>
 
-            <label for="prof_pic">Profile picture</label><br>
-            <input type="prof_pic" id="prof_pic" name="prof_pic"><br><br>
-
-            <label for="country">Country:</label><br>
-            <input list="countries" placeholder="Choose your country" name="country" id="country">
+            <input list="countries" placeholder="Country" name="country" id="country">
             <datalist id="countries">
                 <option value="Japan">
                 <option value="Vietnam">
                 <option value="Korea">
             </datalist><br><br>
 
-            <p>Your Account type:</p>
+            <input type="number" placeholder="ZIP CODE" id="zipcode" name="zipcode"><br><br>
+
+            <p>CONTACT INFO:</p>          
+            <input type="email" placeholder="Email" id="email" name="email"><br><br>
+
+            <input type="tel" placeholder="Phone number" id="phone" name="phone"><br><br>
+  
+
+            <p>Your Account type</p>
             <input type="radio" id="storeowner" onclick="acctype()" name="account_type" value="storeowner">
             <label for="store_owner">Store owner</label><br>
 
             <input type="radio" id="shopper" onclick="acctype()" name="account_type" value="shopper">
             <label for="shopper">Shopper</label><br><br>
 
-
-            <div id="ifOwner" style="display:none">Please input your Store's information: <br><br>
+            <p>STORE INFO:</p>
+            <div id="ifOwner" style="display:visible">
                 <label for="business_name">Business name:</label><br>
                 <input type="text" id="business_name" name="business_name"><br><br>
     
@@ -62,7 +70,7 @@
                     <option value="accessory">Accessory</option>
                 </select>
             </div>        
-            
+            <br>
             
             <button type="submit" class="submit" value="submit">Submit</button>
             <button type="reset" name="reset" value="reset">Reset</button>
