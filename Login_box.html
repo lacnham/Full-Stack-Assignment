@@ -4,23 +4,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     </head>
 
     <body>
-        <div id="login-view" >
-            <header>
-                <div class="view-header">Login</div><br>
-            </header>
-            <form id="taohu-login-form" class="login-form" method="post" actioin="javascript:;" onsubmit="return false;">
-                <!-- <input type="hidden" name="registrationSiteID" value="0" data-componentname="registrationSiteID" -->
-                <input type="text" placeholder="Email/Phone" id="email"><br><br>
+        <header class="simple-header-container">
+            <div class="black-logo"> 
+                <a href="#">
+                    <img class="logo" src="image/shop-logo.png" alt="TaoHu"></a>    
+            </div>
+            <p>Sign into your account</p>
+            <div class="home-link">
+                <a href="#">Home Page</a>
+            </div>
+        </header>
 
-                <input type="password" placeholder="Password" id="password" name="password"><br><br>
+        <div class="login-container">
+                <div class="view-header">Login</div>
+
+            <form action="#" method="post">
+                <div class="data">
+                    <div class="username-login">
+                        <input type="text" placeholder="Email/Phone" class="form-control" name="loginKey" required>
+                    </div>
+                </div>
+
+                <div class="data">
+                    <div class="password-login">
+                        <input type="password" placeholder="Password" class="form-control" name="password" required>
+                    </div>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot your password</a>
+                </div>
+                
+                <input type="submit" class="btn" value="Login">    
             </form>
-            <p>Forgot your password</p>
-            <button type="submit" class="submit" value="submit">LOG IN</button>
-            <p>No account? <a href="register_acc.html">Create one here</a></p>
+
+            <hr>
+            <div class="no-account">
+                <p>No account? <a href="register_acc.html">Create one here</a></p>
+            </div>
+        </div>
+    </body>
+
+    <footer class="simple-footer">
+        <div class="container">
+            <div class="content">
+            <ul class="footer-nav">
+                <li><a href="#">Search</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Term of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            
+        
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
         </div>
         
-    </body>
+        <div class="footer-bottom">
+            <p>&copy; 2021 <span>taohu</span>. All Rights Reserved | s3864120@rmit.edu.vn </p>
+        </div>
+        
+    </footer>
+
 </html>
