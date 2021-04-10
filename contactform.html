@@ -10,7 +10,7 @@
             padding: 12px 20px;
             margin: 10px 0;
             display: inline-block;
-            border: 2px solid rgb(170, 144, 201);
+            border: 0.5px solid rgb(3, 3, 3);
             border-radius: 40px;
             
         }
@@ -18,7 +18,7 @@
 
         input[type=submit] {
             width: 50%;
-            background-color: #be92db;
+            background-color: #68636b;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -35,16 +35,14 @@
             margin: auto;
             text-align: left;
             width: 70%;
-            border-radius: 50px;
-            background-color: #ecd7ec;
-            padding: 40px;
+            border-radius: 30px;
+            background-color: #ffffff;
         }  
         h1 {
             text-align: center;
             font-family: 'Train One', cursive;
-            color:  #be92db;
+            color:  #302f2f;
             font-size: 40;
-
         }
         .contactpic{
             position: relative;
@@ -54,17 +52,18 @@
             border-radius: 90px;
         }
         label{
-            color: rgb(67, 50, 87);
+            color: rgb(21, 20, 22);
             margin-left: 1%;
             font-family: 'Poiret One', cursive;
             font-size: 20;
+            font-weight: bold ;
         }
     </style>
 </head>
 <body>
     <h1> Contact Us </h1>
     <div>
-        <form action="/contactform.php">
+        <form>
             <label class='fullnamebox' for='fullname'>Full Name</label><br>
             <input type='text' id = "fullname" name = "fullname"><br>
             <label for='email'>Email</label><br>
@@ -75,7 +74,7 @@
             <input style="height:200px" type='text' id = "description" name = "description"><br>
             <input type="submit" value="Submit">
         </form>
-        <img src="pics_nham/contact.png" alt="Winter Collection" class= 'contactpic' >
+        <img src="pics_nham/contact.png" alt="Contact picture" class= 'contactpic' >
     </div>
 </body>
 <foot>

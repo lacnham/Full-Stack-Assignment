@@ -27,11 +27,6 @@
     float:left;
 
 }
-.logo{
-    width: 100px;
-    display: block; 
-    margin: 0 auto;
-}
 .introvideo{
     max-width: 80%;
     display: block; 
@@ -75,7 +70,9 @@
 .pro{
     text-decoration: none;
 }
-
+.logo{
+    margin: right;
+}
 .pro:link{
     color:black;
 }
@@ -93,4 +90,9 @@
     color:grey;
     position: relative;
     bottom:18px;
+}
+.logo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
 }
