@@ -16,10 +16,12 @@
     clear: both;
 }
 
-.overflow-content{
-    display: block;
-    overflow: auto;
-    width: 98rem;
+@media screen and (max-width: 920px) {
+    .overflow-content{
+        display: block;
+        width: 920px;
+        overflow: auto;
+    }
 }
 
 /* SIMPLE HEADER */
