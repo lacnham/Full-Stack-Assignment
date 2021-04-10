@@ -58,6 +58,15 @@
     font-family: "Work Sans", sans-serif;
 }
 
+.home-link a{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.home-link a:hover{
+    color:rgb(146, 146, 146)
+}
+
 /* FOOTER */
 .footer{
     padding-top: 25px;
@@ -218,7 +227,15 @@ footer img{
     padding-bottom: 30px;
     padding-top: 10px;
     font-family: "Work Sans", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.forgot-pass a{
+    color: black;
+}
+
+.forgot-pass a:hover{
+    color: rgb(138, 138, 138);
 }
 
 .login-container form .btn{
@@ -248,4 +265,13 @@ footer img{
     padding-top: 10px;
     text-align: center;
     font-family: "Work Sans", sans-serif;
+}
+
+.login-container .no-account a{
+    text-decoration: ;
+    color: rgb(0, 0, 0);
+}
+
+.login-container .no-account a:hover{
+    color: rgb(139, 139, 139);
 }
