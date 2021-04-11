@@ -1,63 +1,80 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring Collection</title>
-    <link rel='stylesheet' href='css_uniqlo/productdetails.css'>
-</head>
-<body>
-    <a href='store1.html'>
-        <img class='logo' src='pics_nham/logo.jpg'>
-    </a>
-    <section class='product_details'> 
-        <div class='image'>
-            <img class='detailpic' src='pics_nham/spring1.jpg' alt="Tan Pants"> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>U N I Q L O</title>
+        <link rel='stylesheet' href='css_uniqlo/test.css'>
+    </head>
+    <body>
+        <a href='store1.html'>
+            <img class='logo' src='pics_nham/logo.jpg'>
+        </a>
+        <div class='small-container detailproduct'>
+            <div class='row'>
+                <div class="col-2">
+                    <img src="pics_nham/autumn1.jpg" alt='Autumn collection' width='400px;'>
+                </div>
+                <div class="col-2">
+                    <p>Home/ Jacket</p>
+                    <h1>Kaki Jacket</h1>
+                    <h4>450.000 VND</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <input type='number' value='1'>
+                    <a href='' class='btn'>Add to Cart</a>
+                    <h3>Product Details 
+                    </h3>
+                    <br>
+                    <p>
+                        Selected High Quality Wool: We use 80% wool fabrics.
+                         Soft, smooth, breathable. Our coat features a classic 
+                         big hood, windproof zipper, 2 inner pockets and 2 side
+                          zip pockets. The overall sense of design is strong and
+                           stylish. Wearing is also very comfortable and it gives 
+                           you a cool looking. Advanced and reliable fabric can keep 
+                           you warm enough in cold weather.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class='information'>
-            <h1 class='protitle'>Tan Pants</h1>
-            <p class='price'>350.000VND</p>
-            <p>Categories:
-                <a class = 'pro'href="spring.html" >Spring Collection</a>  
-            </p>
-            <div>Color: Tan
-                <div class="square"></div>
+        <div class='small-container'>
+            <div class = 'roww'>
+                <h3>More products in season</h3>
+                <section class='product_display'>
+                    <div class='pic_product_display'>
+                        <a class="pro" href="detailpage.html">
+                            <img  class='pic' src="pics_nham/autumn1.jpg" alt="Autumn Collection" width="340" height="470" >
+                            <p>Kaki Jacket</p>
+                            <p class='price'>450.000 VNĐ</p>
+                        </a>
+                    </div>
+                    <div class='pic_product_display'>
+                        <a class="pro" href="detailpage.html">
+                            <img class='pic' src="pics_nham/autumn2.jpg" alt="Autumn Collection" width="340" height="470" >
+                            <p>Brown Jacket</p> 
+                            <p class='price'>350.000 VNĐ</p>
+                        </a>
+                    </div>
+                    <div class='pic_product_display'>
+                        <a class="pro" href="detailpage.html">
+                            <img class='pic' src="pics_nham/autumn3.jpg" alt="Autumn Collection" width="340" height="470"  >
+                            <p>Deep Blue Trench Jacket</p> 
+                            <p class='price'>650.000 VNĐ</p>
+                        </a>
+                    </div>
+                    <div class='pic_product_display'>
+                        <a class="pro" href="detailpage.html">
+                            <img class='pic' src="pics_nham/autumn4.jpg" alt="Autumn Collection" width="340" height="470"  >
+                            <p>Dark Brown Jacket</p> 
+                            <p class='price'>400.000 VNĐ</p>
+                        </a>
+                    </div>
+                </section>
             </div>
-
-            <p>Gender: Unisex</p>
-            <p>Stock: 30</p>
-            <div class='size'>Size:</div>
-            <div>
-            <input type="radio" id="S" name="size" value="S">
-            <label for="S">S</label><br>
-            <input type="radio" id="M" name="size" value="M">
-            <label for="M">M</label><br>
-            <input type="radio" id="L" name="size" value="L">
-            <label for="L">L</label> 
-            </div>
-            <button type="button buy-now" id="button1" >Buy Now</button>
-            <button type="button add-to-cart" id="button2">Add to cart</button>
-        </div>   
-    </section>
-    <section>
-        <p class='description'>Detail Description</p>
-        <table style='width: 100%'>
-            <tr>
-                <th>Brand</th>
-                <td>Uniqlo</td>
-            </tr>
-            <tr>
-                <th>Origin</th>
-                <td>Japan</td>
-            </tr>
-            <tr>
-                <th>Size</th>
-                <td>80cm</td>
-            </tr>
-            <tr>
-                <th>Weight</th>
-                <td>200 gram</td>
-            </tr>
-        </table>
-    </section>
-
-
-</body>
+        </div>
+    </body>
+</html>

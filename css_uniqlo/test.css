@@ -69,3 +69,51 @@ input:focus{
 .detailproduct .fa{
     color: #744b2b;
 }
+.logo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
+}
+.product_display{
+    overflow: hidden;
+    display: block;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    position: center;
+    font-family: 'Work Sans', sans-serif;
+    padding:1%;
+}
+.pic_product_display{
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    max-width: 100%;
+    height: auto;
+}
+.pro{
+    text-decoration: none;
+}
+.pro:link{
+    color:black;
+}
+.pro:visited{
+    color:black;
+}
+.pro:hover{
+    color:rgb(133, 48, 48);
+    background: rgb(167, 66, 35);
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+}
+.price{
+    font-size: 13;
+    color:grey;
+    position: relative;
+    bottom:18px;
+}
