@@ -5,49 +5,77 @@
         <link rel="stylesheet" href="css.css">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
     </head>
+
     <body>
-        <header>
+        <header class="simple-header-container">
             <div class="black-logo"> 
                 <a href="#">
                     <img class="logo" src="image/shop-logo.png" alt="TaoHu"></a>    
             </div>
             <p>Create your Account</p>
-            <a href="#">Home page</a>
+            <div class="home-link">
+                <a href="#">Home Page</a>
+            </div>
         </header>
-
+        
+    
         <form action="register_acc.html" method="get">
+        <div class="register-acc-container">
+            <div class="column">
             <p>BASIC INFO:</p>
+        
+            <div class="data">
+            <input type="text" placeholder="First name" id="fname" class="form-control" name="fname"><br><br>
+            </div>
 
-            <input type="text" placeholder="First name" id="fname" name="fname"><br><br>
+            <div class="data">
+            <input type="text" placeholder="Last name" id="lname" class="form-control" name="lname"><br><br>
+            </div>
 
-            <input type="text" placeholder="Last name" id="lname" name="lname"><br><br>
+            <div class="data">
+            <input type="password" placeholder="Password" id="password" class="form-control" name="password"><br><br>
+            </div>
 
-            <input type="password" placeholder="Password" id="password" name="password"><br><br>
-
-            <label for="re_pass"></label><br>
-            <input type="password" placeholder="Confirm Password" id="re_pass" name="re_pass"><br><br>
+            <div class="data">
+            <input type="password" placeholder="Confirm Password" id="re_pass" class="form-control" name="re_pass"><br><br>
+            </div>
 
             <label for="prof_pic">Profile picture</label><br>
             <input type="prof_pic" id="prof_pic" name="prof_pic"><br><br>    
 
-            <input type="password" placeholder="Address" id="address" name="address"><br><br>
+            <div class="data">
+            <input type="password" placeholder="Address" id="address" class="form-control" name="address"><br><br>
+            </div>
 
-            <input list="countries" placeholder="Country" name="country" id="country">
+            <div class="data">
+            <input list="countries" placeholder="Country" name="country" id="country" class="form-control">
             <datalist id="countries">
                 <option value="Japan">
                 <option value="Vietnam">
                 <option value="Korea">
             </datalist><br><br>
+            </div>
 
-            <input type="number" placeholder="ZIP CODE" id="zipcode" name="zipcode"><br><br>
+            <div class="data">
+            <input type="number" placeholder="ZIP CODE" id="zipcode" name="zipcode" class="form-control"><br><br>
+            </div>
+        </div>
 
-            <p>CONTACT INFO:</p>          
-            <input type="email" placeholder="Email" id="email" name="email"><br><br>
+        <div class="column">
+            <p>CONTACT INFO:</p> 
+            <div class="data">         
+            <input type="email" placeholder="Email" id="email" name="email" class="form-control"><br><br>
+            </div>
 
-            <input type="tel" placeholder="Phone number" id="phone" name="phone"><br><br>
-  
+            <div class="data">
+            <input type="tel" placeholder="Phone number" id="phone" name="phone" class="form-control"><br><br>
+            </div>
 
             <p>Your Account type</p>
             <input type="radio" id="storeowner" onclick="acctype()" name="account_type" value="storeowner">
@@ -73,11 +101,12 @@
                 </select>
             </div>        
             <br>
-            
+        </div>
+        </div>
             <button type="submit" class="submit" value="submit">Submit</button>
             <button type="reset" name="reset" value="reset">Reset</button>
         </form>
-
+    
 
 
         <script type="text/javascript">
