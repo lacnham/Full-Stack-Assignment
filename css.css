@@ -333,7 +333,8 @@ footer img{
 }
 
 /* LOGIN */
-.login-container{
+/* FORGOT PASSWORD */
+.login-container, .forgot-pass-container{
     display: block;
     clear: both;
     max-width: 90%;
@@ -343,16 +344,23 @@ footer img{
     padding-top: 60px;
     padding-bottom: 50px;
     background-color: transparent;
+    font-family: "Work Sans", sans-serif;
 }
 
 .header-login{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
-    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
 }
 
-.login-container form{
+.enter-email{
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.login-container form, .forgot-pass-container form{
     display: block;
     max-width: 50%;
     margin-right: auto;
@@ -360,7 +368,7 @@ footer img{
     margin-top: 10px;
 }
 
-.login-container form .data .form-control{
+.login-container form .data .form-control, .forgot-pass-container form .data .form-control{
     height: 40px;
     width: 100%;
     padding-left: 10px;
@@ -391,7 +399,7 @@ footer img{
     color: rgb(138, 138, 138);
 }
 
-.login-container form .btn{
+.login-container form .btn, .forgot-pass-container form .btn{
     margin-left: 50%;
     transform: translateX(-50%);
     width: 120px;
@@ -406,7 +414,7 @@ footer img{
     border-radius: 4px;
 }
 
-.login-container form .btn:hover{
+.login-container form .btn:hover, .forgot-pass-container form .btn:hover{
     opacity: 0.7;
 }
 
@@ -428,4 +436,9 @@ footer img{
 .login-container .no-account a:hover{
     color: rgb(139, 139, 139);
 }
+
+
+
+
+
 
