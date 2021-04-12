@@ -134,7 +134,7 @@ input:focus{
     min-width: 230px;
     border:1px solid  rgb(146, 146, 146);
     border-radius: 18px;
-    height: 280px;
+    height: 300px;
     box-sizing: border-box;
     margin-bottom: 10%;
     
@@ -156,6 +156,10 @@ input:focus{
 }
 .afee{
     text-decoration: none;
+}
+.viewmore{
+    text-decoration: none;
+    color: rgb(159, 221, 197)
 }
 .hfee{
     font-family: 'Patua One', cursive;
