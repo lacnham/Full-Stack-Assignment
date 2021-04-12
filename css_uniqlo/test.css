@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
 .small-container{
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    font-family: 'Work Sans', sans-serif;
 }
 .row{
    display: flex;  
@@ -24,9 +25,9 @@
     line-height: 60px;
     margin: 25px 0;
 }
-.btn{
+.button{
     display: inline-block;
-    background-color: rgb(119, 74, 16);
+    background-color: rgb(158, 124, 80);
     color:white;
     padding: 8px 30px;
     margin: 30px 0;
@@ -63,11 +64,7 @@
 
 }
 input:focus{
-    outline: none;
-    
-}
-.detailproduct .fa{
-    color: #744b2b;
+    outline: none;  
 }
 .logo{
     width: 100px;
@@ -115,4 +112,9 @@ input:focus{
     color:grey;
     position: relative;
     bottom:18px;
+}
+.moreproduct{
+    color: rgb(158, 124, 80);
+    font-family: 'Poppins', sans-serif;
+    font-size: 35;
 }
