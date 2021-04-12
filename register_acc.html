@@ -10,6 +10,15 @@
             box-sizing: border-box;
         }
     </style>
+
+        <script type="text/javascript">
+            function acctype() {
+                if (document.getElementById("storeowner").checked) {
+                    document.getElementById("ifOwner").style.display = "block";
+                } else 
+                    document.getElementById("ifOwner").style.display = "none";
+                }
+        </script>
     </head>
 
     <body>
@@ -28,7 +37,7 @@
         <form action="register_acc.html" method="get">
         <div class="register-acc-container">
             <div class="column">
-            <p>BASIC INFO:</p>
+            <h3>BASIC INFO:</h3>
         
             <div class="data">
             <input type="text" placeholder="First name" id="fname" class="form-control" name="fname"><br><br>
@@ -46,8 +55,10 @@
             <input type="password" placeholder="Confirm Password" id="re_pass" class="form-control" name="re_pass"><br><br>
             </div>
 
-            <label for="prof_pic">Profile picture</label><br>
-            <input type="prof_pic" id="prof_pic" name="prof_pic"><br><br>    
+            <div class="data">
+            <h4>Profile picture</h4>
+            <input type="file" id="prof-pic" name="prof-pic"><br><br>  
+            </div>
 
             <div class="data">
             <input type="password" placeholder="Address" id="address" class="form-control" name="address"><br><br>
@@ -68,7 +79,7 @@
         </div>
 
         <div class="column">
-            <p>CONTACT INFO:</p> 
+            <h3>CONTACT INFO:</h3> 
             <div class="data">         
             <input type="email" placeholder="Email" id="email" name="email" class="form-control"><br><br>
             </div>
@@ -77,51 +88,53 @@
             <input type="tel" placeholder="Phone number" id="phone" name="phone" class="form-control"><br><br>
             </div>
 
-            <p>Your Account type</p>
+            <h3 class="account-type-heading">YOUR ACCOUNT TYPE:</h3>
             <input type="radio" id="storeowner" onclick="acctype()" name="account_type" value="storeowner">
-            <label for="store_owner">Store owner</label><br>
-
+            <label for="store_owner">Store owner</label><br><br>
+            
             <input type="radio" id="shopper" onclick="acctype()" name="account_type" value="shopper">
             <label for="shopper">Shopper</label><br><br>
 
-            <p>STORE INFO:</p>
-            <div id="ifOwner" style="display:visible">
+            
+            <div id="ifOwner" style="display:none">
+                <h3>STORE INFO:</h3>
+                <div class="data">
                 <label for="business_name">Business name:</label><br>
-                <input type="text" id="business_name" name="business_name"><br><br>
-    
+                <input type="text" id="business_name" name="business_name" class="form-control"><br><br>
+                </div>
+
+                <div class="data">
                 <label for="store_name">Store name:</label><br>
-                <input type="text" id="store_name" name="store_name"><br><br>
-    
-                <label for="store_catergory">Store Category:</label><br>
-                <select id="store_category" name="store_category" size="4">
-                    <option value="technology">Technology</option>
-                    <option value="clothes">Clothes</option>
-                    <option value="grocery">Grocery</option>
-                    <option value="accessory">Accessory</option>
+                <input type="text" id="store_name" name="store_name" class="form-control"><br><br>
+                </div>
+
+                <div class="data">
+                <label for="store_catergory">Store Category:</label>
+                <select id="store_category" name="store_category" size="4" class="form-control2">
+                    <option value="technology" class="option">Technology</option>
+                    <option value="clothes" class="option">Clothes</option>
+                    <option value="grocery" class="option">Grocery</option>
+                    <option value="accessory" class="option">Accessory</option>
                 </select>
+                </div>
             </div>        
             <br>
         </div>
+        <div class="submit-reset-container">
+            <div class="submit-reset-big">
+            <div class="submit-reset">
+            <input type="submit" class="btn" value="submit">
+            <input type="reset" class="reset" value="reset">
+            </div>
+            </div>
         </div>
-            <button type="submit" class="submit" value="submit">Submit</button>
-            <button type="reset" name="reset" value="reset">Reset</button>
+        </div>
+            
         </form>
-    
 
-
-        <script type="text/javascript">
-            function acctype() {
-                if (document.getElementById("storeowner").checked) {
-                    document.getElementById("ifOwner").style.display = "block";
-                } else {
-                    document.getElementById("ifOwner").style.display = "none";
-                }
-        </script>
-
-        <footer class="footer">
+        <footer class="simple-footer">
             <div class="container">
                 <div class="content">
-                    <img src="/image/shop-logo.png" alt="TaoHu">
                 <ul class="footer-nav">
                     <li><a href="#">Search</a></li>
                     <li><a href="#">About Us</a></li>
@@ -144,6 +157,7 @@
             <div class="footer-bottom">
                 <p>&copy; 2021 <span>taohu</span>. All Rights Reserved | s3864120@rmit.edu.vn </p>
             </div>
+            
         </footer>
     </body>
 </html>

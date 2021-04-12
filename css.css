@@ -386,13 +386,26 @@ footer img{
 
 .login-container form .data .form-control, .forgot-pass-container form .data .form-control, .register-acc-container .column .data .form-control{
     height: 2.7rem;
-    width: 100%;
-    padding-left: 0.6rem;
+    width: 90%;
     font-size: 1rem;
     border: 1px solid lightgray;  
     border-radius: 4px;
     margin: 1.2rem 0 0.6rem 0;
     padding: 0 0.6rem;
+}
+
+.register-acc-container .column .data .form-control2{
+    height: 6.5rem;
+    width: 90%;
+    font-size: 1rem;
+    border: 1px solid lightgray;  
+    border-radius: 4px;
+    margin: 1.2rem 0 0.6rem 0;
+    padding: 0.3rem 0.6rem;
+}
+
+.register-acc-container .column .data .option{
+    padding-bottom: 5px;
 }
 
 .login-container form .data label{
@@ -458,7 +471,8 @@ footer img{
 .register-acc-container .column{
     float: left;
     width: 50%;
-    padding: 30px;
+    padding: 40px;
+    font-family: "Work Sans", sans-serif;
 }
 
 .register-acc-container::after{
@@ -467,40 +481,110 @@ footer img{
     clear: both;
 }
 
+#storeowner, #shopper{
+    margin-left: 50px;
+}
+
+#ifOwner h3, .account-type-heading{
+    padding-top: 20px;
+}
+
+.register-acc-container{
+    width: 100%;
+}
+
+.submit-reset-container{
+    display: flex;
+    padding-bottom: 3rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.submit-reset-big{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 20rem;
+}
+
+.submit-reset{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.submit-reset .btn{
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    background: black;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
+.submit-reset .reset{
+    width: 120px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background: #EDEDED;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+
 @media screen and (max-width: 530px) {
     .register-acc-container .column{
         width: 90%;
     }
-
-    .simple-header-container {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
-        padding: 1px;
-        width: 100%;
-        height: 110px;
-        background-color: #EDEDED;
-        box-shadow: 0 4px 3px rgba(0, 0, 0, 0.219);
-    }
-    
-    .black-logo .logo{
-        width: 3.5rem;
-        margin-left: 1rem;
-    }
     
     .home-link{
-        font-family: "Work Sans", sans-serif;
-        font-size: 13px;
-        padding-left: 12px;
+        display: none;
     }
         
-    
+    .black-logo .logo{
+        width: 3.5rem;
+        float: left;
+        margin-left: 25px;
+        margin-top: 28px;
+    }
+
     .simple-header-container p{
-        padding-left: 9px;
-        font-size: 1.1rem;
+        display: inline-block;
+        padding: 25px 0px 0px 10px;
+        font-size: 1.2rem;
         font-family: "Work Sans", sans-serif;
     }
-}
 
+    .submit-reset .btn{
+        width: 70px;
+        height: 23px;
+        border: none;
+        cursor: pointer;
+        font-family: "Work Sans", sans-serif;
+        font-size: 11px;
+        color: white;
+        background: black;
+        text-transform: uppercase;
+        border-radius: 6px;
+    }
+    
+    .submit-reset .reset{
+        width: 70px;
+        height: 23px;
+        border: none;
+        cursor: pointer;
+        font-family: "Work Sans", sans-serif;
+        font-size: 11px;
+        color: rgb(0, 0, 0);
+        background: #EDEDED;
+        text-transform: uppercase;
+        border-radius: 6px;
+    }
