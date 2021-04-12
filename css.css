@@ -197,7 +197,7 @@
 .home-link{
     float: right;
     padding-top: 45px;
-    padding-right: 80px;
+    padding-right: 50px;
     font-family: "Work Sans", sans-serif;
     font-size: 15px;
 }
@@ -205,8 +205,8 @@
 
 .simple-header-container p{
     display: inline-block;
-    padding: 5px 0px 0px 30px;
-    font-size: 1.9rem;
+    padding: 16px 0px 0px 20px;
+    font-size: 1.5rem;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -345,7 +345,7 @@ footer img{
     background-color: transparent;
 }
 
-.view-header{
+.header-login{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
@@ -375,7 +375,7 @@ footer img{
     font-size: 17px;
 }
 
-.forgot-pass{
+.forgot-pass-login{
     text-align: center;
     padding-bottom: 30px;
     padding-top: 10px;
@@ -383,11 +383,11 @@ footer img{
     font-size: 14px;
 }
 
-.forgot-pass a{
+.forgot-pass-login a{
     color: black;
 }
 
-.forgot-pass a:hover{
+.forgot-pass-login a:hover{
     color: rgb(138, 138, 138);
 }
 
@@ -428,3 +428,4 @@ footer img{
 .login-container .no-account a:hover{
     color: rgb(139, 139, 139);
 }
+
