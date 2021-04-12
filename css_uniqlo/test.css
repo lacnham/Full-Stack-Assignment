@@ -123,13 +123,18 @@ input:focus{
 /* FEES PAGE */
 .hf{
     font-family: 'Varela Round', sans-serif;
+    color:rgb(94, 95, 131);
+}
+.hf1{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(146, 146, 146)
 }
 .col3{
     flex-basis: 31%;
     min-width: 230px;
     border:1px solid  rgb(146, 146, 146);
     border-radius: 18px;
-    height: 300px;
+    height: 280px;
     box-sizing: border-box;
     margin-bottom: 10%;
     
@@ -137,12 +142,38 @@ input:focus{
 .col3 h2{
     text-align: center;
     font-family: 'Patua One', cursive;
+    color:rgb(94, 95, 131)
     
 }
-.col3 p{
+.col3 p {
     padding: 10%;
     font-family: 'Varela Round', sans-serif;
     color:rgb(146, 146, 146);
+}
+.infofee{
+    font-family: 'Patua One', cursive;
+    color:rgb(94, 95, 131)  
+}
+.afee{
+    text-decoration: none;
+}
+.hfee{
+    font-family: 'Patua One', cursive;
+    color:rgb(157, 159, 199)  
+}
+.detailfee{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(124, 121, 121);
+}
+.rent{
+    margin-top: 80px;
+}
+.premiumpic{
+    width: 450px;
+}
+span{
+    font-size: larger;
+    color:rgb(157, 159, 199) 
 }
 /* Footer */
 .footer{
