@@ -10,32 +10,14 @@
     padding: 10px;
 }
    
-   .search-box:hover > .search-txt 
+.search-box:hover > .search-txt 
 {
     width: 240px;
     padding:  0 6px;
 }
-   
-   .search-box:hover > .search-btn 
+.search-box:hover > .search-box i
 {
-    background: white;
-    color: black;
-}
-   
-   .search-btn
-{
-    color: #e84118;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    color: white;
-    cursor: pointer;
+    right: 0;
 }
    
    .search-txt {
@@ -51,3 +33,9 @@
     width: 0px;
     font-weight: bold;
    }
+
+.search-box i
+{
+    padding: 5px;
+    
+}
