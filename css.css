@@ -1,27 +1,157 @@
-.member_info {
+/* ABOUT US */
+.simple-intro-container{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    clear: both;
+    width: 40rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 4rem;
 }
 
-.image {
-    margin-bottom: 0.7em;
-    max-width: 25%;
-    margin-right: 0.7em;
+.simple-intro{
+    text-align: center;
+}
+
+.member_info{
+    width: 100%;
+    height: 52rem;
+    background-color: #EDEDED;
+    margin-bottom: 120px;
+}
+
+.member_info h1{
+    text-align: center;
+    font-family: "Work Sans", serif;
+    font-size: 3rem;
+    padding-top: 3rem;
+}
+
+
+.member_left_bigcontainer:after{
+    display: table;
+    clear: both;
+    content: " ";
+    width: 40%;
+    float: left;
+    font-family: "Work Sans", serif;
+    font-size: 0.9rem;
+    background-color: rgba(135, 207, 235, 0.356);
+}
+
+.member_left_container, .member_right_container{
+    float: left;
+    width: 40%;
+    margin-left: 5rem;
+    background-color: rgba(188, 143, 143, 0.267);
+    padding-bottom: 20px;
+}
+
+.member_left_container .image1 {
+    display: block;
+    float: left;
+    width: 10rem;
     border-radius: 50px;
+    margin: 0 3.1rem 0.9rem 1.6rem;
+}
+
+.member_right_container .image2 {
+    display: block;
+    float: left;
+    width: 10rem;
+    border-radius: 50px;
+    margin: 0 3.1rem 0.9rem 1.6rem;
+}
+
+.social-member-container{
+    display: block;
     float: left;
     clear: both;
+    background-color: rgba(250, 128, 114, 0.137);
 }
 
-@media screen and (max-width: 920px) {
-    .overflow-content{
+.social-member{
+    list-style: none;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.social-member li{
+    padding-right: 1.25rem;
+}
+
+.social-member a{
+    color: rgb(66, 66, 66);
+}
+
+.social-member a:hover{
+    color:rgb(0, 0, 0)
+}
+
+.team-detail-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 7rem;
+}
+
+.team-detail-container > div{
+    margin: 3rem;
+    padding: 3rem;
+    height: 20rem;
+    background-color: #EDEDED;
+}
+
+.detail-small-container h2{
+    padding-bottom: 1rem;
+}
+
+.detail-small-container{
+    text-align: center;
+    font-family: "Work Sans", serif;
+}
+
+@media screen and (max-width: 1460px) {
+    .member_left_bigcontainer{
         display: block;
-        width: 920px;
-        overflow: auto;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Work Sans", serif;
+        font-size: 0.9rem;
+        background-color: rgba(135, 207, 235, 0.356);
     }
+    
+    .member_left_container, .member_right_container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        background-color: rgba(188, 143, 143, 0.267);
+        padding-bottom: 5rem;
+    }
+
+/* HEADER TESTING */
+.simple-header-testing{
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+    background:transparent;
+}
+
+.simple-header-testing p{
+    display: inline-block;
+    padding: 5px 0px 0px 30px;
+    font-size: 1.9rem;
+    font-family: "Work Sans", sans-serif;
+}
+
+.aboutus-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-bottom: 35px;
 }
 
 /* SIMPLE HEADER */
@@ -66,6 +196,7 @@
 .home-link a:hover{
     color:rgb(146, 146, 146)
 }
+
 
 /* FOOTER */
 .footer{
@@ -143,8 +274,8 @@
 }
 
 .socials li{
-    padding-right: 10px;
-    margin-right: 15px;
+    padding-right: 35px;
+    
 }
 
 .socials a{
