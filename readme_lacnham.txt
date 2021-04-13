@@ -20,3 +20,4 @@ Copyright, ToS, and Privacy Policy:
 -   https://www.parksonbranding.com/pages/terms-of-service
 FAQs:
 -   https://www.amazon.com/gp/help/customer/display.html?nodeId=201995060
+-   https://www.gucci.com/us/en/st/faq#covid-stores

@@ -46,6 +46,13 @@ width: 50%;
     font-family: 'Rye', cursive;
     font-size: 30;
 }
+@media screen and (max-width: 450px){
+    .title1{
+        font-family: 'Rye', cursive;
+        font-size: 30;
+    }
+}
+
 .introimg{
     max-width: 100%;
     height: auto;
@@ -157,114 +164,3 @@ width: 50%;
     position: relative;
     bottom:18px;
 }
-.footer{
-    padding-top: 25px;
-    width: 100%;
-    height: 370px;
-    left: 0;
-    right: 0; 
-    display: block;
-    box-sizing: border-box;
-    clear: both ;
-    background-color: #EDEDED;
-}
-
-.container{
-    max-width: 1200px;
-    background-color: rgba(255, 255, 255, 0);
-    width: 100%;
-    height: auto;
-    display: block;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    top: 11%;
-    bottom: 15%; 
-    box-sizing: border-box;
-}
-
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Work Sans", sans-serif;
-    color: rgb(0,0,0);
-    padding-top: 10px;
-}
-
-.content h3{
-    font-size: 1.8em;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 1em
-}
-
-.footer-nav{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-nav li{
-    display: inline-block;
-    font-size: 15px;
-    margin-right: 45px;
-    padding: 8px;
-}
-
-.footer-nav a{
-    color: #000000;
-    text-decoration: none;
-}
-
-.footer-nav li a:hover{
-    color:rgb(146, 146, 146)
-}
-
-.socials{
-    list-style: none;
-    display: flex;
-    font-size: 1.1em;
-    padding-top: 1em;
-}
-
-.socials li{
-    padding-right: 10px;
-    margin-right: 15px;
-}
-
-.socials a{
-    color: rgb(0,0,0);
-}
-
-.footer-bottom{
-    text-align: center;
-    bottom: 25px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 14px;
-}
-
-.footer-bottom span{
-    text-transform: uppercase;
-}
-
-footer img{ 
-    width:90px;
-}
-
-/* SIMPLE FOOTER */
-.simple-footer{
-    padding-top: 25px;
-    width: 100%;
-    height: 250px;
-    left: 0;
-    right: 0; 
-    display: block;
-    box-sizing: border-box;
-    clear: both ;
-    background-color: #EDEDED;
-}
-
