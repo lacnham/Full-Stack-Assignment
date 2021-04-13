@@ -212,6 +212,9 @@ span{
 }
 
 /* Order Placement */
+.bodyorder{
+    font-family: 'Varela Round', sans-serif;
+}
 .order{
     margin: 80px auto;
 }
@@ -230,9 +233,11 @@ th{
     color:rgb(255, 255, 255);
     background-color: rgb(94, 95, 131);
     font-weight: normal;
+    font-family: 'Varela Round', sans-serif
 }
 td{
     padding: 10px 5px;
+    font-family: 'Varela Round', sans-serif
 
 }
 td input{
@@ -248,4 +253,41 @@ td img{
     width: 80px;
     height: 100px;
     margin-right:10px ;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+.total table{
+    border-top: 3px solid rgb(94, 95, 131);
+    width: 90%;
+    max-width: 500px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.btn{
+    text-align: right;
+}
+button{
+    background-color: rgb(94, 95, 131);
+    padding: 2%;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    box-sizing: border-box;
+    width: 180;
+    margin-bottom: 1%;
+    font-family: 'Varela Round', sans-serif
+}
+@media screen and (max-width: 450px){
+    .orderinfo p{
+        font-size: small;
+    }
+    small{
+        font-size: small;
+    }
 }
