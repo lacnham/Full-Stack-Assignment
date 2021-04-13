@@ -15,3 +15,8 @@ SCRIPT:
 - https://www.amazon.in/ELETOP-Content-Classic-Hooded-Jacket/dp/B082Q2Y2DL
 - https://seller.shopee.sg/edu/article/2450
 - https://www.thestorefront.com/go/rent-pop-up-space-in-shopping-mall/
+Copyright, ToS, and Privacy Policy:
+-   http://www.parksongroup.com.cn/html_en/privacy/Terms_of_Use.php
+-   https://www.parksonbranding.com/pages/terms-of-service
+FAQs:
+-   https://www.amazon.com/gp/help/customer/display.html?nodeId=201995060

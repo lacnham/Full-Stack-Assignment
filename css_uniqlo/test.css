@@ -177,8 +177,32 @@ input:focus{
 }
 span{
     font-size: larger;
-    color:rgb(157, 159, 199) 
+    color:rgb(157, 159, 199) ;
 }
+
+
+
+
+
+/* Copyright */
+.box{
+    padding: 3%;
+    border: 3px solid rgb(204, 183, 221);
+    border-radius: 25px ;
+    margin-bottom: 10px;
+}
+.hc{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(121, 111, 129);
+}
+
+
+/* FAQs */
+.hfaq{
+    color:rgb(221, 185, 107);
+    font-family: 'Varela Round', sans-serif;
+}
+
 /* Footer */
 .footer{
     padding-top: 25px;
