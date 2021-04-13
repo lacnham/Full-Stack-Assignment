@@ -330,7 +330,7 @@ footer img{
         display: block;
         box-sizing: border-box;
         clear: both ;
-        background-color: #EDEDED;
+        background-color: #ffffff;
     }
 }
 
@@ -345,7 +345,7 @@ footer img{
     display: block;
     box-sizing: border-box;
     clear: both ;
-    background-color: #EDEDED;
+    background-color: #ffffff;
 }
 
 /* LOGIN */
@@ -458,7 +458,7 @@ footer img{
 }
 
 .login-container .no-account a{
-    text-decoration: ;
+    text-decoration: none ;
     color: rgb(0, 0, 0);
 }
 
@@ -602,5 +602,4 @@ footer img{
         box-sizing: border-box;
         clear: both ;
         background-color: #EDEDED;
-    }
-}
+    }}
