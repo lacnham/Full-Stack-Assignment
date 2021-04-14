@@ -21,3 +21,5 @@ Copyright, ToS, and Privacy Policy:
 FAQs:
 -   https://www.amazon.com/gp/help/customer/display.html?nodeId=201995060
 -   https://www.gucci.com/us/en/st/faq#covid-stores
+Contact:
+-   https://yourstory.com/2017/04/common-problems-online-shopping
