@@ -328,7 +328,7 @@ input[type=select]{
     color: rgb(134, 135, 175);
     font-weight: bolder;
 }
-input[type=submit]{
+input[type=button]{
     background-color: rgb(134, 135, 175) ;
     width: 265px;
     border-radius: 30px;
@@ -358,7 +358,7 @@ input[type=submit]{
 input[type=checkbox]{
     margin-bottom: 10px;
 }
-select{
+.purpose{
    color: rgb(134, 135, 175);
     border-radius: 25px;
     width: 100%;
@@ -382,5 +382,8 @@ select{
         margin: center;
         margin-left: auto;
         margin-right: auto;
+    }
+    .pix{
+        display: none;
     }
 }
