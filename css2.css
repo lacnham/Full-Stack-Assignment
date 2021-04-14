@@ -1,0 +1,121 @@
+/* MY ACCOUNT */
+.prof-pic-name img{
+    width:150px; 
+    height: 150px;
+    border-radius: 50%
+}
+
+.acc-whole-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: rgba(220, 20, 60, 0);
+    font-family: "Work Sans", sans-serif;
+}
+
+.acc-whole-content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.acc-whole-content .acc-column{
+    float: left;
+    margin-top: 3rem;
+}
+
+.prof-pic-name{
+    text-align: center;
+    background-color: rgba(153, 148, 84, 0);
+}
+
+.acc-nav-container{
+    padding-top: 15%;
+}
+
+.prof-pic-nav{
+    padding-right: 10vw;
+    margin-left: 3vw;
+}
+
+
+.tab-container-wrap{
+    width: 65vw;
+    background-color: rgba(100, 148, 237, 0);
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-container-wrap h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tab-container-wrap form .form-control{
+    height: 2.5rem;
+    width: 85%;
+    font-size: 1rem;
+    border: 1px solid lightgray;  
+    border-radius: 4px;
+}
+
+
+.tab-container-wrap form{
+    right: 3vw;
+    padding-top: 1.5rem;
+}
+
+.col-label{
+    float: left;
+    width: 25%;
+    margin-top: 17px;
+}
+
+.col-input{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.form-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 880px) {
+    .col-label, .col-input{
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .acc-column{
+        width: 100%;
+        margin-left: auto;
+        margin-top: auto;
+    } 
+
+    .acc-nav-container{
+        padding-top: 0px;
+        text-align: center;
+    }
+    
+    .prof-pic-nav{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .tab-container-wrap h2{
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .tab-container-wrap{
+        width: 65%;
+        background-color: rgba(100, 148, 237, 0);
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
