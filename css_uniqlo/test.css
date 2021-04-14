@@ -302,7 +302,9 @@ button{
     font-size: large;
 }
     
-
+.contactpic{
+    margin-top: 40px;
+}
 input[type=text]{
     width: 100%;
     margin-bottom: 2%;
