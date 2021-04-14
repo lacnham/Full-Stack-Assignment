@@ -2,79 +2,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel='stylesheet' href='css_uniqlo/store1.css'>
+    <link rel='stylesheet' href='css_uniqlo/test.css'>
     <link rel='stylesheet' href='css_uniqlo/css.css'>
     <title>Contact Us</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Poiret+One&family=Train+One&display=swap');
-        input[type=text]{
-            width: 50%;
-            padding: 12px 20px;
-            margin: 10px 0;
-            display: inline-block;
-            border: 0.5px solid rgb(3, 3, 3);
-            border-radius: 40px;
-            
-        }
-        input[type=submit] {
-            width: 50%;
-            background-color: #68636b;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            font-family: 'Poiret One', cursive;
-            font-size: 20;
-            border-radius: 40px;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: #7cc1c4;
-        }
-        div {
-            margin: auto;
-            text-align: left;
-            width: 70%;
-        }  
-        h1 {
-            text-align: center;
-            font-family: 'Train One', cursive;
-            color:  #302f2f;
-            font-size: 40;
-        }
-        .contactpic{
-            position: relative;
-            bottom: 500px;
-            width: 45%;
-            float:right;
-            border-radius: 90px;
-        }
-        label{
-            color: rgb(21, 20, 22);
-            margin-left: 1%;
-            font-family: 'Poiret One', cursive;
-            font-size: 20;
-            font-weight: bold ;
-        }
-        
-    </style>
 </head>
 <body>
-    <h1> Contact Us </h1>
-    <div>
-        <form>
-            <label class='fullnamebox' for='fullname'>Full Name</label><br>
-            <input type='text' id = "fullname" name = "fullname"><br>
-            <label for='email'>Email</label><br>
-            <input type='text' id = "email" name = "email"><br>
-            <label for='title'>Title</label><br>
-            <input type='text' id = "title" name = "title"><br>
-            <label for='description'>Description</label><br>
-            <input style="height:200px" type='text' id = "description" name = "description"><br>
-            <input type="submit" value="Submit">
-        </form>
-        <img src="pics_nham/contact.png" alt="Contact picture" class= 'contactpic' >
+    
+    <div class='small-container'>
+        <div class='row'>
+            <div class="col-2">
+                <h1> Contact Us </h1>
+                <form>
+                    <select name='purpose'>Contact Purpose:
+                        <option value=''></option>
+                    </select>
+
+                    <label class='fullnamebox' for='fullname'>Full Name</label><br>
+                    <input type='text' id = "fullname" name = "fullname"><br>
+                    <label for='email'>Email</label><br>
+                    <input type='text' id = "email" name = "email"><br>
+                    <label for='title'>Title</label><br>
+                    <input type='text' id = "title" name = "title"><br>
+                    <label for='description'>Description</label><br>
+                    <input style="height:200px" type='text' id = "description" name = "description"><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>  
+            <div class="col-2">
+                <img src="pics_nham/contact.png" alt="Contact picture" class= 'contactpic' >
+            </div>
+        </div>
     </div>
 </body>
 <footer class="simple-footer">
