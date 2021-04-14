@@ -325,11 +325,11 @@ input[type=select]{
 }
 .line{
     font-size: 20;
-    color: rgb(94, 95, 131);
+    color: rgb(134, 135, 175);
     font-weight: bolder;
 }
 input[type=submit]{
-    background-color: rgb(94, 95, 131) ;
+    background-color: rgb(134, 135, 175) ;
     width: 265px;
     border-radius: 30px;
     padding:3%;
@@ -359,7 +359,7 @@ input[type=checkbox]{
     margin-bottom: 10px;
 }
 select{
-   color: rgb(94, 95, 131);
+   color: rgb(134, 135, 175);
     border-radius: 25px;
     width: 100%;
     margin-bottom: 5px;

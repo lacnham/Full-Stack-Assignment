@@ -231,7 +231,7 @@
     display: block;
     box-sizing: border-box;
     clear: both ;
-    background-color: #EDEDED;
+    background-color: #f3f3f3;
 }
 
 .container{
@@ -345,7 +345,7 @@ footer img{
     display: block;
     box-sizing: border-box;
     clear: both ;
-    background-color: #ffffff;
+    background-color: #EDEDED;
 }
 
 /* LOGIN */
@@ -602,4 +602,5 @@ footer img{
         box-sizing: border-box;
         clear: both ;
         background-color: #EDEDED;
-    }}
+    }
+}
