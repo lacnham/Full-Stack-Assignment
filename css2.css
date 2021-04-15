@@ -22,6 +22,8 @@
 .acc-whole-content .acc-column{
     float: left;
     margin-top: 3rem;
+    height: auto;
+    padding-bottom: 35px;
 }
 
 .prof-pic-name{
@@ -34,10 +36,9 @@
 }
 
 .prof-pic-nav{
-    padding-right: 10vw;
-    margin-left: 3vw;
+    padding-right: 6vw;
+    margin-left: 5vw;
 }
-
 
 .tab-container-wrap{
     width: 65vw;
@@ -62,7 +63,6 @@
 
 
 .tab-container-wrap form{
-    right: 3vw;
     padding-top: 1.5rem;
 }
 
@@ -70,12 +70,14 @@
     float: left;
     width: 25%;
     margin-top: 17px;
+    padding-left: 8%;
 }
 
 .col-input{
     float: left;
-    width: 75%;
+    width: 100%;
     margin-top: 6px;
+    padding-left: 8%;
 }
 
 .form-row::after{
