@@ -211,6 +211,21 @@ footer img{
     font-family: "Work Sans", sans-serif;
 }
 
+@media screen and (min-height: 1100px) {
+    .login-container{
+        display: block;
+        clear: both;
+        max-width: 90%;
+        height: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-color: transparent;
+        font-family: "Work Sans", sans-serif;
+    }
+}
+
 
 .header-login{
     font-size: 2rem;
