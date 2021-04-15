@@ -12,22 +12,36 @@ body
 
 .navbar nav
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-sizing: border-box;   
 }
-
+.logo
+{
+    animation-name: wheel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel
+{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.taohu
+{
+    padding-left: 30px;
+}
 .navbar ul{
-    position: absolute;
-    float: right;
     top: 10%;
-    left: 50%;
     transform: translate(-50%,-50%,);
-    margin: 0;
-    padding: 20px 0;
     background-color: transparent;
-    display: flex;
-    
+    display: flex;   
 }
 .navbar ul li
 {
@@ -118,19 +132,70 @@ body
 }
 .navbar
 {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 20px;
     position: sticky;
     top: 0;
     background:#ededed;
+    box-shadow: 10px 10px 10px black;
 }
-.row
+.search-box
 {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 2.5rem;
+    border: 2px solid black;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+}
+   
+.search-box:hover > .search-txt 
+{
+    width: 240px;
+    padding:  0 6px;
+}
+.search-box:hover > .search-box i
+{
+    right: 0;
+}
+   
+.search-txt 
+{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 25px;
+    width: 0px;
+    font-weight: bold;
+    font-family: "Work Sans", sans-serif;
 }
 
+.search-box i
+{
+    padding: 5px;
+    
+}
+
+.row
+{
+    background-image:url(/assets/leaf-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.column-2
+{
+    margin-left: 0;
+}
 p
 {
     color: #555;
@@ -139,8 +204,9 @@ p
 {
     margin: auto;
     width: 100%;
+    
 }
-.row
+.row-2
 {
     display: flex;
     align-items: center;
@@ -149,14 +215,9 @@ p
 }
 .column-2
 {
-    flex-basis: 50%;
-    min-width: 300px;
+    flex-basis: 80%;
 }
-.column-2 img
-{
-    max-width: 100%;
-    padding: 50px 0;
-}
+
 .column-2 h1
 {
     font-size: 50px;
@@ -179,16 +240,74 @@ p
 }
 .header
 {
-    background: radial-gradient(#fff,#fff);
+    background: radial-gradient(#fff,#ededed);
 }
-.header .row 
+
+.news-roll figure
 {
-    margin-top: 70px;
+    position: relative;
+    width: 500%;
+    height: 50%;
+    animation: 10s slider infinite;
+}
+.news-roll figure img
+{
+    width: 20%;
+    float: left;
+}
+@keyframes slider 
+{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.container-news-roll
+{
+    width: 100%;
+    background-image:url(/assets/leaf-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 50px;
+}
+.news-roll
+{
+    overflow: hidden;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: groove;
+    box-shadow: 10px 10px 10px 5px black ;
+
 }
 .categories
 {
     margin: 70px 0;
-    background: radial-gradient(#fff,#ffd6d6);
 }
 .column-3
 {
@@ -200,10 +319,59 @@ p
 {
     width: 100%;
 }
+.column-3 h3
+{
+    text-align: center;
+}
 .small-container
 {
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    
+}
+
+.row-3{
+    display: flex;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.title 
+{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after
+{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h4{
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+}
+.column-4 p
+{
+    font-size: 16px;
+
+}
+.rating
+{
+   color:#ff523b;
 }
