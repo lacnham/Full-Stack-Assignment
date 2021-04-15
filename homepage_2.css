@@ -10,20 +10,13 @@ body
     font-family: 'Work Sans', sans-serif;
 }
 
-.navbar nav
-{
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    box-sizing: border-box;   
-}
 .logo
 {
     animation-name: wheel;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+
 @keyframes wheel
 {
     from{
@@ -33,13 +26,21 @@ body
         transform: rotateY(360deg);
     }
 }
+
 .taohu
 {
     padding-left: 30px;
 }
+
+/* NAV BAR */
+
+.navbar nav {
+    display: block;
+    margin-left: 5%;
+}
+
 .navbar ul{
     top: 10%;
-    transform: translate(-50%,-50%,);
     background-color: transparent;
     display: flex;   
 }
@@ -57,7 +58,7 @@ body
 .navbar ul li a
 {
     text-decoration: none;
-    padding: 0 50px;
+    padding: 0 25px;
     display: block;
 }
 .navbar ul li a .icon
@@ -66,14 +67,14 @@ body
     height: 40px;
     text-align: center;
     overflow:hidden;
-    margin: 0 auto 10px;
+    margin: 0 auto 2px;
 }
 .navbar ul li a .icon .fa
 {
     width: 100%;
     height: 100%;
     line-height: 40px;
-    font-size: 34px;
+    font-size: 25px;
     transition: 0.5s;
     color: #000;
 }
@@ -118,6 +119,9 @@ body
     transform: translateY(20px);
 
 }
+
+
+
 .navbar .shops-dropdown-content
 {
   position: absolute;
