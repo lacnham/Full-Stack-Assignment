@@ -122,13 +122,12 @@
     }
 }
 
-
-.up-arrow a{
+.up-arrow a i{
     position: fixed;
-    right: 40px;
+    right: 30px;
     bottom: 30px;
     color: black;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 /* ABOUT US */
