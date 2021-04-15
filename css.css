@@ -249,7 +249,7 @@ footer img{
 
 .login-container form .data .form-control, .forgot-pass-container form .data .form-control, .register-acc-container .column .data .form-control{
     height: 2.7rem;
-    width: 90%;
+    width: 100%;
     font-size: 1rem;
     border: 1px solid lightgray;  
     border-radius: 4px;
