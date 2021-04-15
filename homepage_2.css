@@ -66,7 +66,7 @@ body
     width: 40px;
     height: 40px;
     text-align: center;
-    overflow:hidden;
+    overflow: hidden;
     margin: 0 auto 2px;
 }
 .navbar ul li a .icon .fa
@@ -114,14 +114,123 @@ body
     height: 100%;
     color:#e91e63;
 }
+
 .navbar ul li a:hover .name span
 {
     transform: translateY(20px);
+}
 
+.menuicon i{
+    font-size: 35px;
+    display: none;
 }
 
 
+@media screen and (max-width: 1430px){
+    .navbar nav ul{
+        padding: 0;
+        width: 250px;
+        display: block;
+        overflow: hidden;
+        background-color: #EDEDED;
+        border: 1px solid rgba(0, 0, 0, 0.404);
+        transition: 0.5s;
+    }
 
+    .navbar ul li{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .navbar ul li:last-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar ul li a{
+        padding: 0 20px;
+    }
+
+    .navbar ul li a .icon{
+        display: inline-block;
+        float: left;
+        margin: 0 auto;
+    }
+
+
+    .navbar ul li a .name{
+        width: auto;
+        display: inline-block;
+        padding: 0px 40px;
+        height: 35px;
+    }
+
+    .navbar ul li a .name span{
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    line-height: 40px;
+    transition: 0.5s;
+    }
+
+    .navbar ul li a .name span::before{
+    content:attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#e91e63;
+    }
+
+    .navbar ul li a:hover .name span{
+        transform: translateY(42px);
+    }
+
+    .taohu svg{
+        width: 120px;
+    }
+
+    .taohu{
+        padding-left: 20px;
+    }
+
+}
+
+    .menu .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 4px;
+        background-color: #333;
+        margin: 6px 0px;
+        transition: 0.4s;
+      }
+
+    .menu{
+        display: block;
+        position: fixed;
+        top: 36px;
+        width: 35px;
+    }
+
+    .navbar nav ul{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menuicon i{
+        font-size: 35px;
+        display: block;
+    }
+
+    .menu:hover > ul{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/* SHOP DROPDOWN */
 .navbar .shops-dropdown-content
 {
   position: absolute;
@@ -134,13 +243,14 @@ body
 {
     display: block;
 }
+
 .navbar
 {
     width: 100%;
     display: flex;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background:#ededed;
     box-shadow: 10px 10px 10px black;
@@ -249,7 +359,6 @@ p
 
 .news-roll figure
 {
-    position: relative;
     width: 500%;
     height: 50%;
     animation: 10s slider infinite;
