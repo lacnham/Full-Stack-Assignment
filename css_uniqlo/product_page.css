@@ -12,6 +12,7 @@
     width: 100px;
     display: block; 
     margin: 0 auto;
+    padding-top: 110px;
 }
 .product_display{
     overflow: hidden;
@@ -154,8 +155,9 @@ width: 50%;
 .pro:hover{
     color:rgb(133, 48, 48);
     background: rgb(167, 66, 35);
-    /* filter: grayscale(60%); */
-    /* -webkit-filter: grayscale(60%); */
+    -moz-box-shadow: 0 10px 30px rgb(102, 81, 81);
+    -webkit-box-shadow: 0 10px 30px rgb(121, 99, 99);
+    box-shadow: 0 10px 30px rgb(117, 88, 88);
 }
 .price{
     font-size: 13;

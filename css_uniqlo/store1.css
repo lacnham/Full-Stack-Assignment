@@ -12,13 +12,11 @@
 .coverpage1{
     overflow: hidden;
     display: block;
-    margin-block-end: 1em;
-    margin-block-start: 1em;
     width: 100%;
     margin: 0;
     padding: 5px;
     background-color: white;
-    position: center;
+    /* position: center; */
 }
 .spring,.summer,.autumn, .winter,.casual{
     width: 20%;
@@ -58,8 +56,6 @@
 .product_display{
     overflow: hidden;
     display: block;
-    margin-block-end: 1em;
-    margin-block-start: 1em;
     width: 100%;
     margin: 0;
     background-color: white;
@@ -84,7 +80,11 @@
     text-decoration: none;
 }
 .logouniqlo{
+    padding-top: 110px;
     margin: right;
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
 }
 .pro:link{
     color:black;
@@ -95,17 +95,13 @@
 .pro:hover{
     color:rgb(133, 48, 48);
     background: rgb(167, 66, 35);
-    filter: grayscale(60%);
-    -webkit-filter: grayscale(60%);
+    -moz-box-shadow: 0 10px 30px rgb(102, 81, 81);
+    -webkit-box-shadow: 0 10px 30px rgb(121, 99, 99);
+    box-shadow: 0 10px 30px rgb(117, 88, 88);
 }
 .price{
     font-size: 13;
     color:grey;
-    position: relative;
     bottom:18px;
 }
-.logouniqlo{
-    width: 100px;
-    display: block; 
-    margin: 0 auto;
-}
+
