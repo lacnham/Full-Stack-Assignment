@@ -54,7 +54,7 @@ body
     position: fixed;
     top: 0;
     background:#ededed;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px rgba(63, 63, 63, 0.267);
 }
 .search-box
 {

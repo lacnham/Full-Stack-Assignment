@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
 .smallcontainer{
+    padding-top: 8rem;
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
@@ -124,10 +125,12 @@ input:focus{
 .hf{
     font-family: 'Varela Round', sans-serif;
     color:rgb(94, 95, 131);
+    line-height: 2.2em;
 }
 .hf1, .hf1-1{
     font-family: 'Varela Round', sans-serif;
-    color:rgb(146, 146, 146)
+    color:rgb(146, 146, 146);
+    line-height: 2.2em;
 }
 .hf1-1{
     text-align: center;
@@ -146,7 +149,8 @@ input:focus{
 .col3 h2{
     text-align: center;
     font-family: 'Patua One', cursive;
-    color:rgb(94, 95, 131)
+    color:rgb(94, 95, 131);
+    line-height: 2em;
     
 }
 .col3 p {
@@ -205,6 +209,7 @@ span{
 .hfaq{
     color:rgb(218, 181, 104);
     font-family: 'Varela Round', sans-serif;
+    line-height: 2em;
 }
 .hfaq1{
     color:rgb(221, 195, 135);
@@ -305,7 +310,7 @@ button{
 .contactpic{
     margin-top: 40px;
 }
-input[type=text]{
+.textcontact{
     width: 100%;
     margin-bottom: 2%;
     padding: 2%;
@@ -332,7 +337,7 @@ input[type=select]{
 }
 input[type=button]{
     background-color: rgb(134, 135, 175) ;
-    width: 265px;
+    width: 250px;
     border-radius: 30px;
     padding:3%;
     color: white;
@@ -340,7 +345,7 @@ input[type=button]{
     font-size: 15;
     margin-bottom: 5px;
     text-align: center;
-    border: none
+    border: none;
 }
 .cday{
     display: flex; 
