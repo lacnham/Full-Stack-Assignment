@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
-.small-container{
+.smallcontainer{
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
     font-family: 'Work Sans', sans-serif;
 }
-.row{
+.rowwf{
     display: flex; 
    align-items: center;
    flex-wrap: wrap;
    justify-content: space-around;
 }
-.col-2{
+.col2{
     flex-basis: 50%;
     min-width: 300px;
 }
-.col-2 img{
+.col2 img{
     max-width: 100%;
     padding: 50px 0;
 }
-.col-2 h1{
+.col2 h1{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
@@ -68,7 +68,7 @@
 input:focus{
     outline: none;  
 }
-.logo{
+.logouniqlo{
     width: 100px;
     display: block; 
     margin: 0 auto;
@@ -273,7 +273,7 @@ td:last-child{
 th:last-child{
     text-align: right;
 }
-.btn{
+.buttonshop{
     text-align: right;
 }
 button{

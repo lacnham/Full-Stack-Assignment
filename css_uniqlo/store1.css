@@ -83,7 +83,7 @@
 .pro{
     text-decoration: none;
 }
-.logo{
+.logouniqlo{
     margin: right;
 }
 .pro:link{
@@ -104,7 +104,7 @@
     position: relative;
     bottom:18px;
 }
-.logo{
+.logouniqlo{
     width: 100px;
     display: block; 
     margin: 0 auto;
