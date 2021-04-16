@@ -1,155 +1,3 @@
-/* ABOUT US */
-.simple-intro-container{
-    display: block;
-    width: 40rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 4rem;
-}
-
-.simple-intro{
-    text-align: center;
-}
-
-
-.member_info h1{
-    text-align: center;
-    font-family: "Work Sans", serif;
-    font-size: 3rem;
-    padding-top: 3rem;
-}
-
-
-.member_left_bigcontainer::after{
-    display: table;
-    clear: both;
-    content: " ";
-    width: 40%;
-    font-family: "Work Sans", serif;
-    font-size: 0.9rem;
-}
-
-.member_left_container, .member_right_container{
-    float: left;
-    width: 40%;
-    padding: 0 2rem 3rem 4rem;
-}
-
-.member_left_container .image1 {
-    display: block;
-    float: left;
-    width: 10rem;
-    border-radius: 50px;
-    margin: 0 3.1rem 0.9rem 1.6rem;
-}
-
-.member_right_container .image2 {
-    display: block;
-    float: left;
-    width: 10rem;
-    border-radius: 50px;
-    margin: 0 3.1rem 0.9rem 1.6rem;
-}
-
-.social-member-container{
-    display: block;
-    float: left;
-    clear: both;
-}
-
-.social-member{
-    list-style: none;
-    display: flex;
-    font-size: 1.1rem;
-}
-
-.social-member li{
-    padding-right: 1.25rem;
-}
-
-.social-member a{
-    color: rgb(66, 66, 66);
-}
-
-.social-member a:hover{
-    color:rgb(0, 0, 0)
-}
-
-.team-detail-container{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 7rem;
-}
-
-.team-detail-container > div{
-    margin: 3rem;
-    padding: 3rem;
-    height: 21rem;
-    background-color: #ffffffc4;
-}
-
-.detail-small-container h2{
-    padding-bottom: 1rem;
-}
-
-.detail-small-container{
-    text-align: center;
-    font-family: "Work Sans", serif;
-}
-
-.detail-small-container p{
-    font-size: 14px;
-}
-
-@media screen and (max-width: 1024px) {
-    .member_info{
-        width: 100%;
-        height: 52rem;
-        background-color: transparent;
-        margin-bottom: 120px;
-    }
-    .member_left_bigcontainer{
-        display: block;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: "Work Sans", serif;
-        font-size: 0.9rem;
-    }
-    
-    .member_left_container, .member_right_container{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        padding-bottom: 4rem;
-    }
-
-    .team-detail-container{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-bottom: 7rem;
-    }
-    
-    .team-detail-container > div{
-        margin: 3rem;
-        padding: 3rem;
-        height: 20rem;
-        background-color: #ffffffc4;
-    }
-    
-    .detail-small-container h2{
-        padding-bottom: 1rem;
-    }
-    
-    .detail-small-container{
-        text-align: center;
-        font-family: "Work Sans", serif;
-    }
-}
 
 /* HEADER TESTING */
 .simple-header-testing{
@@ -231,7 +79,7 @@
     display: block;
     box-sizing: border-box;
     clear: both ;
-    background-color: #f3f3f3;
+    background-color: #EDEDED;
 }
 
 .container{
@@ -330,7 +178,7 @@ footer img{
         display: block;
         box-sizing: border-box;
         clear: both ;
-        background-color: #ffffff;
+        background-color: #EDEDED;
     }
 }
 
@@ -363,6 +211,21 @@ footer img{
     font-family: "Work Sans", sans-serif;
 }
 
+@media screen and (min-height: 1100px) {
+    .login-container{
+        display: block;
+        clear: both;
+        max-width: 90%;
+        height: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-color: transparent;
+        font-family: "Work Sans", sans-serif;
+    }
+}
+
 
 .header-login{
     font-size: 2rem;
@@ -386,7 +249,7 @@ footer img{
 
 .login-container form .data .form-control, .forgot-pass-container form .data .form-control, .register-acc-container .column .data .form-control{
     height: 2.7rem;
-    width: 90%;
+    width: 100%;
     font-size: 1rem;
     border: 1px solid lightgray;  
     border-radius: 4px;
@@ -458,7 +321,7 @@ footer img{
 }
 
 .login-container .no-account a{
-    text-decoration: none ;
+    text-decoration: ;
     color: rgb(0, 0, 0);
 }
 
