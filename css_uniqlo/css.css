@@ -453,7 +453,7 @@ footer img{
         border-radius: 6px;
     }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 330px){
     .simple-footer{
         padding-top: 25px;
         width: 100%;
