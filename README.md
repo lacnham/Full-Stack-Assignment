@@ -1,3 +1,3 @@
-Hey guys, 
-Create your own branch to push your files up.
-We will push to the master branch only after we finalize the code.
+Work-sans font: https://fonts.google.com/specimen/Work+Sans
+iconic svg - FontAwesome: https://cdnjs.com/libraries/font-awesome
+image: https://unsplash.com/
