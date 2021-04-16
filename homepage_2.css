@@ -105,7 +105,7 @@ body
 
 .row
 {
-    background-image:url("assets/leaf-background.jpg");
+    background-image:url("leaf-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
