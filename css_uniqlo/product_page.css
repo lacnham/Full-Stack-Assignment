@@ -22,7 +22,6 @@
     margin: 0;
     padding: 5px;
     background-color: white;
-    position: center;
     font-family: 'Work Sans', sans-serif;
     padding:1%;
 }
@@ -155,12 +154,11 @@ width: 50%;
 .pro:hover{
     color:rgb(133, 48, 48);
     background: rgb(167, 66, 35);
-    filter: grayscale(60%);
-    -webkit-filter: grayscale(60%);
+    /* filter: grayscale(60%); */
+    /* -webkit-filter: grayscale(60%); */
 }
 .price{
     font-size: 13;
     color:grey;
-    position: relative;
     bottom:18px;
 }
