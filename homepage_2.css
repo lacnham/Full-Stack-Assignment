@@ -289,24 +289,11 @@ h4{
 {
    color:#ff523b;
 }
-.pro{
-    text-decoration: none;
+
+.hover-mouse:hover{
+    color: rgb(180, 180, 180);
 }
 
-.pro:link{
-    color:black;
-}
-
-.pro:visited{
-    color:black;
-}
-
-.pro:hover{
-    color:rgb(133, 48, 48);
-    background: rgb(167, 66, 35);
-    filter: grayscale(60%);
-    -webkit-filter: grayscale(60%);
-}
 @media screen and (max-width: 500px){
     .column-2 h1{
         font-size: 40px;
