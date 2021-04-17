@@ -6,13 +6,11 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
-
 .logo{
     animation-name: wheel;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
 @keyframes wheel{
     from{
         transform:rotateY(0deg);
@@ -21,11 +19,9 @@ body{
         transform: rotateY(360deg);
     }
 }
-
 .taohu{
     padding-left: 30px;
 }
-
 /* SHOP DROPDOWN */
 .navbar .shops-dropdown-content{
   position: absolute;
@@ -119,7 +115,6 @@ p{
 .btn:hover{
     background: #555;
 }
-
 .news-roll figure{
     width: 500%;
     height: 50%;
@@ -129,7 +124,6 @@ p{
     width: 20%;
     float: left;
 }
-
 @keyframes slider{
     0%{
         left:0;
@@ -176,11 +170,11 @@ p{
     padding-bottom: 2rem;
     padding-top: 7rem;
 }
- a{
+a{
     text-decoration: none;
     color: black;
 }
- a:hover{
+a:hover{
     color: black;
 }
 .title-store h1{
@@ -234,16 +228,13 @@ h4{
 }
 .column-4 p{
     font-size: 16px;
-
 }
 .rating{
    color:#ff523b;
 }
-
 .hover-mouse:hover{
     color: rgb(180, 180, 180);
 }
-
 @media screen and (max-width: 500px){
     .column-2 h1{
         font-size: 40px;
