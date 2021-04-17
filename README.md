@@ -1,3 +1,4 @@
+Sources of material:
 Work-sans font: https://fonts.google.com/specimen/Work+Sans <br><br>
 Iconic svg - FontAwesome: https://cdnjs.com/libraries/font-awesome<br><br>
 Image: https://unsplash.com/<br>
