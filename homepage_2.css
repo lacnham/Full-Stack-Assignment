@@ -37,7 +37,6 @@ body{
 .navbar .name:hover .shops-dropdown-content{
     display: block;
 }
-
 .navbar{
     width: 100%;
     display: flex;
@@ -57,11 +56,9 @@ body{
     border-radius: 40px;
     padding: 5px;
 }
-
 .search-box i{
     color: black;
-}
-   
+} 
 .search-box:hover > .search-txt {
     width: 200px;
     padding:  0 6px;
@@ -69,8 +66,7 @@ body{
 .search-box:hover > .search-box i{
     right: 0;
 }
-   
-.search-txt {
+.search-txt{
     border: none;
     background: none;
     outline: none;
@@ -84,12 +80,9 @@ body{
     font-weight: bold;
     font-family: "Work Sans", sans-serif;
 }
-
 .search-box i{
-    padding: 5px;
-    
+    padding: 5px;  
 }
-
 .row{
     background-image:url("leaf-background.jpg");
     background-repeat: no-repeat;
@@ -110,12 +103,10 @@ p{
 .header-container{
     width: 100%;
 }
-
 .column-2 h1{
     font-size: 50px;
     line-height: 60px;
     margin:25px 0;
-
 }
 .btn{
     display: inline-block;
@@ -139,7 +130,7 @@ p{
     float: left;
 }
 
-@keyframes slider {
+@keyframes slider{
     0%{
         left:0;
     }
@@ -179,7 +170,6 @@ p{
     margin-right: auto;
     border-style: groove;
 }
-
 .title-store{
     text-align: center;
     font-family: 'Work Sans', sans-serif;
@@ -205,16 +195,13 @@ p{
     flex-wrap: wrap;
     width: 100%;
 }
-
 .row-4{
     padding-bottom: 5rem;
 }
-
 .column-3, .column-4, .column-5{
     display: block;
     padding: 1.5rem;
 }
-
 .column-3 img, .column-4 img, .column-5 img{
     display: block;
     width: 200px;
@@ -222,7 +209,6 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-
 .column-3 h3{
     text-align: center;
     padding-top: 5px;
@@ -237,13 +223,10 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-
-
 .column-6{
     padding-left: 12rem;
     padding-bottom: 2rem;
 }
-
 h4{
     color: #555;
     font-weight: normal;
