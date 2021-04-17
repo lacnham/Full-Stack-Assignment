@@ -1,3 +1,8 @@
+TAO HU Group<br>
+We are the group of 3.5 members trying our besttt building an online mall. <br>
+Github URL: https://lacnham.github.io/HTML-CSS-Assignment/<br><br>
+
+Sources of material:
 Work-sans font: https://fonts.google.com/specimen/Work+Sans <br><br>
 Iconic svg - FontAwesome: https://cdnjs.com/libraries/font-awesome<br><br>
 Image: https://unsplash.com/<br>
