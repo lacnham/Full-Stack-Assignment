@@ -1,4 +1,5 @@
-Github URL: https://lacnham.github.io/HTML-CSS-Assignment/<br><br>
+Github Repo URL: https://github.com/lacnham/HTML-CSS-Assignment <br>
+Github Page: https://lacnham.github.io/HTML-CSS-Assignment <br><br>
 
 TAO HU Group<br>
 We are the group of 3.5 members trying our besttt building an online mall. <br>
