@@ -9,7 +9,7 @@ Vu Bui Khanh Linh - s3864120<br>
 Vu Le Hoang Nguyen - s3881101 <br>
 Pham Quang Anh - s3810152 <br><br>
 
-Sources of material:
+SOURCES OF MATERIALS <br>
 Work-sans font: https://fonts.google.com/specimen/Work+Sans <br><br>
 Iconic svg - FontAwesome: https://cdnjs.com/libraries/font-awesome<br><br>
 Image: https://unsplash.com/<br>
@@ -42,10 +42,10 @@ SCRIPT: <br>
 Copyright, ToS, and Privacy Policy: <br>
 -   http://www.parksongroup.com.cn/html_en/privacy/Terms_of_Use.php <br>
 -   https://www.parksonbranding.com/pages/terms-of-service <br><br>
--   
+ 
 FAQs: <br>
 -   https://www.amazon.com/gp/help/customer/display.html?nodeId=201995060 <br>
 -   https://www.gucci.com/us/en/st/faq#covid-stores <br><br>
--   
+ 
 Contact: <br>
 -   https://yourstory.com/2017/04/common-problems-online-shopping
