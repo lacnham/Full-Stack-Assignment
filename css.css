@@ -1,20 +1,3 @@
-/* HEADER TESTING */
-.simple-header-testing{
-    display: block;
-    width: 100%;
-    height: 110px;
-    margin: 0;
-    padding: 0;
-    background:transparent;
-}
-
-.simple-header-testing p{
-    display: inline-block;
-    padding: 5px 0px 0px 30px;
-    font-size: 1.9rem;
-    font-family: "Work Sans", sans-serif;
-}
-
 .aboutus-image img{
     display: block;
     margin-left: auto;
@@ -29,11 +12,9 @@
     display: block;
     width: 100%;
     height: 110px;
-    margin: 0;
-    padding: 0;
-    top:0;
     background-color: #EDEDED;
     box-shadow: 0 4px 3px rgba(0, 0, 0, 0.219);
+    font-family: "Work Sans", sans-serif;
 }
 
 .black-logo .logo{
@@ -47,7 +28,6 @@
     float: right;
     padding-top: 2.8rem;
     padding-right: 3rem;
-    font-family: "Work Sans", sans-serif;
     font-size: 15px;
 }
 
@@ -55,7 +35,6 @@
     display: inline-block;
     padding: 16px 0px 0px 20px;
     font-size: 1.5rem;
-    font-family: "Work Sans", sans-serif;
 }
 
 .home-link a{
@@ -69,33 +48,6 @@
 
 
 /* FOOTER */
-.footer{
-    padding-top: 25px;
-    width: 100%;
-    height: 25rem;
-    left: 0;
-    right: 0; 
-    display: block;
-    box-sizing: border-box;
-    clear: both ;
-    background-color: #EDEDED;
-}
-
-.footer .container{
-    max-width: 1200px;
-    background-color: rgba(255, 255, 255, 0);
-    width: 100%;
-    height: auto;
-    display: block;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    top: 11%;
-    bottom: 15%; 
-    box-sizing: border-box;
-}
-
 .content{
     display: flex;
     align-items: center;
@@ -105,13 +57,6 @@
     font-family: "Work Sans", sans-serif;
     color: rgb(0,0,0);
     padding-top: 10px;
-}
-
-.content h3{
-    font-size: 1.8em;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 1em
 }
 
 .footer-nav{
@@ -143,7 +88,6 @@
     padding: 2.2rem 0;
 }
 
-
 .socials li{
     padding-right: 35px;
     
@@ -162,24 +106,6 @@
 
 .footer-bottom span{
     text-transform: uppercase;
-}
-
-footer img{ 
-    width:90px;
-}
-
-@media screen and (max-width: 450px) {
-    .footer{
-        padding-top: 25px;
-        width: 100%;
-        height: 33rem;
-        left: 0;
-        right: 0; 
-        display: block;
-        box-sizing: border-box;
-        clear: both ;
-        background-color: #EDEDED;
-    }
 }
 
 /* SIMPLE FOOTER */
@@ -205,8 +131,7 @@ footer img{
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 8rem 0;
     background-color: transparent;
     font-family: "Work Sans", sans-serif;
 }
@@ -222,10 +147,8 @@ footer img{
         padding-top: 8rem;
         padding-bottom: 8rem;
         background-color: transparent;
-        font-family: "Work Sans", sans-serif;
     }
 }
-
 
 .header-login{
     font-size: 2rem;
@@ -237,7 +160,6 @@ footer img{
     text-align: center;
     font-size: 1rem;
 }
-
 
 .login-container form, .forgot-pass-container form{
     display: block;
@@ -298,7 +220,6 @@ footer img{
     height: 40px;
     border: none;
     cursor: pointer;
-    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     color: white;
     background: black;
@@ -331,11 +252,14 @@ footer img{
 
 
 /* REGISTER ACCOUNT */
+.register-acc-container{
+    width: 100%;
+    font-family: "Work Sans", sans-serif;
+}
 .register-acc-container .column{
     float: left;
     width: 50%;
     padding: 40px;
-    font-family: "Work Sans", sans-serif;
 }
 
 .register-acc-container::after{
@@ -350,10 +274,6 @@ footer img{
 
 #ifOwner h3, .account-type-heading{
     padding-top: 20px;
-}
-
-.register-acc-container{
-    width: 100%;
 }
 
 .submit-reset-container{
@@ -382,7 +302,6 @@ footer img{
     height: 40px;
     border: none;
     cursor: pointer;
-    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     color: white;
     background: black;
@@ -395,7 +314,6 @@ footer img{
     height: 40px;
     border: none;
     cursor: pointer;
-    font-family: "Work Sans", sans-serif;
     font-size: 16px;
     color: rgb(0, 0, 0);
     background: #EDEDED;
@@ -423,16 +341,13 @@ footer img{
         display: inline-block;
         padding: 25px 0px 0px 10px;
         font-size: 1.2rem;
-        font-family: "Work Sans", sans-serif;
     }
-
 
     .submit-reset .btn{
         width: 70px;
         height: 23px;
         border: none;
         cursor: pointer;
-        font-family: "Work Sans", sans-serif;
         font-size: 11px;
         color: white;
         background: black;
@@ -445,7 +360,6 @@ footer img{
         height: 23px;
         border: none;
         cursor: pointer;
-        font-family: "Work Sans", sans-serif;
         font-size: 11px;
         color: rgb(0, 0, 0);
         background: #EDEDED;
