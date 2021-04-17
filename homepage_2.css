@@ -12,12 +12,8 @@ body{
     animation-iteration-count: infinite;
 }
 @keyframes wheel{
-    from{
-        transform:rotateY(0deg);
-    }
-    to{
-        transform: rotateY(360deg);
-    }
+    from{transform:rotateY(0deg);}
+    to{transform: rotateY(360deg);}
 }
 .taohu{
     padding-left: 30px;
@@ -39,6 +35,7 @@ body{
     align-items: center;
     padding: 20px;
     position: fixed;
+    z-index: 104;
     top: 0;
     background:#ededed;
     box-shadow: 10px 10px 10px rgba(63, 63, 63, 0.267);
@@ -115,15 +112,7 @@ p{
 .btn:hover{
     background: #555;
 }
-.news-roll figure{
-    width: 500%;
-    height: 50%;
-    animation: 10s slider infinite;
-}
-.news-roll figure img{
-    width: 20%;
-    float: left;
-}
+
 @keyframes slider{
     0%{
         left:0;
@@ -153,6 +142,19 @@ p{
         left: -400%;
     }
 }
+
+.news-roll figure{
+    position: relative;
+    width: 500%;
+    height: 50%;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.news-roll figure img{
+    width: 20%;
+    float: left;
+}
 .container-news-roll{
     width: 100%;
     padding: 50px 0;
@@ -168,7 +170,7 @@ p{
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     padding-bottom: 2rem;
-    padding-top: 7rem;
+    padding-top: 4rem;
 }
 a{
     text-decoration: none;
@@ -235,6 +237,7 @@ h4{
 .hover-mouse:hover{
     color: rgb(180, 180, 180);
 }
+
 @media screen and (max-width: 500px){
     .column-2 h1{
         font-size: 40px;
@@ -247,6 +250,15 @@ h4{
         margin-right: 20px;
     }
     .title-store{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
         font-size: smaller;
+    }
+    .news-roll{
+        overflow: hidden;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: groove;
     }
 }
