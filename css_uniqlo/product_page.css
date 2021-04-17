@@ -77,7 +77,7 @@ width: 50%;
 @media screen and (max-width: 450px){
     .title1{
         font-family: 'Rye', cursive;
-        font-size: 30;
+        font-size: 20;
     }
     .heading{
         padding: 20px;
