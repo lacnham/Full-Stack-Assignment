@@ -25,13 +25,13 @@ PICS:<br>
 https://www.reddit.com/r/wallpaper/comments/6m6wn9/autumn_wallpaper19201080/ <br>
 https://id.pinterest.com/pin/858428378955785089/?amp_client_id=CLIENT_ID(_)&mweb_unauth_id={{default.session}}&simplified=true <br>
 https://undraw.co/search <br>
--   https://undraw.co/search <br>
--   
-SCRIPT: <br><br>
+-   https://undraw.co/search <br><br>
+
+SCRIPT: <br>
 - https://www.amazon.in/ELETOP-Content-Classic-Hooded-Jacket/dp/B082Q2Y2DL <br>
 - https://seller.shopee.sg/edu/article/2450 <br>
 - https://www.thestorefront.com/go/rent-pop-up-space-in-shopping-mall/ <br><br>
-- 
+
 Copyright, ToS, and Privacy Policy: <br>
 -   http://www.parksongroup.com.cn/html_en/privacy/Terms_of_Use.php <br>
 -   https://www.parksonbranding.com/pages/terms-of-service <br><br>
