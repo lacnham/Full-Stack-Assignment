@@ -1,6 +1,12 @@
+Github URL: https://lacnham.github.io/HTML-CSS-Assignment/<br><br>
+
 TAO HU Group<br>
 We are the group of 3.5 members trying our besttt building an online mall. <br>
-Github URL: https://lacnham.github.io/HTML-CSS-Assignment/<br><br>
+Our member includes:<br>
+Nguyen Hoang To Nhu - s3878533<br>
+Vu Bui Khanh Linh - s3864120<br>
+Vu Le Hoang Nguyen - s3881101 <br>
+Pham Quang Anh - s3810152 <br><br>
 
 Sources of material:
 Work-sans font: https://fonts.google.com/specimen/Work+Sans <br><br>
