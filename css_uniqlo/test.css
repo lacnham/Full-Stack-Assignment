@@ -46,7 +46,6 @@
 .detailproduct .col-2{ 
     padding: 0;
 }
-
 .detailproduct h4{
     margin: 20px 0;
     font-size: 22px;
@@ -65,7 +64,6 @@
     font-size: 20px;
     margin-right: 10px;
     border:1px solid #744b2b;
-
 }
 input:focus{
     outline: none;  
@@ -146,14 +144,12 @@ input:focus{
     height: 300px;
     box-sizing: border-box;
     margin-bottom: 10%;
-    
 }
 .col3 h2{
     text-align: center;
     font-family: 'Patua One', cursive;
     color:rgb(94, 95, 131);
-    line-height: 2em;
-    
+    line-height: 2em; 
 }
 .col3 p {
     padding: 10%;
@@ -189,11 +185,6 @@ span{
     font-size: larger;
     color:rgb(157, 159, 199) ;
 }
-
-
-
-
-
 /* Copyright */
 .box{
     padding: 3%;
@@ -205,8 +196,6 @@ span{
     font-family: 'Varela Round', sans-serif;
     color:rgb(121, 111, 129);
 }
-
-
 /* FAQs */
 .hfaq{
     color:rgb(218, 181, 104);
@@ -221,7 +210,6 @@ span{
     text-decoration: none;
     color:rgb(159, 221, 230)
 }
-
 /* Order Placement */
 .bodyorder{
     font-family: 'Varela Round', sans-serif;
@@ -236,7 +224,6 @@ table{
 .orderinfo{
     display: flex;
     flex-wrap:wrap;
-
 }
 th{
     text-align: left;
@@ -249,7 +236,6 @@ th{
 td{
     padding: 10px 5px;
     font-family: 'Varela Round', sans-serif
-
 }
 td input{
     width: 40px;
@@ -263,7 +249,7 @@ td a{
 td img{
     width: 80px;
     height: 100px;
-    margin-right:10px ;
+    margin-right:10px;
 }
 .total{
     display: flex;
@@ -293,15 +279,6 @@ button{
     width: 180;
     margin-bottom: 1%;
     font-family: 'Varela Round', sans-serif
-}
-@media screen and (max-width: 450px){
-    .orderinfo p{
-        font-size: small;
-    }
-    small{
-        font-size: small;
-    }
-
 }
 /* Contact Form */
 .contact{
@@ -375,7 +352,14 @@ input[type=checkbox]{
     height: 35px;
     font-family: 'Varela Round', sans-serif;
 }
-
+@media screen and (max-width: 450px){
+    .orderinfo p{
+        font-size: small;
+    }
+    small{
+        font-size: small;
+    }
+}
 @media screen and (max-width: 733px){
     .day{
         font-size: 15px;

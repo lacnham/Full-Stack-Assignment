@@ -31,7 +31,6 @@
     text-align: center;
     box-sizing: border-box;
     float:left;
-
 }
 .pic{
     max-width: 100%;
@@ -52,7 +51,6 @@ width: 50%;
         font-size: 30;
     }
 }
-
 .introimg{
     max-width: 100%;
     height: auto;
@@ -101,36 +99,21 @@ width: 50%;
     font-size: 40;
     letter-spacing: 10px;
 }
-.descriptionspring{
+.descriptionspring, .descriptionautumn, .descriptioncasual, .descriptionsummer, .descriptionwinter{
     padding: 10%;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 25;
-    background-color:rgb(225, 163, 233);
 }
-.descriptionsummer{
-    padding: 10%;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 25;
-    background-color:rgb(243, 188, 137);
-}
+.descriptionspring{background-color:rgb(225, 163, 233);}
+.descriptionsummer{background-color:rgb(243, 188, 137);}
 .descriptionautumn{
     padding: 10%;
     font-family: 'Cedarville Cursive', cursive;
     font-size: 25;
     background-color:rgb(138, 104, 72);
 }
-.descriptionwinter{
-    padding: 10%;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 25;
-    background-color:rgb(174, 171, 224);
-}
-.descriptioncasual{
-    padding: 10%;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: 25;
-    background-color:rgb(64, 150, 155);
-}
+.descriptionwinter{background-color:rgb(174, 171, 224);}
+.descriptioncasual{background-color:rgb(64, 150, 155);}
 .titlespring, .titlesummer,.titleautumn, .titlewinter, .titlecasual{
     font-family: 'Monoton', cursive;
     text-align: center;
@@ -142,7 +125,6 @@ width: 50%;
 .titleautumn{color:rgb(122, 91, 45);}
 .titlewinter{color:rgb(137, 162, 243);}
 .titlecasual{color:rgb(147, 238, 215);}
-
 .pro{
     text-decoration: none;
 }
