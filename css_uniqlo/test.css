@@ -352,14 +352,6 @@ input[type=checkbox]{
     height: 35px;
     font-family: 'Varela Round', sans-serif;
 }
-@media screen and (max-width: 450px){
-    .orderinfo p{
-        font-size: small;
-    }
-    small{
-        font-size: small;
-    }
-}
 @media screen and (max-width: 733px){
     .day{
         font-size: 15px;
@@ -368,7 +360,7 @@ input[type=checkbox]{
         margin-top: 18px;
     }
     #line1::after{
-        content: "\a";
+    content: "\a";
     white-space: pre;
     }
     input[type=submit]{
@@ -378,5 +370,11 @@ input[type=checkbox]{
     }
     .pix{
         display: none;
+    }
+    .orderinfo p{
+        font-size: small;
+    }
+    small{
+        font-size: small;
     }
 }

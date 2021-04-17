@@ -8,6 +8,35 @@
     margin: auto;
     width: 50%;
 }
+.coverpage1{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    /* position: center; */
+}
+.spring,.summer,.autumn, .winter,.casual{
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.introvideo{
+    max-width: 80%;
+    display: block; 
+    margin: 0 auto;  
+}
+.heading{
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    font-family: 'Staatliches', cursive;
+    color: rgb(175, 9, 36);
+    font-size:60px;
+}
 .logouniqlo{
     width: 100px;
     display: block; 
@@ -49,6 +78,18 @@ width: 50%;
     .title1{
         font-family: 'Rye', cursive;
         font-size: 30;
+    }
+    .heading{
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+        font-family: 'Staatliches', cursive;
+        color: rgb(175, 9, 36);
+        font-size:40px;
+    }
+    .season{
+        font-size: 10px;
     }
 }
 .introimg{
