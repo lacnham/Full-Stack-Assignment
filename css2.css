@@ -10,6 +10,7 @@
     margin-right: auto;
     width: 100%;
     background-color: rgba(220, 20, 60, 0);
+    padding-top: 8rem;
     font-family: "Work Sans", sans-serif;
 }
 
@@ -60,7 +61,6 @@
     border: 1px solid lightgray;  
     border-radius: 4px;
 }
-
 
 .tab-container-wrap form{
     padding-top: 1.5rem;
@@ -158,7 +158,6 @@
     clear: both;
     content: " ";
     width: 40%;
-    font-family: "Work Sans", serif;
     font-size: 0.9rem;
 }
 
@@ -245,22 +244,7 @@
         height: 27rem;
         background-color: #ffffffc4;
     }
-    
-    .detail-small-container h2{
-        padding-bottom: 1rem;
-    }
-    
-    .detail-small-container{
-        text-align: center;
-        font-family: "Work Sans", serif;
-    }
-    
-    .detail-small-container p{
-        font-size: 14px;
-        line-height: 18px;
-    }
 }
-
 
 @media screen and (max-width: 1000px) {
     .member_info{
@@ -276,7 +260,6 @@
         margin-right: 0;
         font-family: "Work Sans", serif;
         font-size: 0.9rem;
-        font-family: "Work Sans", serif;
     }
     
     .member_left_container, .member_right_container{
@@ -285,7 +268,6 @@
         margin-right: auto;
         width: auto;
         padding-bottom: 4rem;
-        font-family: "Work Sans", serif;
     }
 
     .team-detail-container{
@@ -296,52 +278,26 @@
         padding-bottom: 7rem;
     }
     
-    .team-detail-container > div{
-        margin: 3rem;
-        padding: 3rem;
-        height: 20rem;
-        background-color: #ffffffc4;
-    }
-    
     .detail-small-container h2{
         padding-bottom: 1rem;
     }
-    
-
-    .member_left_container .image1 {
-    display: block;
-    float: left;
-    width: 10rem;
-    border-radius: 50px;
-    margin: 0 3.1rem 0.9rem 1.6rem;
 }
 
-    .member_right_container .image2 {
-        display: block;
-        float: left;
-        width: 10rem;
-        border-radius: 50px;
-        margin: 0 3.1rem 0.9rem 1.6rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px){
     .detail-small-container p{
         text-align: center;
         font-family: "Work Sans", serif;
         line-height: 15px; 
         font-size: 12px;
-}
+    }
 }
 
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 350px){
     .member_left_bigcontainer{
         display: block;
         width: 100%;
         margin-left: 0px;
         margin-right: 0;
-        font-family: "Work Sans", serif;
         font-size: 0.9rem;
     }
     
@@ -350,18 +306,12 @@
         margin-left: 3px;
         margin-right: 5px;
         padding: 0 0 65px 0;
-        font-family: "Work Sans", serif;
     }
 
     .team-detail-container > div{
         margin: 3rem;
         padding: 3rem;
         height: 25rem;
-        background-color: #ffffffc4;
     }
-}
-
-.acc-whole-content {
-    padding-top: 8rem;
 }
 
