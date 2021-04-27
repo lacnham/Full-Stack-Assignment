@@ -136,6 +136,28 @@
     font-family: "Work Sans", sans-serif;
 }
 
+    #message {
+    display:none;
+    background: #f6f6f6;
+    color: #000;
+  }
+  
+  #message p {
+    padding: 5px 40px;
+    font-size: 14px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+
 @media screen and (min-height: 1100px) {
     .login-container{
         display: block;
@@ -241,7 +263,8 @@
 }
 
 .login-container .no-account a{
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
