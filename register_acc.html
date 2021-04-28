@@ -39,7 +39,7 @@
             </div>
 
             <div class="data">
-            <input type="password" placeholder="Password" id="psw" class="form-control" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Must contain a Lowercase, a Uppercase, a Digit, a Special Character and 8-20 characters" required><br><br>
+            <input type="password" placeholder="Password" id="psw" class="form-control" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{7,20}$" title="Must contain a Lowercase, a Uppercase, a Digit, a Special Character and 8-20 characters" required><br><br>
             
             <div id="message">
                 <p id="letter" class="invalid">Password must contain a <b>lowercase</b> letter</p>
@@ -323,7 +323,7 @@
             <br>
 
             <div class="data">
-            <input type="text" placeholder="ZIP CODE" id="zipcode" name="zipcode" class="form-control" pattern="[0-9].{3,6}" title="Must contain 4-6 digits" required><br><br>
+            <input type="text" placeholder="ZIP CODE" id="zipcode" name="zipcode" class="form-control" pattern="^[0-9]{4,6}$" title="Must contain 4-6 digits, no whitespace" required><br><br>
             </div>
         </div>
 
@@ -334,7 +334,7 @@
             </div>
 
             <div class="data">
-            <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" pattern="[0-9].{8,11}" title="Must contain 9-11 digits" required><br><br>
+            <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" pattern="^[\.-\s ]*[0-9]{8,11}[\.-\s 0-9]$" title="Must contain 9-11 digits" required><br><br>
             </div>
 
             <h3 class="account-type-heading">YOUR ACCOUNT TYPE:</h3>
