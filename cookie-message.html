@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cookie-popup-consent-form</title>
+        <link href="cookie-message.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+    <body>
+        <div class="container-cookie">
+            <img src="/assets/cookie-popup-2-removebg-preview.png" alt="cookie">
+            <div class="message-content">
+                <header>I USE COOKIES</header>
+                <p>My website uses necessary for its basic functioning. By continuing browsing, you consent to my use of cookies and other technologies.</p>
+            </div>
+            <div class="buttons">
+                <button class="item">I understand</button>
+                <a href="policy.html">Learn More</a>
+            </div>
+        </div>
+        <script>
+            const cookieBox = document.querySelector("container-cookie"),
+            acceptBtn = cookieBox.querySelector(".buttons button");
+            // setting cookies for 1 day, after which time the cookie will automatically expire//
+            acceptBtn.onclick = ()=>{
+                document.cookie = "CookieBy=BlackLotus; max-age="+60*60*24
+                if(document.cookie){
+                    //if the above cookie set
+                    cookieBox.classList.add("hide"); //hide cookie box message once cookie is set
+                }else{
+                    alert("Cookie can't be set!"); //if cookie can't be set alert an error
+                }
+            }
+            //Hide cookie box if cookie is set and not expired//
+            let checkCookie = document.cookie.indexOf("CookieBy=BlackLotus"); // check Lotus' set cookies
+            //if cookie is set then hide the cookie box else show it
+            checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");
+        </script>
+    </body>
+</html>

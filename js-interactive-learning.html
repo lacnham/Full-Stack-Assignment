@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="tools.js"></script>
+        <script type="text/javascript">
+        function displayDate()
+        {
+            document.getElementbyID("date").value=Date();
+        }
+        </script>
+    </head>
+    <body>
+        <h1>What's the Date</h1>
+        <p><input type="text" id="date" name="date" value="Click the button" />
+            <button onclick="displayDate()">Display Date</button></p>
+            <p>&copy; Copyright Date Awareness Inc 1990 - 
+              <script type="text/javascript">
+                var d = new Date();
+                document.write(d.getFullYear());
+              </script>
+              <noscript>Date of my death, plus 70 years ...</noscript>
+            </p>
+            <h6>Ask us about the benefits of dynamic dating</h6>
+           </body>
+    </body>
+</html>
