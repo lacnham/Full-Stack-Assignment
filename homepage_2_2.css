@@ -69,7 +69,7 @@
 .navbar ul li a:hover .name spa{
     transform: translateY(20px);
 }
-.menuicon i{
+.menuicon button{
     display: none;
     font-size: 35px;
 }
@@ -82,6 +82,8 @@
         background-color: #EDEDED;
         border: 1px solid rgba(0, 0, 0, 0.404);
         transition: 0.5s;
+        opacity: 0;
+        pointer-events: none;
     }
     .navbar ul li{
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -131,30 +133,23 @@
     .taohu{
         padding-left: 20px;
     }
-    .menu .bar1, .bar2, .bar3{
-        width: 35px;
-        height: 4px;
-        background-color: #333;
-        margin: 6px 0px;
-        transition: 0.4s;
-    }
+
     .menu{
         display: block;
         position: fixed;
         top: 36px;
         width: 35px;
+        cursor: pointer;
     }
-    .navbar nav ul{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .menuicon i{
+    
+    .menuicon button{
         font-size: 35px;
         display: block;
     }
-    .menu:hover > ul{
+
+    .menuicon button:focus + ul{
         opacity: 1;
-        visibility: visible;
+        pointer-events: all;
     }
 }
 @media screen and (max-width: 600px){
