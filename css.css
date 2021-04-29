@@ -214,10 +214,29 @@
     padding-bottom: 5px;
 }
 
+/* The eye */
+.register-acc-container .column .data{
+ position: relative;
+}
+
+.register-acc-container .data span{
+    position: absolute;
+    right: 10px;
+    transform: translate(0, -50%);
+    top: 45%;
+    cursor: pointer;
+}
+
+.register-acc-container .data span i{
+    font-size: 18px;
+    color: #696772;
+}
+
 .login-container form .data label{
     font-size: 1rem;
 }
 
+/* Forgot Password */
 .forgot-pass-login{
     text-align: center;
     padding-bottom: 30px;

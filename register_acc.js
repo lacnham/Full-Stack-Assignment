@@ -89,5 +89,29 @@ function acctype(){
     }
 }  
 
+// Toggle Password Visibility
+var state = false;
+  function toggleEye(){
+      if(state){
+          document.getElementById("psw").setAttribute("type", "password");
+          document.getElementById("eye").style.color = "#7a797e";
+          state = false;
+      } else {
+          document.getElementById("psw").setAttribute("type", "text");
+          document.getElementById("eye").style.color = "#5887ef";
+          state = true;
+      }
+  }
 
+  function toggleEye2(){
+    if(state){
+        document.getElementById("re_pass").setAttribute("type", "password");
+        document.getElementById("eye2").style.color = "#7a797e";
+        state = false;
+    } else {
+        document.getElementById("re_pass").setAttribute("type", "text");
+        document.getElementById("eye2").style.color = "#5887ef";
+        state = true;
+    }
+}
 
