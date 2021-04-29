@@ -4,8 +4,11 @@ var nguyen_modal = document.getElementById("nguyen-modal-box")
 
 // Get the element that opens the modal
 var openModal1 = document.getElementById("openModal1");
+var openModal1_2 = document.getElementById("openModal1_2"); 
 var openModal2 = document.getElementById("openModal2");
+var openModal2_2 = document.getElementById("openModal2_2"); 
 var openModal3 = document.getElementById("openModal3");
+var openModal3_2 = document.getElementById("openModal3_2"); 
 
 // Get the element that closes the modal
 var closeModal1 = document.getElementsByClassName("close1")[0];
@@ -17,11 +20,23 @@ openModal1.onclick = function nham(openbox) {
     nham_modal.style.display = "block";
 }
 
+openModal1_2.onclick = function nham(openbox) {
+    nham_modal.style.display = "block";
+}
+
 openModal2.onclick = function linh(openbox) {
     linh_modal.style.display = "block";
 }
 
+openModal2_2.onclick = function linh(openbox) {
+    linh_modal.style.display = "block";
+}
+
 openModal3.onclick = function nguyen(openbox) {
+    nguyen_modal.style.display = "block";
+}
+
+openModal3_2.onclick = function nguyen(openbox) {
     nguyen_modal.style.display = "block";
 }
 
