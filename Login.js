@@ -4,10 +4,10 @@ var password = document.getElementById("password");
 function check(){
     if(password.value == "password"){
         // alert("Login successfully")
-        window.open("google.com");
+        location.href = "my-account.html";
         return false;
     } else {
         alert("Wrong password!");
-        window.location.replace("Login_box.html");
+        location.reload();
     }
 }
