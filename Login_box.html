@@ -23,23 +23,25 @@
         <div class="login-container">
                 <div class="header-login">Login</div>
 
-            <form action="Login_box.html" method="post">
+            <form name="loginform" action="/" method="post">
                 <div class="data">
                     <div class="username-login">
-                        <input type="text" placeholder="Email/Phone" class="form-control" name="loginKey" required>
+                        <input type="text" placeholder="Email/Phone" id="email" class="form-control" name="loginKey" pattern="(^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" title="Invalid emaill address!" required>
                     </div>
+                    <!-- <div class="email_error">Unvalid email address</div> -->
                 </div>
 
                 <div class="data">
                     <div class="password-login">
-                        <input type="password" placeholder="Password" class="form-control" name="password" required>
+                        <input type="password" placeholder="Password" id="password" class="form-control" name="password" required>
                     </div>
+                    <!-- <div class="pass_error">Wrong Password</div> -->
                 </div>
                 <div class="forgot-pass-login">
                     <a href="forgotPass.html">Forgot your password</a>
                 </div>
 
-                <input type="submit" class="btn" value="Login">
+                <input type="submit" class="btn" value="Login" onclick="check()">
             </form>
 
             <hr>
@@ -75,5 +77,6 @@
         
     </footer>
     </div>
+    <script type="text/javascript" src="Login.js"></script>
     </body>
 </html>
