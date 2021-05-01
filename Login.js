@@ -4,7 +4,7 @@ var password = document.getElementById("password");
 function check(){
     if(password.value == "password"){
         // alert("Login successfully")
-        location.replace("my-account.html");
+        location.replace("http://linh-0v0.github.io/WebGroupAsmTesting/my-account.html");
         return false;
     } else {
         alert("Wrong password!");
