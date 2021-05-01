@@ -11,3 +11,10 @@ function check(){
         location.reload();
     }
 }
+
+
+var displayemail = document.getElementById("DisplayEmail");
+function displayInputEmail(){
+    const emailvalue = document.getElementById("email").value;
+    displayemail.setAttribute("value", "emailvalue");
+}
