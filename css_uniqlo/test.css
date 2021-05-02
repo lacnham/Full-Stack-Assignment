@@ -352,6 +352,15 @@ input[type=checkbox]{
     height: 35px;
     font-family: 'Varela Round', sans-serif;
 }
+#errorfullname, #errorphone, #erroremail, #errordescription, #errorradio, #errorcheckbox{
+    color: red;
+}
+#successfullname, #successphone, #successemail, #successradio, #successcheckbox{
+    color: rgb(157, 214, 70);
+}
+#preparesubmit{
+    color:rgb(62, 207, 127);
+}
 @media screen and (max-width: 733px){
     .day{
         font-size: 15px;
