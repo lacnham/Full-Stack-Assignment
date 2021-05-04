@@ -25,7 +25,7 @@ function Emailused4login() {
                         UserInfo.UsernameLogin = emailvalue.value;
                         localStorage.setItem('UsernameLogin',JSON.stringify(UserInfo));
                         displayemail = localStorage.getItem("UsernameLogin")
-                        window.location.href = "my-account.html";
+                        location.href = "my-account.html";
                     } else {
                         alert("Wrong password!");
                     }
@@ -34,7 +34,7 @@ function Emailused4login() {
             } else {
                 // UserInfo was set, welcome them back
                 displayemail = localStorage.getItem("UsernameLogin")
-                window.location.href = "my-account.html";   
+                location.href = "my-account.html";   
             }
         } else {
             alert('Your browser does not support the localStorage method!');
