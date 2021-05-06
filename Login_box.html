@@ -23,7 +23,7 @@
         <div class="login-container">
                 <div class="header-login">Login</div>
 
-            <form id="loginform" action="my-account.html" method="post" onsubmit="Emailused4login">
+            <form id="loginform" action="my-account.html" method="post">
                 <div class="data">
                     <div class="username-login">
                         <input type="text" placeholder="Email/Phone" id="email" class="form-control" name="loginKey" pattern="(^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" title="Invalid emaill address!" required>
@@ -35,7 +35,7 @@
                     <div class="password-login">
                         <input type="password" placeholder="Password" id="password" class="form-control" name="password" required>
                     </div>
-                    <!-- <div class="pass_error">Wrong Password</div> -->
+                    <div class="pass_error" style="display: none;">Wrong Password</div>
                 </div>
                 <div class="forgot-pass-login">
                     <a href="forgotPass.html">Forgot your password</a>

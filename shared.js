@@ -10,7 +10,7 @@
     const logoutBtn = document.getElementById("logoutBtn");
 
     if (logoutBtn) {
-        logoutBtn.setAttribute("style", "display: block");
+        logoutBtn.setAttribute("style", "display: block;");
     }
 
     // Redirect to My Account if the user is already logged in and tries to open either Login, Register, or Forgot Password

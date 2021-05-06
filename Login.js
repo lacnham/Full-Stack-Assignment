@@ -58,13 +58,14 @@ LoginForm.addEventListener("submit", function (event) {
     // Get email and password values, and wrong password message
     const ENTERED_EMAIL = LoginForm.username.value;
     const ENTERED_PWD = LoginForm.password.value;
+    const WRONG_PASS_MSG = document.getElementById("pass_error");
 
     // Set email value as local storage item
     localStorage.setItem("email", ENTERED_EMAIL);
 
     if (ENTERED_PWD !== CORRECT_PWD) {
         // Display wrong password message
-        alert("Wrong password!");
+        WRONG_PASS_MSG.setAttribute("style", "display: block");
         event.preventDefault();   // Stop form from submitting
         return false;
     } else {
