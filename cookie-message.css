@@ -1,38 +1,15 @@
-<<<<<<< Updated upstream
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
-}
-body
-{
-    background: #fcba7f;
-}
-.container-cookie
-{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-=======
 
 .container-cookie
 {
     position:fixed;
     left:10px;
     bottom: 10px;
->>>>>>> Stashed changes
     background: #fff;
     max-width: 365px;
     border-radius: 15%;
     text-align: center;
     padding: 20px 20px 30px 20px;
-<<<<<<< Updated upstream
-    box-shadow:  5px 5px grey;
-=======
     box-shadow:  5px 5px 10px 10px grey;
->>>>>>> Stashed changes
 }
 .container-cookie.hide
 {
@@ -40,12 +17,6 @@ body
     visibility: hidden;
     transition: all 0.3s ease;
 }
-<<<<<<< Updated upstream
-.container-cookie img{
-    width: 90px;
-}
-=======
->>>>>>> Stashed changes
 .container-cookie .message-content
 {
     font-size: 18px;
