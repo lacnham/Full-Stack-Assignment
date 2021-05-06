@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
 
-    <body onload="check()">
+    <body>
         <div class="overflow-content">
         <header class="simple-header-container">
             <div class="black-logo"> 
@@ -23,7 +23,7 @@
         <div class="login-container">
                 <div class="header-login">Login</div>
 
-            <form name="loginform" action="/" method="post">
+            <form id="loginform" action="my-account.html" method="post" onsubmit="Emailused4login">
                 <div class="data">
                     <div class="username-login">
                         <input type="text" placeholder="Email/Phone" id="email" class="form-control" name="loginKey" pattern="(^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" title="Invalid emaill address!" required>
@@ -78,6 +78,6 @@
     </footer>
     </div>
     <script type="text/javascript" src="Login.js"></script>
-   
-    </body>
+    <script type="text/javascript" src="shared.js"></script>
+</body>
 </html>
