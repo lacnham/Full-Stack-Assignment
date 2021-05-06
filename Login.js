@@ -1,3 +1,36 @@
+// localStorage initialization
+if (localStorage.getItem("isLoggedIn") === null) {
+    localStorage.setItem("isLoggedIn", "false");
+}
+
+const CORRECT_PWD = "password";
+const LoginForm = document.getElementById("loginform");
+
+// Check entered password with correct password
+LoginForm.addEventListener("submit", function (event) {
+    // Get email and password values, and wrong password message
+    const ENTERED_EMAIL = LoginForm.username.value;
+    const ENTERED_PWD = LoginForm.password.value;
+    const WRONG_PASS_MSG = document.getElementById("pass_error");
+
+    // Set email value as local storage item
+    localStorage.setItem("email", ENTERED_EMAIL);
+
+    if (ENTERED_PWD !== CORRECT_PWD) {
+        // Display wrong password message
+        WRONG_PASS_MSG.setAttribute("style", "display: block");
+        event.preventDefault();   // Stop form from submitting
+        return false;
+    } else {
+        // Set login status to 'true'
+        localStorage["isLoggedIn"] = "true";
+        return true;
+    }
+})
+
+
+
+
 
 // var UserInfo = {};
 
@@ -42,55 +75,4 @@
     //     alert('To use localStorage, you need to enable cookies.');
     // }
 // }
-
-
-
-// localStorage initialization
-if (localStorage.getItem("isLoggedIn") === null) {
-    localStorage.setItem("isLoggedIn", "false");
-}
-
-const CORRECT_PWD = "password";
-const LoginForm = document.getElementById("loginform");
-
-// Check entered password with correct password
-LoginForm.addEventListener("submit", function (event) {
-    // Get email and password values, and wrong password message
-    const ENTERED_EMAIL = LoginForm.username.value;
-    const ENTERED_PWD = LoginForm.password.value;
-    const WRONG_PASS_MSG = document.getElementById("pass_error");
-
-    // Set email value as local storage item
-    localStorage.setItem("email", ENTERED_EMAIL);
-
-    if (ENTERED_PWD !== CORRECT_PWD) {
-        // Display wrong password message
-        WRONG_PASS_MSG.setAttribute("style", "display: block");
-        event.preventDefault();   // Stop form from submitting
-        return false;
-    } else {
-        // Set login status to 'true'
-        localStorage["isLoggedIn"] = "true";
-        return true;
-    }
-})
-
-
-
-// Get entered email on login page from local storage
-const USER_EMAIL = localStorage.getItem("email");
-
-// Get email element from my-account page
-const LOGIN_EMAIL = document.getElementById("DisplayEmail");
-
-// Change email field to entered email value
-LOGIN_EMAIL.innerHTML = USER_EMAIL;
-
-// Redirect the user back to Login page if the user hasn't logged in
-if (localStorage.isLoggedIn === null || localStorage.isLoggedIn === "false") {
-    let url = window.location.href;
-    url = url.replace("my-account.html", "Login_box.html");
-    window.location.replace(url);
-}
-
 
