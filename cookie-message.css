@@ -6,6 +6,7 @@
     background: #fff;
     max-width: 365px;
     text-align: center;
+    z-index: 60;
     padding: 20px 20px 30px 20px;
     box-shadow:  2px 2px 5px 5px rgb(238, 238, 238);
 }
