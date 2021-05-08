@@ -283,7 +283,7 @@ th:last-child{
 .buttonshop{
     text-align: right;
 }
-.contactbtn, .buttonnham{
+.contactbtn, .buttonnham, .RemoveProduct{
     background-color: rgb(94, 95, 131);
     padding: 2%;
     color: white;
@@ -339,7 +339,7 @@ input[type=select]{
     color: rgb(134, 135, 175);
     font-weight: bolder;
 }
-input[type=button]{
+/* input[type=button]{
     background-color: rgb(134, 135, 175) ;
     width: 250px;
     border-radius: 30px;
@@ -350,7 +350,7 @@ input[type=button]{
     margin-bottom: 5px;
     text-align: center;
     border: none;
-}
+} */
 .cday{
     display: flex; 
     align-items: center;
