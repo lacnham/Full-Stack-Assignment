@@ -113,7 +113,7 @@
         <div class='rowwf'>
             <div class="col2">
                 <h1 class='hcu'> Contact Us </h1>
-                <form class='contact'>
+                <form class='contact' id='contact' name ='contact' >
                     <div class='cpurpose'>
                         <label class='line' for='purpose'>Contact Purpose</label>
                         <select class='purpose' name='purpose'>Contact Purpose
@@ -124,20 +124,39 @@
                             <option value='difference'>Difference Issue</option>
                         </select><br>
                     </div>
-                    <label class='line' class='fullnamebox' for='fullname'>Full Name</label><br>
-                    <input class='textcontact' type='text' id = "fullname" name = "fullname"><br>
-                    <label class='line' for='email'>Email</label><br>
-                    <input class='textcontact' type='text' id = "email" name = "email"><br>
-                    <label class='line' for='phone'>Phone</label><br>
-                    <input class='textcontact' type='text' id = "title" name = "phone"><br>
-                    <div class='coption'>
+                    
+                        <label class='line' class='fullnamebox' for='fullname' >Full Name</label><br>
+                        <input class='textcontact' type='text' id = "fullname" name = "fullname" required>
+                        <small id='errorfullname'></small>
+                        <small id='successfullname'></small>
+                        <br>
+                    
+                    <div class = 'contactgroup'>
+                        <label class='line' for='email'>Email</label><br>
+                        <input class='textcontact' type='text' id = "email" name = "email" required>  
+                        <small id='erroremail'></small>
+                        <small id='successemail'></small>
+                    <br>
+                    </div>
+                    
+                    <div class = 'contactgroup'>
+                        <label class='line' for='phone'>Phone</label><br>
+                        <input class='textcontact' type='text' id = "phone" name = "phone" type='number'required>
+                        <small id='errorphone'></small>
+                        <small id='successphone'></small>
+                    <br>
+                    </div>
+                    <div class='coption contactgroup'>
                         <label id='line1' class='line' for="preferred">Preferred contact method</label>                       
-                        <input id='line2'type="radio" id="cemail" name="preferred" value="cmail">
+                        <input type="radio" id="cemail" name="preferred" value="cemail" required >
                         <label for="mail">Email</label>
                         <input type="radio" id="cphone" name="preferred" value="cphone">
                         <label for="cphone">Phone</label>
+                        <br>
+                        <small id='errorradio'></small>
+                        <small id='successradio'></small>
                     </div>
-                    <div class='cday'>
+                    <div class='cday contactgroup'>
                         <div class='colday'>
                             <label class='line' for="preferred">Contact Days</label> <br>
                             <input type="checkbox" id="mon" name="day" value="mon">
@@ -149,7 +168,7 @@
                             <input type="checkbox" id="thu" name="day" value="thu">
                             <label  class='day' for="thu">Thursday</label><br>
                         </div>
-                        <div class='colday colday2'>
+                        <div class='colday colday2 contactgroup'>
                             <input type="checkbox" id="fri" name="day" value="fri">
                             <label class='day' for="fri">Friday</label><br>
                             <input type="checkbox" id="sa" name="day" value="sa">
@@ -157,13 +176,22 @@
                             <input type="checkbox" id="sun" name="day" value="sun">
                             <label class='day' for="sun">Sunday</label><br>
                         </div>
+
+                        
                     </div>
+                    
+                    <div>
                     <label class='line' for="description">Message</label>
-                    <input style="height:200px" class='textcontact'  type='text' id = "description" name = "description"><br><br>
-                    <input type="button" value="Clear">
-                    <a href='receive.html'>
-                        <input type="button" value="Send">
-                    </a>
+                    <textarea style="height:200px" onkeyup="countletter();" minlength = '50' maxlength = "500" class='textcontact' id = "description" name = "description" ></textarea>
+                    <small id='characterremaining'>50 characters remaining</small>
+                    <br>
+                    <small id ='errordescription'></small>
+                     </div>
+                    <br>                   
+                    <p id='preparesubmit'></p>
+                    <input class ='contactbtn' type="button" value="Clear">
+                    <input  class ='contactbtn' type="button" name='submit' id ='submit'value="Submit" onclick="return contactform()">
+                    </form>
                 </form>
             </div>  
             <div class="col2 pix">
@@ -174,6 +202,7 @@
             </div>
         </div>
     </div>
+    <script src="nham.js"></script>
     <script type="text/javascript" src="shared.js"></script>
 </body>
 <footer class="simple-footer">
