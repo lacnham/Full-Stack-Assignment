@@ -28,7 +28,7 @@
     line-height: 60px;
     margin: 25px 0;
 }
-.button{
+.addtocart{
     display: inline-block;
     background-color: rgb(158, 124, 80);
     color:white;
@@ -121,6 +121,9 @@ input:focus{
     font-family: 'Poppins', sans-serif;
     font-size: 35;
 }
+.product_title{
+    color: rgb(0, 0, 0);
+};
 /* FEES PAGE */
 .hf{
     font-family: 'Varela Round', sans-serif;
@@ -238,7 +241,7 @@ td{
     font-family: 'Varela Round', sans-serif
 }
 td input{
-    width: 40px;
+    width: 60px;
     height: 30px;
     padding: 5px;
 }
@@ -251,14 +254,25 @@ td img{
     height: 100px;
     margin-right:10px;
 }
+
 .total{
     display: flex;
     justify-content: flex-end;
 }
 .total table{
+    margin-top: 10px;
     border-top: 3px solid rgb(94, 95, 131);
     width: 90%;
     max-width: 500px;
+}
+.voucher-box{
+    width: 140px;
+    height: 20px;
+
+}
+.voucher{
+    margin-top: 10px;
+    margin-right: 20px;
 }
 td:last-child{
     text-align: right;
@@ -269,7 +283,7 @@ th:last-child{
 .buttonshop{
     text-align: right;
 }
-button{
+.contactbtn, .buttonnham, .RemoveProduct{
     background-color: rgb(94, 95, 131);
     padding: 2%;
     color: white;
@@ -279,6 +293,17 @@ button{
     width: 180;
     margin-bottom: 1%;
     font-family: 'Varela Round', sans-serif
+}
+.RemoveProduct{
+    width: 60px;
+}
+#alertcartinfo{
+    text-align: center;
+    padding: 10%;
+}
+#quantities{
+    font-size: 15px;
+    margin-right: 20px;
 }
 /* Contact Form */
 .contact{
@@ -314,7 +339,7 @@ input[type=select]{
     color: rgb(134, 135, 175);
     font-weight: bolder;
 }
-input[type=button]{
+/* input[type=button]{
     background-color: rgb(134, 135, 175) ;
     width: 250px;
     border-radius: 30px;
@@ -325,7 +350,7 @@ input[type=button]{
     margin-bottom: 5px;
     text-align: center;
     border: none;
-}
+} */
 .cday{
     display: flex; 
     align-items: center;
@@ -352,6 +377,19 @@ input[type=checkbox]{
     height: 35px;
     font-family: 'Varela Round', sans-serif;
 }
+#errorfullname, #errorphone, #erroremail, #errordescription, #errorradio, #errorcheckbox{
+    color: red;
+}
+#successfullname, #successphone, #successemail, #successradio, #successcheckbox{
+    color: rgb(157, 214, 70);
+}
+#preparesubmit, #notice{
+    color:rgb(62, 207, 127);
+}
+#notice{
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 733px){
     .day{
         font-size: 15px;
