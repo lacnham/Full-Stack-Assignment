@@ -22,46 +22,10 @@ if (cart === null || cart.length === 0) {
     }
 }
 
+
+
 if (localStorage.getItem("cart") === "{}") {
     localStorage.removeItem("cart")
 }
 
-if (cart !=null){
-    setinfoforproduct();
-}
-
-// function setinfoforproduct() {
-//     let display_products = localStorage.getItem('cart');
-//     display_products = JSON.parse(display_products);
-//     let bar = document.querySelector('.productbar');
-//     console.log(display_products);
-//     if (display_products && bar){
-//         bar.innerHTML=''
-//         Object.values(display_products).map(item => {
-//             bar.innerHTML +=`
-//             <td>
-//             <div class='orderinfo'>
-//                 <img  src="${item.product_img}" alt='Image of a product'class='cartimg' width='150px'>
-//                 <div>
-//                     <p class="ProductTitle titleofproduct"></p>
-//                     <br>
-//                     <button class='RemoveProduct'onclick='remove()'>Remove</button>
-//                 </div>
-//             </div>
-//         </td>
-    
-//         <td>
-//             <input type='number' value='1' >
-//         </td>
-//         <td ><span class='ProductPrice price'>1</span></td>
-//             `
-//         });
-//     }
-// }
-
-function remove() {
-    var bar_to_remove = document.querySelector('.productbar');
-    bar_to_remove.parentNode.removeChild(bar_to_remove);
-    return false;
-}
 
