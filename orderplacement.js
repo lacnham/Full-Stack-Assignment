@@ -75,11 +75,15 @@ function checkcoupon(){
 
 
 
-let deleteitem = document.querySelector(".RemoveProduct");
-deleteitem.addEventListener("click", function (){
-        let productbar = localStorage.getItem("cart");
-        productbar = JSON.parse(productbar);
-        let productID = cart.parentNode.parentNode.id;
-        delete productbar[productID];
-        localStorage.setItem("cart", JSON.stringify(productbar));
-    })
+let deleteitems = document.querySelectorAll(".RemoveProduct");
+deleteitems.forEach(function (item, index){
+    item.addEventListener('click', function(){
+    let cart = localStorage.getItem('cart');
+    cart = JSON.parse(cart);
+
+    cart.splice(index -1, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    window.location.reload();
+})
+})
+

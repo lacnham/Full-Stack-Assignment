@@ -283,7 +283,7 @@ th:last-child{
 .buttonshop{
     text-align: right;
 }
-.contactbtn{
+.contactbtn, .buttonnham{
     background-color: rgb(94, 95, 131);
     padding: 2%;
     color: white;
