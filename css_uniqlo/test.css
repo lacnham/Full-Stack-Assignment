@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+.smallcontainer{
+    padding-top: 8rem;
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+.rowwf{
+    display: flex; 
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.addtocart{
+    display: inline-block;
+    background-color: rgb(158, 124, 80);
+    color:white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.detailproduct{
+    margin-top: 80px;
+}
+.detailproduct .col-2 img{ 
+    padding: 0;
+}
+.detailproduct .col-2{ 
+    padding: 0;
+}
+.detailproduct h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+.detailproduct select{
+    display:block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.detailproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border:1px solid #744b2b;
+}
+input:focus{
+    outline: none;  
+}
+.logouniqlo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
+}
+.product_display{
+    overflow: hidden;
+    display: block;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    position: center;
+    padding:1%;
+}
+.pic_product_display{
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    max-width: 100%;
+    height: auto;
+}
+.pro{
+    text-decoration: none;
+}
+.pro:link{
+    color:black;
+}
+.pro:visited{
+    color:black;
+}
+.pro:hover{
+    color:rgb(133, 48, 48);
+    background: rgb(167, 66, 35);
+    -moz-box-shadow: 0 10px 30px rgb(102, 81, 81);
+    -webkit-box-shadow: 0 10px 30px rgb(121, 99, 99);
+    box-shadow: 0 10px 30px rgb(117, 88, 88);
+}
+.price{
+    font-size: 13;
+    color:grey;
+    position: relative;
+    bottom:18px;
+}
+.moreproduct{
+    color: rgb(158, 124, 80);
+    font-family: 'Poppins', sans-serif;
+    font-size: 35;
+}
+.product_title{
+    color: rgb(0, 0, 0);
+};
+/* FEES PAGE */
+.hf{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(94, 95, 131);
+    line-height: 2.2em;
+}
+.hf1, .hf1-1{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(146, 146, 146);
+    line-height: 2.2em;
+}
+.hf1-1{
+    text-align: center;
+    font-size: 20;
+}
+.col3{
+    flex-basis: 31%;
+    min-width: 230px;
+    border:1px solid  rgb(146, 146, 146);
+    border-radius: 18px;
+    height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+.col3 h2{
+    text-align: center;
+    font-family: 'Patua One', cursive;
+    color:rgb(94, 95, 131);
+    line-height: 2em; 
+}
+.col3 p {
+    padding: 10%;
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(146, 146, 146);
+}
+.infofee{
+    font-family: 'Patua One', cursive;
+    color:rgb(94, 95, 131)  
+}
+.afee{
+    text-decoration: none;
+}
+.viewmore{
+    text-decoration: none;
+    color: rgb(159, 221, 197)
+}
+.hfee{
+    font-family: 'Patua One', cursive;
+    color:rgb(157, 159, 199)  
+}
+.detailfee{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(124, 121, 121);
+}
+.rent{
+    margin-top: 80px;
+}
+.premiumpic{
+    width: 450px;
+}
+span{
+    font-size: larger;
+    color:rgb(157, 159, 199) ;
+}
+/* Copyright */
+.box{
+    padding: 3%;
+    border: 3px solid rgb(204, 183, 221);
+    border-radius: 25px ;
+    margin-bottom: 10px;
+}
+.hc{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(121, 111, 129);
+}
+/* FAQs */
+.hfaq{
+    color:rgb(218, 181, 104);
+    font-family: 'Varela Round', sans-serif;
+    line-height: 2em;
+}
+.hfaq1{
+    color:rgb(221, 195, 135);
+    font-family: 'Varela Round', sans-serif;
+}
+.ahfaq{
+    text-decoration: none;
+    color:rgb(159, 221, 230)
+}
+/* Order Placement */
+.bodyorder{
+    font-family: 'Varela Round', sans-serif;
+}
+.order{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.orderinfo{
+    display: flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(94, 95, 131);
+    font-weight: normal;
+    font-family: 'Varela Round', sans-serif
+}
+td{
+    padding: 10px 5px;
+    font-family: 'Varela Round', sans-serif
+}
+td input{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color:rgb(94, 95, 131);
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 100px;
+    margin-right:10px;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+}
+.total table{
+    margin-top: 10px;
+    border-top: 3px solid rgb(94, 95, 131);
+    width: 90%;
+    max-width: 500px;
+}
+.voucher-box{
+    width: 140px;
+    height: 20px;
+
+}
+.voucher{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.buttonshop{
+    text-align: right;
+}
+.contactbtn, .buttonnham, .RemoveProduct{
+    background-color: rgb(94, 95, 131);
+    padding: 2%;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    box-sizing: border-box;
+    width: 180;
+    margin-bottom: 1%;
+    font-family: 'Varela Round', sans-serif
+}
+.RemoveProduct{
+    width: 60px;
+}
+#alertcartinfo{
+    text-align: center;
+    padding: 10%;
+}
+#quantities{
+    font-size: 15px;
+    margin-right: 20px;
+}
+/* Contact Form */
+.contact{
+    font-family: 'Varela Round', sans-serif;
+    font-size: large;
+}
+    
+.contactpic{
+    margin-top: 40px;
+}
+.textcontact{
+    width: 100%;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-radius: 25px;
+    border: 0.2px solid rgb(94, 95, 131);
+    margin-top:7px;
+}
+input[type=select]{
+    width: 100%;
+}
+.hcu{
+    font-family: 'Varela Round', sans-serif;
+    color:rgb(94, 95, 131);
+    text-align: center;
+}
+.coption{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.line{
+    font-size: 20;
+    color: rgb(134, 135, 175);
+    font-weight: bolder;
+}
+/* input[type=button]{
+    background-color: rgb(134, 135, 175) ;
+    width: 250px;
+    border-radius: 30px;
+    padding:3%;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15;
+    margin-bottom: 5px;
+    text-align: center;
+    border: none;
+} */
+.cday{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.cpurpose{
+    margin-bottom: 5px;
+}
+.colday{
+    flex-basis: 36%;
+    max-width: 500px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+input[type=checkbox]{
+    margin-bottom: 10px;
+}
+.purpose{
+   color: rgb(134, 135, 175);
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 35px;
+    font-family: 'Varela Round', sans-serif;
+}
+#errorfullname, #errorphone, #erroremail, #errordescription, #errorradio, #errorcheckbox{
+    color: red;
+}
+#successfullname, #successphone, #successemail, #successradio, #successcheckbox{
+    color: rgb(157, 214, 70);
+}
+#preparesubmit, #notice{
+    color:rgb(62, 207, 127);
+}
+#notice{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 733px){
+    .day{
+        font-size: 15px;
+    }
+    .colday2{
+        margin-top: 18px;
+    }
+    #line1::after{
+    content: "\a";
+    white-space: pre;
+    }
+    input[type=submit]{
+        margin: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pix{
+        display: none;
+    }
+    .orderinfo p{
+        font-size: small;
+    }
+    small{
+        font-size: small;
+    }
+}
