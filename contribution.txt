@@ -1,0 +1,20 @@
+JavaScript Assginment
+Vu Bui Khanh Linh : 40%
+- Modal windows in "About Us" page 5.1.2 ===NEW03===
+- Login, Logout function 5.1.7 ===NEW05===
+- Regex in "Register Account" page 5.1.9 ===NEW06===
+- Navigation bar and Footer of the website
+- Address conflicts in Git
+
+Nguyen Hoang To Nhu: 40%
+- Regex in "Contact" page 5.1.6 ===NEW04===
+- Add to Cart function 5.2.3 ===NEW07===
+- Order Placement 5.2.4 ===NEW08===
+- Sample Data: to verify the "Add" to cart and Order Placement features 5.3 ===NEW09===
+- Address conflicts in Git
+
+Vu Le Hoang Nguyen: 20%
+-cookie consent message ===NEW01===
+-automatic scrolling for "New Products" & "New Stores" 5.1.1 ===NEW02===
+
+Pham Quang Anh: 0%
