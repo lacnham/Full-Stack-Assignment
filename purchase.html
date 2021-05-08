@@ -16,7 +16,7 @@
         <script src="https://kit.fontawesome.com/e1571d95d8.js" crossorigin="anonymous"></script>
     </head>
     <body class="bodyorder">
-        <!-- <div class="navbar">
+        <div class="navbar">
             <div class="logo">
                 <img src="assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px">
             </div>
@@ -105,7 +105,7 @@
                 </div>
                 
             </nav>
-        </div> -->
+        </div>
         <div class='smallcontainer order'>
             <table>
                 <tr>
@@ -121,13 +121,13 @@
                             <div>
                                 <p class="ProductTitle titleofproduct"></p>
                                 <br>
-                                <button class='RemoveProduct'onclick='remove()'>Remove</button>
+                                <button class='RemoveProduct'>Remove</button>
                             </div>
                         </div>
                     </td>
                 
                     <td>
-                        <input type='number' value='1' >
+                        <input class='quantites' type='number' value='1' min ='1' >
                     </td>
                     <td ><span class='ProductPrice price'></span></td>
                 </tr>       
@@ -136,8 +136,9 @@
             <p id='alertcartinfo' hidden> Your cart is empty now</p>
             <div class='total'>
                 <div class='voucher'>
-                    <label>Voucher</label>
+                    <label class= 'voucher'>Voucher</label>
                     <input class= 'voucher-box' type ='text'>
+                    <span class ='alertcoupon' hidden> Voucher can not be used</span>
                  </div>
                 <table>  
                     <tr>
@@ -146,7 +147,7 @@
                     </tr>
                     <tr>
                         <td>Discount</td>
-                        <td class='tax'></td>
+                        <td class='discountprice'>0</td>
                     </tr>
                     <tr>
                         <td>Total</td>
@@ -159,10 +160,8 @@
             <div class='buttonshop'>
                 <a href='store1.html'>
                     <button>Continue Shopping</button>
-                </a>
-                <a href='thankyou.html'>
-                    <button>Order</button>
-                </a>
+                </a>    
+                <button id ='buy' onclick = checkcoupon()>Order</button>
             </div>
         </div>
     </body>

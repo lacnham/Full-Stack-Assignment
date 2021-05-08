@@ -1,5 +1,6 @@
 // Load product information in preparation of adding to cart
-let product_ID = window.location.pathname.split('/')[1];
+let product_ID = window.location.pathname.split('/');
+product_ID = product_ID[product_ID.length - 1];
 let product_link = window.location.href;
 let product_name = document.querySelector('.col2 h1').innerHTML;
 let product_price = document.querySelector('.col2 h4').innerHTML.slice(0,6);

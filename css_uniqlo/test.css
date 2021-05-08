@@ -241,7 +241,7 @@ td{
     font-family: 'Varela Round', sans-serif
 }
 td input{
-    width: 40px;
+    width: 60px;
     height: 30px;
     padding: 5px;
 }
@@ -254,6 +254,7 @@ td img{
     height: 100px;
     margin-right:10px;
 }
+
 .total{
     display: flex;
     justify-content: flex-end;
