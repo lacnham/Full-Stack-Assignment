@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
     <meta charset="utf-08">
@@ -5,6 +6,15 @@
     <link rel="stylesheet" href="css.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .pass_error{
+            display: none;
+            padding-top: 8px;
+            padding-left: 15px;
+            color: rgb(241, 13, 13);
+            font-weight: bold;
+        }
+    </style>
     </head>
 
     <body>
@@ -23,7 +33,7 @@
         <div class="login-container">
                 <div class="header-login">Login</div>
 
-            <form id="loginform" action="/assets" method="post">
+            <form id="loginform" action="my-account.html">
                 <div class="data">
                     <div class="username-login">
                         <input type="text" placeholder="Email/Phone" id="email" class="form-control" name="loginKey" pattern="(^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$)" title="Invalid emaill address!" required>
@@ -78,8 +88,7 @@
         
     </footer>
     </div>
+
     <script type="text/javascript" src="Login.js"></script>
-    <script type="text/javascript" src="shared.js"></script>
-    <script type="text/javascript" src="my-account.js"></script>
 </body>
 </html>

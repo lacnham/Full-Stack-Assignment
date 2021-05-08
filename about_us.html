@@ -38,9 +38,12 @@
                     <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
                     <a class="search-btn" href="#"></a> 
                     <i class="fas fa-search"></i>
-                    <a href="Login_box.html"><i class="fas fa-sign-in-alt"></i></a>  
                 </div> 
-                <nav>
+                <div>
+                    <a href="Login_box.html" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
+                    <div class="cicrle_logoutbtn"  ></div>
+                </div>
+                    <nav>
                     <div class="menu"> 
                         <div class="menuicon">
                             <button><i class="fa fa-bars"></i></button>
@@ -105,7 +108,7 @@
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
-                                <div class="name"><span data-text="Accounts">Accounts</span></div>
+                                <div class="name"><span data-text="Accounts" id="Account_Signin">Sign In</span></div>
                             </a>
                         </li>
                             </ul>
@@ -272,14 +275,8 @@
 
     <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
 
-    <script type="text/javascript" src="Dropdown_menu.js"></script>
+    <script type="text/javascript" src="shared.js"></script>
     <script type="text/javascript" src="about_us.js" ></script>
-    <script>
-        function topfunction(){
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
     
     </body>
 </html>

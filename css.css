@@ -7,6 +7,27 @@
     padding-bottom: 35px;
 }
 
+#logoutBtn{
+    position: absolute;
+    display: none;
+    right: 19px;
+    bottom: 42.5px;
+    font-size: 25px;  
+}
+
+#cicrle_logoutbtn{
+    position: absolute;
+    visibility: hidden;
+    right: 8.5px;
+    bottom: 32.5px;
+    height: 45px;
+    width: 45px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+
 /* SIMPLE HEADER */
 .simple-header-container{
     display: block;
@@ -136,26 +157,33 @@
     font-family: "Work Sans", sans-serif;
 }
 
-    #message {
+#message #emailMSG #phoneMSG {
     display:none;
     background: #f6f6f6;
     color: #000;
-  }
-  
-  #message p {
+}
+
+#message p{
     padding: 5px 40px;
     font-size: 14px;
-  }
-  
-  /* Add a green text color and a checkmark when the requirements are right */
-  .valid {
+}
+
+#emailMSG, #phoneMSG {
+    position: absolute;
+    top: 56px;
+    left: 10px;
+    font-size: 15px;
+}
+
+/* Add a green text color when the requirements are right */
+.valid {
     color: green;
-  }
-  
-  /* Add a red text color and an "x" icon when the requirements are wrong */
-  .invalid {
+}
+
+/* Add a red text color when the requirements are wrong */
+.invalid {
     color: red;
-  }
+}
   
 
 @media screen and (min-height: 1100px) {

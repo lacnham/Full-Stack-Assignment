@@ -1,40 +1,39 @@
-/**
- * Persistent log in features
- */
- if (localStorage["isLoggedIn"] === "true") {
-    // Mobile menu display Logged In status
-    // document.querySelector(".mobile-menu-my-account").setAttribute("style", "display: block;");
-    // document.querySelector(".mobile-menu-login").setAttribute("style", "display: none;");
-
-    // Check the login status and change Login field to 'My Account'
-    const logoutBtn = document.getElementById("logoutBtn");
-
-    if (logoutBtn) {
-        logoutBtn.setAttribute("style", "display: block;");
-    }
-
-    // Redirect to My Account if the user is already logged in and tries to open either Login, Register, or Forgot Password
-    let currentURL = window.location.href;
-    if (
-        currentURL.indexOf("Login_box.html") !== -1 ||
-        currentURL.indexOf("register_acc.html") !== -1 ||
-        currentURL.indexOf("forgotPass.html") !== -1
-    ) {
-
-        // Auto redirect to "My Account" if already logged in
-        let myAccountURL = currentURL;
-        myAccountURL = myAccountURL.replace("Login_box.html", "");
-        myAccountURL = myAccountURL.replace("register_acc.html", "");
-        myAccountURL = myAccountURL.replace("forgotPass.html", "");
-        myAccountURL += "my-account.html";
-        window.location.replace(myAccountURL);
-    }
+function logout() {
+    localStorage["LogInState"] = "notLoggedIn";
 }
 
+// Scroll to top button
+function topfunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
-/**
- * Logout mechanism
- */
-function logout() {
-    localStorage["isLoggedIn"] = "false";
+var logoutBtn = document.getElementById("logoutBtn");
+var cicrle_logoutbtn = document.getElementById("cicrle_logoutbtn");
+var Account_Signin = document.getElementById("Account_Signin");
+
+// If User Logged In
+if (localStorage["LogInState"] === "LoggedIn") {
+    // display LOGOUT button
+    logoutBtn.setAttribute("style", "display: block;") &&
+    cicrle_logoutbtn.setAttribute("hidden");
+    // change SIGNIN button into ACCOUNT button
+    Account_Signin.innerHTML = "My Account"; 
+    
+    // if user trying to access "login/register/forgotPassword page" even though they have logged in
+    // navigate the user to my account page 
+    let theURL = window.location.href; 
+    if(
+        theURL.search("Login_box.html") !== -1 ||
+        theURL.search("register_acc.html") !== -1 ||
+        theURL.search("forgotPass.html") !== -1 
+        
+    ){
+        let myaccountURL = theURL;
+        myaccountURL.replace("Login_box.html", "");
+        myaccountURL.replace("register_acc.html", "");
+        myaccountURL.replace("forgotPass.html", "") ;
+        myaccountURL = myaccountURL + "my-account.html";
+        window.location.replace(myaccountURL);
+    }
 }

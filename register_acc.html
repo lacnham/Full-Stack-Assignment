@@ -25,7 +25,7 @@
         </header>
         
     
-        <form action="register_acc.html" method="get">
+        <form id="registerform" action="register_acc.html" method="get">
         <div class="register-acc-container">
             <div class="column">
             <h3>BASIC INFO:</h3>
@@ -335,11 +335,16 @@
         <div class="column">
             <h3>CONTACT INFO:</h3> 
             <div class="data">         
-            <input type="email" placeholder="Email" id="email" name="email" class="form-control" required><br><br>
+            <input type="email" placeholder="Email" id="registerEmail" name="email" class="form-control" required><br><br>
+            <div id="emailMSGcontainer">
+                <p id="emailMSG" class="invalid">Valid Email Address</p>
             </div>
+        </div>
 
             <div class="data">
-            <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" pattern="^[\.-\s ]*[0-9]{8,11}[\.-\s 0-9]$" title="Must contain 9-11 digits" required><br><br>
+            <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" required><br><br>
+            <div id="phoneMSGcontainer">
+                <p id="phoneMSG" class="invalid">Valid Phone Number</p></div>
             </div>
 
             <h3 class="account-type-heading">YOUR ACCOUNT TYPE:</h3>
@@ -429,5 +434,6 @@
             </div>
         </footer>
         <script type="text/javascript" src="register_acc.js"></script>
+        <script type="text/javascript" src="shared.js"></script>
     </body>
 </html>

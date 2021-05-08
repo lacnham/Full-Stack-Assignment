@@ -42,16 +42,14 @@ body{
 }
 .search-box{
     position: absolute;
-    right: 1rem;
-    bottom: 2.5rem;
+    right: 4rem;
+    bottom: 2.2rem;
     border: 2px solid black;
     height: 40px;
     border-radius: 40px;
     padding: 5px;
 }
-.search-box i{
-    color: black;
-} 
+
 .search-box:hover > .search-txt {
     width: 200px;
     padding:  0 6px;
@@ -74,8 +72,10 @@ body{
     font-family: "Work Sans", sans-serif;
 }
 .search-box i{
-    padding: 5px;  
+    color: black;
+    padding: 5px;
 }
+
 .row{
     background-image:url(leaf-background.webp);
     background-repeat: no-repeat;

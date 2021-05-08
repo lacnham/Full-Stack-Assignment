@@ -27,13 +27,14 @@
                 <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
                 <a class="search-btn" href="#"></a> 
                 <i class="fas fa-search"></i>
-                <a href="Login_box.html" id="logoutBtn" onclick="logout()" style="display: none;"><i class="fas fa-sign-in-alt"></i></a> 
             </div> 
+            <div>
+                <a href="Login_box.html" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
+                <div class="cicrle_logoutbtn"  ></div>
+            </div>
             <nav>
                 <div class="menu">
-                    <div class="menuicon">
-                        <i class="fa fa-bars"></i>
-                    </div>
+                    <button><i class="fa fa-bars"></i></button>
                     <ul>
                     <li>
                         <a href="index.html">
@@ -90,17 +91,17 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Login_box.html">
-                        <div class="icon" type="button">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        <div class="name"><span data-text="Accounts">Account</span></div>
+                        <a href="my-account.html">
+                            <div class="icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="name"><span data-text="Accounts" id="Account_Signin">Sign In</span></div>
                         </a>
                     </li>
                     </ul>
                 </div>
-                
+        
             </nav>
         </div>
 
@@ -390,9 +391,7 @@
             </div>
             
         </footer>
-        <script type="text/javascript" src="Login.js"></script>
         <script type="text/javascript" src="shared.js"></script>
-        <script type="text/javascript" src="my-account.js"></script>
     </body>
 
 

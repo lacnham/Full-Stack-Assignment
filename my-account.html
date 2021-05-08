@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-08">
@@ -32,13 +33,15 @@
                         <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
                         <a class="search-btn" href="#"></a> 
                         <i class="fas fa-search"></i>
-                        <a href="Login_box.html"><i class="fas fa-sign-in-alt"></i></a> 
                     </div> 
+                    <div>
+                        <a href="Login_box.html" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
+                        <span id="cicrle_logoutbtn"></span>
+                    </div>
+                    
                     <nav>
                         <div class="menu">
-                            <div class="menuicon">
-                                <i class="fa fa-bars"></i>
-                            </div>
+                            <button><i class="fa fa-bars"></i></button>
                             <ul>
                             <li>
                                 <a href="index.html">
@@ -100,7 +103,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </div>
-                                    <div class="name"><span data-text="Accounts">Accounts</span></div>
+                                    <div class="name"><span data-text="Accounts" id="Account_Signin">Sign In</span></div>
                                 </a>
                             </li>
                             </ul>
@@ -151,8 +154,8 @@
                     <label for="email">Email:</label>  
                     </div>
                     <div class="col-input">
-                    <!-- <input type="email" id="DisplayEmail" name="email" class="form-control" ><br><br> -->
-                    <span id="DisplayEmail" class="form-control">s3864120@rmit.edu.vn</span></div><br><br>
+                    <input type="text" name="email" class="form-control"><br><br>
+                    <span id="DisplayEmail" class="AccountEmail">s3864120@rmit.edu.vn</span></div><br><br>
                 </div>
 
                 <div class="form-row">
@@ -219,7 +222,7 @@
         </div>
         
     </footer>
-    <script type="text/javascript" src="Login.js"></script>
+
     <script type="text/javascript" src="shared.js"></script>
     <script type="text/javascript" src="my-account.js"></script>
     </body>

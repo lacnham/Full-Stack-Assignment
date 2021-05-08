@@ -1,3 +1,4 @@
+// VALIDATE Password; CONFIRMED PASSWORD
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -115,3 +116,51 @@ var state = false;
     }
 }
 
+// VALIDATE PHONE NUMBER & EMAIL ADDRESS
+var phone = document.getElementById("phone");
+var email = document.getElementById("registerEmail");
+var phoneMsg = document.getElementById("phoneMSG");
+var emailMsg = document.getElementById("emailMSG");
+
+
+// When the user's mouse is outside the password field, hide the message box
+phone.onblur = function () {
+  document.getElementById("phoneMSGcontainer").style.display = "none";
+}
+
+// When the user clicks on the password field, show the message box
+phone.onfocus = function () {
+  document.getElementById("phoneMSGcontainer").style.display = "block";
+}
+
+email.onblur = function () {
+  document.getElementById("emailMSG").style.display = "none";
+}
+
+email.onfocus = function () {
+  document.getElementById("emailMSG").style.display = "block";
+}
+
+phone.onkeyup = function () {
+  // Validate lowercase letters
+  var re =  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/im;
+  if(phone.value.match(re)) {
+      phoneMsg.classList.remove("invalid");
+      phoneMsg.classList.add("valid");
+    } else {
+      phoneMsg.classList.remove("valid");
+      phoneMsg.classList.add("invalid");
+  }
+}
+
+email.onkeyup = function () {
+  // Validate lowercase letters
+  var remail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(email.value.match(remail)) {
+      emailMsg.classList.remove("invalid");
+      emailMsg.classList.add("valid");
+    } else {
+      emailMsg.classList.remove("valid");
+      emailMsg.classList.add("invalid");
+  }
+}

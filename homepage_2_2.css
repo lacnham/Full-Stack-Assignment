@@ -69,7 +69,7 @@
 .navbar ul li a:hover .name spa{
     transform: translateY(20px);
 }
-.menuicon button{
+.menu button{
     display: none;
     font-size: 35px;
 }
@@ -142,14 +142,15 @@
         cursor: pointer;
     }
     
-    .menuicon button{
+    .menu button{
         font-size: 35px;
         display: block;
     }
 
-    .menuicon button:focus + ul{
+    .menu button:focus + ul{
         opacity: 1;
         pointer-events: all;
+        transform: translateY(0px);
     }
 }
 @media screen and (max-width: 600px){
