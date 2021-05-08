@@ -18,7 +18,8 @@ if (localStorage["LogInState"] === "LoggedIn") {
     logoutBtn.setAttribute("style", "display: block;") &&
     cicrle_logoutbtn.setAttribute("hidden");
     // change SIGNIN button into ACCOUNT button
-    Account_Signin.innerHTML = "My Account"; 
+    Account_Signin.innerHTML = "My Account";
+    Account_Signin.setAttribute("data-text", "MyAccount"); 
     
     // if user trying to access "login/register/forgotPassword page" even though they have logged in
     // navigate the user to my account page 

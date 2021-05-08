@@ -31,13 +31,15 @@
                         <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
                         <a class="search-btn" href="#"></a> 
                         <i class="fas fa-search"></i>
-                        <a href="Login_box.html"><i class="fas fa-sign-in-alt"></i></a> 
                     </div> 
+                    <div>
+                        <a href="Login_box.html" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
+                        <span id="cicrle_logoutbtn"></span>
+                    </div>
+                    
                     <nav>
                         <div class="menu">
-                            <div class="menuicon">
-                                <i class="fa fa-bars"></i>
-                            </div>
+                            <button><i class="fa fa-bars"></i></button>
                             <ul>
                             <li>
                                 <a href="index.html">
@@ -99,7 +101,7 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </div>
-                                    <div class="name"><span data-text="Accounts">Accounts</span></div>
+                                    <div class="name"><span data-text="Sign In" id="Account_Signin">Sign In</span></div>
                                 </a>
                             </li>
                             </ul>

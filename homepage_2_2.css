@@ -54,6 +54,7 @@
     position: relative;
     color: #000;
     font-size: 18px;
+    font-weight: bold;
     line-height: 20px;
     transition: 0.5s;
 }
@@ -66,7 +67,7 @@
     height: 100%;
     color:#e91e63;
 }
-.navbar ul li a:hover .name spa{
+.navbar ul li a:hover .name span{
     transform: translateY(20px);
 }
 .menu button{
@@ -111,7 +112,8 @@
     display: block;
     position: relative;
     color: #000;
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: bold;
     line-height: 40px;
     transition: 0.5s;
     }
@@ -170,6 +172,17 @@
         border: 1px solid rgba(0, 0, 0, 0.404);
         transition: 0.5s;
     }
+
+    .navbar ul li a .name span{
+        display: block;
+        position: relative;
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 40px;
+        transition: 0.5s;
+        }
+
     .navbar ul li a{
         padding: 0;
     }
