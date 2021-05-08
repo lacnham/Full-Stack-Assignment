@@ -266,7 +266,7 @@ td img{
     max-width: 500px;
 }
 .voucher-box{
-    width: 120px;
+    width: 140px;
     height: 20px;
 
 }
@@ -283,7 +283,7 @@ th:last-child{
 .buttonshop{
     text-align: right;
 }
-button{
+.contactbtn{
     background-color: rgb(94, 95, 131);
     padding: 2%;
     color: white;

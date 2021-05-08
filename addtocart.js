@@ -16,12 +16,12 @@ let Product_Detail = {
 
 console.log(Product_Detail);
 
-
+alertcart = document.getElementById('notice')
 // Add to cart implementation
 const ADD_TO_CART = document.getElementById("add-to-cart");
 ADD_TO_CART.addEventListener("click", function () {
+    notice.innerHTML = 'ITEM HAS BEEN ADD TO CART';
     let cart = localStorage.cart;
-
     if (cart === undefined) {
         // Create a new cart in memory
         cart = [Product_Detail];

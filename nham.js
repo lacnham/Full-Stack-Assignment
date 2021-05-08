@@ -68,21 +68,6 @@ function contactform() {
         document.getElementById("errorradio").innerHTML ="";
         countfunction += 1;
     }
-    if ( ( document.getElementById("mon").checked == false ) && 
-    ( document.getElementById("tue").checked == false ) &&
-    ( document.getElementById("wed").checked == false ) &&
-    ( document.getElementById("thu").checked == false ) &&
-    ( document.getElementById("sa").checked == false ) &&
-    ( document.getElementById("fri").checked == false ) &&
-    ( document.getElementById("sun").checked == false )
-     ){
-        document.getElementById("errorcheckbox").innerHTML = 'One or more option must be chosen';
-        document.getElementById("successcheckbox").innerHTML ="";
-    } else {
-        document.getElementById("successcheckbox").innerHTML = 'Input OK';
-        document.getElementById("errorcheckbox").innerHTML ="";
-        countfunction += 1;
-    }
     if(total.length < 50){
         document.getElementById("errordescription").innerHTML = 'Do not reach the limit characters';
     }else if (total.length >= 500){
@@ -91,7 +76,7 @@ function contactform() {
         document.getElementById("errordescription").innerHTML = '';
         countfunction +=1;
     };
-    if (countfunction == 6 ){
+    if (countfunction == 5 ){
         document.getElementById("preparesubmit").innerHTML = 'Please check your contact form again before submit';
         document.getElementById("submit").onclick= function() {
             location.href='receive.html';
