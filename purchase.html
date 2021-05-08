@@ -12,10 +12,11 @@
         <link href="css2.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+       
         <script src="https://kit.fontawesome.com/e1571d95d8.js" crossorigin="anonymous"></script>
     </head>
     <body class="bodyorder">
-        <div class="navbar">
+        <!-- <div class="navbar">
             <div class="logo">
                 <img src="assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px">
             </div>
@@ -104,78 +105,55 @@
                 </div>
                 
             </nav>
-        </div>
+        </div> -->
         <div class='smallcontainer order'>
             <table>
                 <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
+                    <th class="ProductTitle">Product</th>
+                    <th class='ProductQuantities'>Quantity</th>
+                    <th class='ProductPrice'>Subtotal</th>
                 </tr>
-                <tr>
+                
+                <tr class='productbar' hidden>
                     <td>
                         <div class='orderinfo'>
-                            <img src='pics_nham/autumn1.jpg' alt='Autumn Collection' width='150px'>
+                            <img src='' alt='Image of a product'class='cartimg' width='150px'>
                             <div>
-                                <p>Kaki Jacket</p>
-                                <small>Price: 450.000VND</small>
+                                <p class="ProductTitle titleofproduct"></p>
                                 <br>
-                                <small>Store:<span style='color: rgb(179, 71, 71);font-size: 12;'> Uniqlo</span></small><br>
-                                <a href="">Remove</a>
+                                <button class='RemoveProduct'onclick='remove()'>Remove</button>
                             </div>
                         </div>
                     </td>
-                    <td><input type='number' value='1'></td>
-                    <td class='price'>450.000 VND</td>
-                </tr>
-                <tr>
+                
                     <td>
-                        <div class='orderinfo'>
-                            <img src='pics_nham/autumn2.jpg' alt='Autumn Collection' width='150px'>
-                            <div>
-                                <p>Brown Jacket</p>
-                                <small>Price: 350.000VND</small><br>
-                                <small>Store:<span style='color: rgb(179, 71, 71);font-size: 12;'> Uniqlo</span></small>
-                                <br>
-                                <a href="">Remove</a>
-                            </div>
-                        </div>
+                        <input type='number' value='1' >
                     </td>
-                    <td><input type='number' value='1'></td>
-                    <td class='price'>350.000 VND</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class='orderinfo'>
-                            <img src='pics_nham/winter2.jpg' alt='Autumn Collection' width='150px'>
-                            <div>
-                                <p>Down Jacket</p>
-                                <small>Price: 550.000VND</small><br>
-                                <small>Store:<span style='color: rgb(179, 71, 71);font-size: 12;'> Uniqlo</span></small>
-                                <br>
-                                <a href="">Remove</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td><input type='number' value='1'></td>
-                    <td class='price'>550.000 VND</td>
-                </tr>
+                    <td ><span class='ProductPrice price'></span></td>
+                </tr>       
+                
             </table>
+            <p id='alertcartinfo' hidden> Your cart is empty now</p>
             <div class='total'>
-                <table>
+                <div class='voucher'>
+                    <label>Voucher</label>
+                    <input class= 'voucher-box' type ='text'>
+                 </div>
+                <table>  
                     <tr>
                         <td>Subtotal</td>
-                        <td>1.320.000VND</td>
+                        <td class='totalprice'></td>
                     </tr>
                     <tr>
-                        <td>Tax</td>
-                        <td>132.000VND</td>
+                        <td>Discount</td>
+                        <td class='tax'></td>
                     </tr>
                     <tr>
                         <td>Total</td>
-                        <td>1.452.000VND</td>
+                        <td class='finalprice'></td>
                     </tr>
                 </table>
+                
             </div>
             <br>
             <div class='buttonshop'>
@@ -215,4 +193,6 @@
             <p>&copy; 2021 <span>taohu</span>. All Rights Reserved | s3878533@rmit.edu.vn </p>
         </div>
     </footer>
+    <script src="orderplacement.js"></script>
+    <script src="addtocart.js"></script>
 </html>
