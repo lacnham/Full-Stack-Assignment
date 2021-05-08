@@ -11,6 +11,7 @@ function topfunction(){
 var logoutBtn = document.getElementById("logoutBtn");
 var cicrle_logoutbtn = document.getElementById("cicrle_logoutbtn");
 var Account_Signin = document.getElementById("Account_Signin");
+var cartLink = document.getElementById("cartLink");
 
 // If User Logged In
 if (localStorage["LogInState"] === "LoggedIn") {
@@ -37,4 +38,8 @@ if (localStorage["LogInState"] === "LoggedIn") {
         myaccountURL = myaccountURL + "my-account.html";
         window.location.replace(myaccountURL);
     }
+}
+
+if (localStorage.LogInState === null || localStorage.LogInState === "notLoggedIn"){
+    cartLink.setAttribute("style","pointer-events: none; display: inline-block;");
 }
