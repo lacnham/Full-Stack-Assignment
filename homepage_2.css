@@ -182,23 +182,32 @@ a:hover{
 .title-store h1{
     font-family: 'Work Sans', sans-serif;
 }
-.row-2, .row-3, .row-4{
+.row-2, .row-3{
     display: flex;    
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
 }
 .row-4{
     padding-bottom: 5rem;
+    display: flex;    
+    margin: 0 auto;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+
 }
-.column-3, .column-4, .column-5{
+.column-3, .column-4, .column-5, .column-6{
     display: block;
     padding: 1.5rem;
+    transition: 0.5s ease;
 }
-.column-3 img, .column-4 img, .column-5 img{
+.column-3 img, .column-4 img, .column-5 img, .column-6 img{
     display: block;
     width: 200px;
     flex-basis: 30%;
@@ -223,6 +232,11 @@ a:hover{
     padding-left: 12rem;
     padding-bottom: 2rem;
 }
+.categories .small-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 h4{
     color: #555;
     font-weight: normal;
@@ -237,6 +251,37 @@ h4{
 .hover-mouse:hover{
     color: rgb(180, 180, 180);
 }
+
+#slider_1, #slider_2 
+{
+
+   overflow-x: hidden;
+   -webkit-overflow-scrolling: touch;
+}
+#slider_1::-webkit-scrollbar
+{
+   height: 5px;
+   width: 3px;
+   border: 1px solid black;
+   background: chocolate;
+}
+#slide_store_1, #slide_store_2
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin: 15px;
+   height: 300px;
+   width: 300px;
+   transition: 0.5s ease;
+}
+#slide_store_1:hover, #slide_store_2:hover {
+   transform: translateY(-25px);
+}
+.column-3:hover, .column-4:hover
+{
+   transform: translateY(-25px);
+} 
 
 @media screen and (max-width: 500px){
     .column-2 h1{
@@ -262,3 +307,4 @@ h4{
         border-style: groove;
     }
 }
+
