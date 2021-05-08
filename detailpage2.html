@@ -36,9 +36,7 @@
                     </div> 
                     <nav>
                         <div class="menu">
-                            <div class="menuicon">
-                                <i class="fa fa-bars"></i>
-                            </div>
+                            <button><i class="fa fa-bars"></i></button>
                             <ul>
                             <li>
                                 <a href="index.html">
@@ -50,12 +48,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="purchase.html">
+                                <a href="purchase.html" id="cartLink">
                                     <div class="icon">
                                         <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                         <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                     </div>
-                                    <div class="name"><span data-text="Shops">Shops</span></div>
+                                    <div class="name"><span data-text="Cart">Cart</span></div>
                                 </a>
                             </li>
                             <li>
@@ -100,14 +98,13 @@
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </div>
-                                    <div class="name"><span data-text="Accounts">Accounts</span></div>
+                                    <div class="name"><span data-text="Sign In" id="Account_Signin">Sign In</span></div>
                                 </a>
                             </li>
                             </ul>
+                        </div>         
+                    </nav>        
                         </div>
-                        
-                    </nav>
-                </div>
             </div>
         </div>
 
@@ -208,4 +205,5 @@
         
     </footer>
     <script src="addtocart.js"></script>
+    <script type="text/javascript" src="shared.js"></script>
 </html>
