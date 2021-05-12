@@ -70,21 +70,44 @@
 .navbar ul li a:hover .name span{
     transform: translateY(20px);
 }
-.menu button{
+.menu-btn{
     display: none;
-    font-size: 35px;
+    font-size: 38px;
+}
+
+nav input{
+    display: none;
 }
 @media screen and (max-width: 1430px){
+    .navbar nav{
+        top: 25px;
+        width: 50px;
+        padding-bottom: 8px;
+    }
+
+    .navbar nav label{
+        color: rgb(0, 0, 0);
+        font-size: 38px;
+        font-weight: 500;
+        padding-top: 8px;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* .menu-btn span{
+        font-size: 35px;
+        display: block;
+        line-height: 20px;
+    } */
+
     .navbar nav ul{
         padding: 0;
         width: 250px;
-        display: block;
+        display: none;
         overflow: hidden;
         background-color: #EDEDED;
         border: 1px solid rgba(0, 0, 0, 0.404);
         transition: 0.5s;
-        opacity: 0;
-        pointer-events: none;
     }
     .navbar ul li{
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -108,6 +131,7 @@
         padding: 0px 40px;
         height: 35px;
     }
+
     .navbar ul li a .name span{
     display: block;
     position: relative;
@@ -136,41 +160,51 @@
         padding-left: 20px;
     }
 
-    .menu{
-        display: block;
-        position: fixed;
-        top: 36px;
-        width: 35px;
-        cursor: pointer;
+    .sub-menu{
+        position: absolute;
+        top: 90px;
     }
     
-    .menu button{
-        font-size: 35px;
-        display: block;
+    nav input{
+        display: none;
     }
 
-    .menu button:focus + ul{
-        opacity: 1;
-        pointer-events: all;
-        transform: translateY(0px);
+    [id^=btn]:checked + ul{
+        display: block;
     }
 }
 @media screen and (max-width: 600px){
     .taohu svg{
         display:none;
     }
-    .search-box:hover > .search-txt{
-    width: 100px;
-    padding:  0 6px;
+
+    .search-box{
+        position: absolute;
+        right: 15px;
+        bottom: 2.2rem;
+        border: 2px solid black;
+        height: 40px;
+        border-radius: 40px;
+        padding: 5px;
     }
+
+    .search-box:hover > .search-txt{
+        width: 100px;
+        padding:  0 6px;
+    }
+
     .navbar nav ul{
         padding: 0;
-        width: 210px;
-        display: block;
+        width: 200px;
+        display: none;
         overflow: hidden;
         background-color: #EDEDED;
         border: 1px solid rgba(0, 0, 0, 0.404);
         transition: 0.5s;
+    }
+
+    .navbar nav label{
+        font-size: 34px;
     }
 
     .navbar ul li a .name span{
