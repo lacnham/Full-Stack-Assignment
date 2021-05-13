@@ -1,18 +1,4 @@
-<!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autumn Collection</title>
-    <link rel='stylesheet' href='css_uniqlo/product_page.css'>
-    <link rel='stylesheet' href='css_uniqlo/css.css'>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link href="homepage_2.css" type="text/css" rel="stylesheet">
-    <link href="homepage_2_2.css" type="text/css" rel="stylesheet">
-    <link href="css.css" type="text/css" rel="stylesheet">
-    <link href="css2.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">        
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <script src="https://kit.fontawesome.com/e1571d95d8.js" crossorigin="anonymous"></script>
-</head> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
 
 <?php require_once("../private/initialize.php"); ?>
 
@@ -20,7 +6,6 @@
 
 <style>
     <?php include("stylesheet/product_page.css"); ?>
-    <?php include("stylesheet/cookie-message.css"); ?>
 </style>
 
 <body>
@@ -70,11 +55,9 @@
         </a>
     </div>
 </section>
-    
-<?php include(SHARED_PATH . "/mall_footer.php"); ?>
-
-
 </body>
+
+<?php include(SHARED_PATH . "/mall_footer.php"); ?>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
 <script type="text/javascript" src="shared.js"></script>
 

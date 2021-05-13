@@ -8,6 +8,7 @@
     <link href="<?php echo url_for('/stylesheet/homepage_2_2.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php echo url_for('/stylesheet/css.css'); ?>" type="text/css" rel="stylesheet">  
     <link href="<?php echo url_for('/stylesheet/css2.css'); ?>" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">        
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src="https://kit.fontawesome.com/e1571d95d8.js" crossorigin="anonymous"></script>
