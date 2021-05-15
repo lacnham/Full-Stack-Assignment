@@ -1,5 +1,3 @@
-<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
-
 <?php require_once("../private/initialize.php"); ?>
 
 <?php include(SHARED_PATH . "/mall_header.php"); ?>
