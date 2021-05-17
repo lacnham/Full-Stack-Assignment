@@ -68,7 +68,7 @@
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/faq.php'); ?>">
+            <a href="<?php echo url_for('/faqs.php'); ?>">
                 <div class="icon">
                     <i class="fa fa-question-circle" aria-hidden="true"></i>
                     <i class="fa fa-question-circle" aria-hidden="true"></i>

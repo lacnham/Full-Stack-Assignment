@@ -4,7 +4,7 @@
 
 <style>
     .background-img{
-        background-image: url(tofu-wallpaper.webp);
+        background-image: url(tofu-wallpaper.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
