@@ -281,7 +281,34 @@ h4{
 {
    transform: translateY(-25px);
 } 
-
+/* CATEGORIES ADDED */
+.categories_row{
+    padding: 2%;
+    overflow: hidden;
+    display: block;
+}
+.categories_title{
+    text-align: center;
+    font-size: 13;
+}
+.categories_display{
+    width: 16.5%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    width:130;
+     height:100;
+}
+.one_category{
+    /* padding: 2%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    overflow: hidden;
+}
 @media screen and (max-width: 500px){
     .column-2 h1{
         font-size: 40px;
@@ -304,6 +331,10 @@ h4{
         margin-left: auto;
         margin-right: auto;
         border-style: groove;
+    }
+    .pic{
+        width:80;
+         height:70;
     }
 }
 
