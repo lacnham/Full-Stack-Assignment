@@ -16,7 +16,7 @@
                 <p class='hf1'>Your dellivery will be confirmed soon through email. Thank you for your purchase.</p>
             </div>
             <div class="col2">
-                <img src='pics_nham/thankyou.png' alt="Goods picture">
+                <?php echo '<img src="HTML-CSS-Assignment/pics_nham/thankyou.png" alt="Good picture">' ?>
             </div>
         </div>
     </div>

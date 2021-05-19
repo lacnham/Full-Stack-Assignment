@@ -104,4 +104,4 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 
-<script src="nham.js"></script>
+<script src="nham.js"></script> 

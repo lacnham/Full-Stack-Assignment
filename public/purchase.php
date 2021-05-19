@@ -30,7 +30,7 @@
                 </td>
             
                 <td>
-                    <input class='quantites' type='number' value='1' min ='1' >
+                    <input id = "quantities" onchange="Save()" class='quantites' type='number' value='' min ='1' >
                 </td>
                 <td ><span class='ProductPrice price'></span></td>
             </tr>       
@@ -67,7 +67,6 @@
             <button id ='buy'class= 'buttonnham' onclick = checkcoupon()>Order</button>
         </div>
     </div>
-    
 </body>
 
 
