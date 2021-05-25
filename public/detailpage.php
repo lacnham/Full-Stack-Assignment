@@ -22,21 +22,22 @@
                 <p>Home/ Jacket</p>
                 <h1>Kaki Jacket</h1>
                 <h4>450000 VND</h4>
-            
+          
                 <button class='addtocart' id='add-to-cart'>Add to Cart
                 </button>
+                </form>
                 <p id='notice'></p>
                 <h2>Product Details 
                 </h2>
                 <br>
                 <p>
                     Selected High Quality Wool: We use 80% wool fabrics.
-                        Soft, smooth, breathable. Our coat features a classic 
-                        big hood, windproof zipper, 2 inner pockets and 2 side
-                        zip pockets. The overall sense of design is strong and
-                        stylish. Wearing is also very comfortable and it gives 
-                        you a cool looking. Advanced and reliable fabric can keep 
-                        you warm enough in cold weather.
+                    Soft, smooth, breathable. Our coat features a classic 
+                    big hood, windproof zipper, 2 inner pockets and 2 side
+                    zip pockets. The overall sense of design is strong and
+                    stylish. Wearing is also very comfortable and it gives 
+                    you a cool looking. Advanced and reliable fabric can keep 
+                    you warm enough in cold weather.
                 </p>
             </div>
         </div>
