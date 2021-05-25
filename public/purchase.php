@@ -37,6 +37,7 @@
             
         </table>
         <p id='alertcartinfo' hidden> Your cart is empty now</p>
+        <form method="post" action="add_product.php">
         <div class='total'>
             <div class='voucher'>
                 <label class= 'voucher'>Voucher</label>
@@ -54,18 +55,22 @@
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td class='finalprice'></td>
+                    <td name = 'finalprice' class='finalprice'></td>
                 </tr>
             </table>
             
         </div>
-        <br>
+        <br>   
+        
         <div class='buttonshop'>
             <a href='store1.php'>
                 <button class= 'buttonnham'>Continue Shopping</button>
-            </a>    
-            <button id ='buy'class= 'buttonnham' onclick = checkcoupon()>Order</button>
+            </a>  
+            <a href='thankyou.php'> 
+            <button id ='buy' name ='add' class= 'buttonnham' onclick = checkcoupon()>Order</button>
+            </a>
         </div>
+        </form>
     </div>
     
 </body>

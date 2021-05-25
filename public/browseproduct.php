@@ -1,5 +1,6 @@
 
 //file Processing
+
 function read_all_products(){
     $file_name = 'products.csv';
     $fp = fopen($file_name, 'r');

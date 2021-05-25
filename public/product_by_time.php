@@ -6,10 +6,10 @@
 .time_filter{
     margin-top:140px;
     text-align: center;
-} ;
-
+} 
 .browse{
     display: flex;
+    
   
 }
 .line {
@@ -31,23 +31,43 @@ img{
 }
 </style>
 
-<div class='time_filter'>
-    <h1> All Products in TaoHu </h1>
-<form>
-    <label for="time">Choose time:</label>
 
-    <select id="time" name="time">
+    <div class='time_filter'>
+    <h1> All Products in TaoHu </h1>
+    <label for="time">Choose time:</label>
+    <select id="compare_by" name="compare_by">
     <option value="newest">Newest Time</option>
     <option value="oldest">Oldest Time</option>
     </select>
-    <input type="submit" value="Submit">
-</form>
 </div>
 
 <?php 
-$products = read_all_products();
+ function created_time_oldest_cmp($p1, $p2) {
+    // Convert date/time string to Unix timestamp
+    return strtotime($p1['created_time']) - strtotime($p2['created_time']);
+  }
 
+  function created_time_newest_cmp($p1, $p2) {
+    // Convert date/time string to Unix timestamp
+    return strtotime($p2['created_time']) - strtotime($p1['created_time']);
+  }
+
+  $mapping = [
+    'newest' => 'created_time_newest__cmp',
+    'oldest' => 'created_time_oldest_cmp',
+  ];
+
+
+  $selected_func = 'created_time_newest_cmp';
+  if (isset($_GET['compare_by']) && !empty($_GET['compare_by'])) {
+    $selected_func = $mapping[$_GET['compare_by']];
+  }
+
+
+$products = read_all_products();
 $count = 0;
+usort($products, $selected_func);
+
 
 echo "<ul class = 'browse'>";
 foreach ($products as $p) {
@@ -55,9 +75,10 @@ foreach ($products as $p) {
     $name = $p['name'];
     $price = $p['price'];
     $date = $p['created_time'];
-    echo "<li class='line'><a class='browse_a' href=\'product.php?$id\'><img src='../pics_nham/rmitogo.png' alt='logo'></a></li>";
-    echo "<li class='line'><a class='browse_a' href=\'product.php?$id\'>$name</a></li>";
-    echo "<li class='line'><a class='browse_a' href=\'product.php?$id\'><img src='../pics_nham/winter.jpg'></a></li>";
+    
+    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/rmitogo.png' alt='logo'></a></li>";
+    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\">$name</a></li>";
+    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/winter.jpg'></a></li>";
     echo  "<li class = 'line description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>";
     echo "<li class='pprice line'>$price</li>";
     echo "<li class='line'>$date</li>";
@@ -69,18 +90,14 @@ foreach ($products as $p) {
 
 }
 echo '</ul>';
-
-if (isset($_SESSION['visited_products']) && is_array($_SESSION['visited_products'])){
-
-    echo 'Visited Products';
-    echo '<ul>';
-    foreach ($_SESSION['visited_products'] as $id){
-        echo "<li>$id</li>";
-    }
-    echo '</ul>';
-}
-
 ?>
+<script>
+  let select_ele = document.querySelector("#compare_by");
+  select_ele.addEventListener("change", function() {
+    let selected_value = select_ele.value;
+    location.href = "product_by_time.php?compare_by=" + selected_value;
+  });
+</script>
 
 
 
