@@ -76,6 +76,72 @@ body{
     padding: 5px;
 }
 
+/* BROWSE */
+.browse{
+    height: 70px;
+    padding-left: 20px;
+  }
+
+.browse ul{
+    margin-right: 30px;
+    list-style: none;
+    text-decoration: none;
+  }
+.browse ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+  }
+.browse ul li a{
+    color: black;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background-color: rgb(237,237,237);
+    transition: .5s;
+    list-style: none;
+    text-decoration: none;
+  }
+.browse ul li a:hover, .browse ul li a.active{
+    color: pink;
+  }
+.browse ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+.browse ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+.browse ul ul li{
+    width: 200px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+.browse ul ul a{
+    line-height: 50px;
+  }
+.browse ul ul ul{
+    border-top: none;
+  }
+.browse_by{
+    position: relative;
+    top: -70px;
+    left: 200px;
+  }
+.fa-caret-right{
+    margin-left: 45px;
+  }
+  
+
 .row{
     background-image:url(../../image/leaf-background.webp);
     background-repeat: no-repeat;

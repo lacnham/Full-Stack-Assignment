@@ -24,11 +24,14 @@
         </svg>
             
     </div>
-    <div class="search-box">
+    <!-- <div class="search-box">
         <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
         <a class="search-btn" href="#"></a> 
         <i class="fas fa-search"></i>
-    </div> 
+    </div>  -->
+
+   
+
     <div>
         <a href="Login_box.php" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
         <span id="cicrle_logoutbtn"></span>
@@ -104,5 +107,44 @@
             </a>
         </li>
         </ul>      
-    </nav>        
+    </nav>
+    <div class='browse'>
+        <ul>  
+        <li>
+            <a href="#">Browse
+            <i class="fas fa-caret-down"></i>
+            </a>
+            <ul>
+            <li>
+                <a href="#">By Shop
+                    <i class="fas fa-caret-right"></i>
+                </a>
+
+                <ul>
+                <li class = 'browse_by'><a href="store_by_category.php">Category</a>
+                </li>
+
+                <li class = 'browse_by'><a href="store_by_name.php">Name</a>
+                </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">By Products
+                <i class="fas fa-caret-right"></i>
+                </a>
+                <ul>
+                <li class = 'browse_by'><a href="product_by_category.php">Category</a>
+                </li>
+
+                <li class = 'browse_by'><a href="product_by_time.php">Created Time</a>
+                </li>
+                </ul>
+            </li>
+
+            </ul>
+        </li>
+        </ul>
+    </div>
+        
 </div>

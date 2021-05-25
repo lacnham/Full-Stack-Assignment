@@ -18,9 +18,13 @@
 }
 .browse ul{
   margin-right: 30px;
+  list-style: none;
+  text-decoration: none;
 }
 .browse ul li{
   display: inline-block;
+  list-style: none;
+  text-decoration: none;
 }
 .browse ul li a{
   color: white;
@@ -73,34 +77,44 @@
     </style>
 </head>
 <body>
-    <nav class='browse'>
-        <ul >  
-        <li >
-            <a  href="#">Browse
-                <i class="fas fa-caret-down"></i>
-            </a>
-            <ul >
-                <li >
-                        <a  href="#">By Shop
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <ul >
-                            <li class = 'browse_by' ><a href="store_by_category.php">Category</a></li>
-                            <li class = 'browse_by'><a href="store_by_name.php">Name</a></li>
-                        </ul>
-                    </li>
-                    <li >
-                        <a href="#">By Products
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <ul >
-                            <li class = 'browse_by' ><a href="product_by_category.php">Category</a></li>
-                            <li class = 'browse_by'><a href="product_by_time.php">Created Time</a></li>
-                        </ul>
-                    </li>
-            </ul>
-        </li>
+<div class='browse'>
+  <ul>  
+  <li>
+    <a href="#">Browse
+      <i class="fas fa-caret-down"></i>
+    </a>
+    <ul>
+      <li>
+        <a href="#">By Shop
+            <i class="fas fa-caret-right"></i>
+        </a>
+
+        <ul>
+          <li class = 'browse_by'><a href="store_by_category.php">Category</a>
+          </li>
+
+          <li class = 'browse_by'><a href="store_by_name.php">Name</a>
+          </li>
         </ul>
-    </nav>
+      </li>
+
+      <li>
+        <a href="#">By Products
+          <i class="fas fa-caret-right"></i>
+        </a>
+        <ul>
+          <li class = 'browse_by'><a href="product_by_category.php">Category</a>
+          </li>
+
+          <li class = 'browse_by'><a href="product_by_time.php">Created Time</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+  </ul>
+</div>
+
 </body>
 </php>
