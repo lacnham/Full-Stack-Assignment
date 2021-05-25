@@ -96,7 +96,7 @@
             </form>
         </div>  
         <div class="col2 pix">              
-            <img  src="pics_nham/contact5.png" alt="Contact picture" class= 'contactpic' >               
+            <img  src="../pics_nham/contact5.png" alt="Contact picture" class= 'contactpic' >               
         </div>
     </div>
 </div>
@@ -104,4 +104,4 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 
-<script src="nham.js"></script>
+<script src="./js/nham.js"></script>

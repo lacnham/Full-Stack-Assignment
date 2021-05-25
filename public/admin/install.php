@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $error = '';
 
     if ($password != $cPassword){
-        // $status = "Invalid Password";
+        // Add text to $error
         $error .= '<label class="text-failure">Please Check your Password!</label>';
     } else {
         //Hash Password
@@ -18,9 +18,9 @@ if (isset($_POST['submit'])) {
     if($error == ''){
         //admin account will be saved in admin_account.csv
         $file_open = fopen(PRIVATE_PATH . "/database/admin_account.csv", "a");
-        $no_rows = count(file(PRIVAE_PATH . "/database/admin_account.csv"));
-        if($no_rows > 1){
-            $no_rows = ($no_rows - 1) + 1;
+        $num_rows = count(file(PRIVAE_PATH . "/database/admin_account.csv"));
+        if($num_rows > 1){
+            $num_rows = ($num_rows - 1) + 1;
         }
 
         $form_data = array(

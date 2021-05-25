@@ -1,9 +1,18 @@
 <!-- Load the initialize.php file -->
-<?php require_once("../../private/initialize.php"); ?> 
+<?php require_once("../../private/initialize.php"); ?>
+
+
+<?php
+//Direct Admin back to Admin_SignIn if they haven't logged in
+if(isset($_SESSION['admin_login']) && $_SESSION['admin_login'] == false) {
+  header("Location: ./admin_SignIn");
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>TaoHu_Staff</title>
+    <title>TaoHu Staff</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<?php echo url_for('/stylesheet/admin_mainpage.css'); ?>"> 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -13,6 +22,7 @@
   <body>
     <header>
       <h1>Staff Area</h1>
+      <a href="../admin/admin_SignIn?element=<?php echo 'LogOut'; ?>">LogOut</a>
     </header>
 
     <nav>

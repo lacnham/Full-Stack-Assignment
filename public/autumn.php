@@ -8,9 +8,9 @@
 
 <body>
 <a href='store1.php'>
-    <img class='logouniqlo' src='pics_nham/logo.jpg'>
+    <img class='logouniqlo' src='../pics_nham/logo.jpg'>
 </a>
-<img src='pics_nham/autumn.jpg' class='introimg'>
+<img src='../pics_nham/autumn.jpg' class='introimg'>
 <section class ="intro3">
     <h3 style="color:white" class =" title1">
         I N T R O D U C T I O N
@@ -26,28 +26,28 @@
 <section class='product_display'>
     <div class='pic_product_display'>
         <a class="pro" href="detailpage.php">
-            <img  class='pic' src="pics_nham/autumn1.jpg" alt="Autumn Collection" width="340" height="470" >
+            <img  class='pic' src="../pics_nham/autumn1.jpg" alt="Autumn Collection" width="340" height="470" >
             <p>Kaki Jacket</p><br>
             <p class='price'>450.000 VNĐ</p>
         </a>
     </div>
     <div class='pic_product_display'>
         <a class="pro" href="detailpage2.php">
-            <img class='pic' src="pics_nham/autumn2.jpg" alt="Autumn Collection" width="340" height="470" >
+            <img class='pic' src="../pics_nham/autumn2.jpg" alt="Autumn Collection" width="340" height="470" >
             <p>Brown Jacket</p> <br>
             <p class='price'>350.000 VNĐ</p>
         </a>
     </div>
     <div class='pic_product_display'>
         <a class="pro" href="detailpage2.php">
-            <img class='pic' src="pics_nham/autumn3.jpg" alt="Autumn Collection" width="340" height="470"  >
+            <img class='pic' src="../pics_nham/autumn3.jpg" alt="Autumn Collection" width="340" height="470"  >
             <p>Deep Blue Trench Jacket</p> <br>
             <p class='price'>650.000 VNĐ</p>
         </a>
     </div>
     <div class='pic_product_display'>
         <a class="pro" href="detailpage.php">
-            <img class='pic' src="pics_nham/autumn4.jpg" alt="Autumn Collection" width="340" height="470"  >
+            <img class='pic' src="../pics_nham/autumn4.jpg" alt="Autumn Collection" width="340" height="470"  >
             <p>Dark Brown Jacket</p> <br>
             <p class='price'>400.000 VNĐ</p>
         </a>
@@ -57,5 +57,5 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
-<script type="text/javascript" src="shared.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>
 

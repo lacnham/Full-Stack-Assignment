@@ -1,6 +1,41 @@
-function logout() {
-    localStorage["LogInState"] = "notLoggedIn";
+// Toggle Password Visibility
+var state = false;
+function toggleEye(){
+    if(state){
+        document.getElementById("psw").setAttribute("type", "password");
+        document.getElementById("eye").style.color = "#7a797e";
+        state = false;
+    } else {
+        document.getElementById("psw").setAttribute("type", "text");
+        document.getElementById("eye").style.color = "#5887ef";
+        state = true;
+    }
 }
+
+function toggleEye2(){
+    if(state){
+        document.getElementById("re_pass").setAttribute("type", "password");
+        document.getElementById("eye2").style.color = "#7a797e";
+        state = false;
+    } else {
+        document.getElementById("re_pass").setAttribute("type", "text");
+        document.getElementById("eye2").style.color = "#5887ef";
+        state = true;
+    }
+    }
+
+function toggleEye3(){
+    if(state){
+        document.getElementById("password").setAttribute("type", "password");
+        document.getElementById("eye3").style.color = "#7a797e";
+        state = false;
+    } else {
+        document.getElementById("password").setAttribute("type", "text");
+        document.getElementById("eye3").style.color = "#5887ef";
+        state = true;
+    }
+}
+
 
 // Scroll to top button
 function topfunction(){
@@ -40,6 +75,10 @@ if (localStorage["LogInState"] === "LoggedIn") {
     }
 }
 
-if (localStorage.LogInState === null || localStorage.LogInState === "notLoggedIn"){
-    cartLink.setAttribute("style","pointer-events: none; display: inline-block;");
-}
+// if (localStorage.LogInState === null || localStorage.LogInState === "notLoggedIn"){
+//     cartLink.setAttribute("style","pointer-events: none; display: inline-block;");
+// }
+
+// function logout() {
+//     localStorage["LogInState"] = "notLoggedIn";
+// }

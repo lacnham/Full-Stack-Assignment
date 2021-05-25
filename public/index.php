@@ -57,11 +57,11 @@
         <div class="container-news-roll">
             <div class="news-roll">
                 <figure>
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
-                    <img src="assets/slider_image_2.webp" alt="slider_image_2">
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
-                    <img src="assets/slider_image_3.webp" alt="slider_image_3">
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_2.webp" alt="slider_image_2">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_3.webp" alt="slider_image_3">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
                 </figure>
             </div>
         </div>
@@ -74,19 +74,19 @@
                 <div class="row-2">
                     <div class="column-3">
                         <a class='hover-mouse' href="store1.php">
-                            <img src="assets/amazon-logo-featured-stores.webp" alt="amazon-logo-featured-stores">
+                            <img src="../assets/amazon-logo-featured-stores.webp" alt="amazon-logo-featured-stores">
                             <h3>Amazon</h3>
                         </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href="Yeet.php">
-                            <img src="assets/chanel-featured stores.webp" alt="gaming-mouse">
+                            <img src="../assets/chanel-featured stores.webp" alt="gaming-mouse">
                             <h3>Chanel</h3>
                         </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href="store1.php">
-                            <img src="assets/Louis Vuiton.webp" alt="shoes-category-3">
+                            <img src="../assets/Louis Vuiton.webp" alt="shoes-category-3">
                             <h3>Louis Vuiton</h3>
                         </a>
                     </div>
@@ -102,19 +102,19 @@
                 <div class="row-2">
                     <div class="column-3">
                         <a class='hover-mouse' href='spring.php'>
-                        <img src="assets/fashion-men-category-4.webp" alt="autumn-outfit-1">
+                        <img src="../assets/fashion-men-category-4.webp" alt="autumn-outfit-1">
                         <h3>FASHION</h3>
                         </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href='autumn.php'>
-                        <img src="assets/razer_category_2.webp" alt="gaming-mouse">
+                        <img src="../assets/razer_category_2.webp" alt="gaming-mouse">
                         <h3>GAMING TECH</h3>
                     </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href='winter.php'>
-                        <img src="assets/shoes-category-3.webp" alt="shoes-category-3">
+                        <img src="../assets/shoes-category-3.webp" alt="shoes-category-3">
                         <h3>FOOTWEAR</h3>
                         </a>
                     </div>
@@ -129,7 +129,7 @@
             <div class="row-3">
                 <div class="column-4">
                     <a href='detailpage.php'>
-                    <img src="assets/autumn4.webp" alt="autumn-outfit-4">
+                    <img src="../assets/autumn4.webp" alt="autumn-outfit-4">
                     <h4 class='hover-mouse'>BLACK AUTUMN JACKET </h4>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -143,7 +143,7 @@
                 </div>
                 <div class="column-4">
                     <a href='detailpage.php'>
-                        <img src="assets/autumn1.webp" alt="autumn-outfit-1">
+                        <img src="../assets/autumn1.webp" alt="autumn-outfit-1">
                         <h4 class='hover-mouse'> BLACK JEAN JACKET</h4>
                         <div class="rating">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="column-4">
                     <a href='detailpage.php'>
-                        <img src="assets/autumn3.webp" alt="autumn-outfit-3">
+                        <img src="../assets/autumn3.webp" alt="autumn-outfit-3">
                         <h4 class='hover-mouse'>LONG BLACK FUR COAT</h4>
                         <div class="rating">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="column-4">
                     <a href='detailpage.php'>
-                        <img src="assets/autumn2.webp" alt="autumn-outfit-4">
+                        <img src="../assets/autumn2.webp" alt="autumn-outfit-4">
                         <h4 class='hover-mouse'>CASUAL ORANGE TURTLE NECK</h4>
                         <div class="rating">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -193,7 +193,7 @@
     <div id="slider_1" class="row-4">
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/casual_black_1.webp" alt="spring-outfit-1">
+                <img src="../assets/casual_black_1.webp" alt="spring-outfit-1">
                 <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -207,7 +207,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
                 <a href="store1.php">
-                    <img src="assets/casual_black_2.webp" alt="spring-outfit-2">
+                    <img src="../assets/casual_black_2.webp" alt="spring-outfit-2">
                     <h4 class='hover-mouse'>DARK GREEN SHIRT</h4>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -221,7 +221,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
                 <a href="store1.php">
-                    <img src="assets/casual_white_1.webp" alt="spring-outfit-3">
+                    <img src="../assets/casual_white_1.webp" alt="spring-outfit-3">
                     <h4 class='hover-mouse'>NEON GREEN T-SHIRT</h4>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -235,7 +235,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/casual_white_2.webp" alt="spring-outfit-4">
+                <img src="../assets/casual_white_2.webp" alt="spring-outfit-4">
                 <h4 class='hover-mouse'>WHITE COTTON SHIRT</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -249,7 +249,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/casual_black_3.webp" alt="spring-outfit-5">
+                <img src="../assets/casual_black_3.webp" alt="spring-outfit-5">
                 <h4 class='hover-mouse'>BLACK SWEATER</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -263,7 +263,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/casual_black_1.webp" alt="spring-outfit-1">
+                <img src="../assets/casual_black_1.webp" alt="spring-outfit-1">
                 <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -277,7 +277,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/autumn5.webp" alt="autumn-5">
+                <img src="../assets/autumn5.webp" alt="autumn-5">
                 <h4 class='hover-mouse'>BEIGE BLAZER</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -291,7 +291,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/autumn6.webp" alt="autumn-outfit-6">
+                <img src="../assets/autumn6.webp" alt="autumn-outfit-6">
                 <h4 class='hover-mouse'>LONG NEPETA DRESS</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -305,7 +305,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/summer4.webp" alt="summer-outfit-4">
+                <img src="../assets/summer4.webp" alt="summer-outfit-4">
                 <h4 class='hover-mouse'>SHORT SLEEVE BLOUSE</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -319,7 +319,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/summer7.webp" alt="summer-outfit-7">
+                <img src="../assets/summer7.webp" alt="summer-outfit-7">
                 <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -333,7 +333,7 @@
         </div>
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
-                <img src="assets/winter6.webp" alt="winter-outfit-6">
+                <img src="../assets/winter6.webp" alt="winter-outfit-6">
                 <h4 class='hover-mouse'>GREY LOOSE SWEATER</h4>
                 <div class="rating">
                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -355,67 +355,67 @@
     <div id="slider_2" class="row-4">
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/balenciaga.webp">
+                <img src="../assets/balenciaga.webp">
                 <h4 class='hover-mouse'><strong>BALENCIAGA</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/seven-eleven.webp">
+                <img src="../assets/seven-eleven.webp">
                 <h4 class='hover-mouse'><strong>SEVEN-ELEVEN</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/McDonalds.webp">
+                <img src="../assets/McDonalds.webp">
                 <h4 class='hover-mouse'><strong>MCDONALDS</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/GUCCI.webp">
+                <img src="../assets/GUCCI.webp">
                 <h4 class='hover-mouse'><strong>GUCCI</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/H&M.webp">
+                <img src="../assets/H&M.webp">
                 <h4 class='hover-mouse'><strong>H&M</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/balenciaga.webp">
+                <img src="../assets/balenciaga.webp">
                 <h4 class='hover-mouse'><strong>BALENCIAGA</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/patagonia.webp">
+                <img src="../assets/patagonia.webp">
                 <h4 class='hover-mouse'><strong>PATAGONIA</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/xiaomi.webp">
+                <img src="../assets/xiaomi.webp">
                 <h4 class='hover-mouse'><strong>XIAOMI</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/subway.webp">
+                <img src="../assets/subway.webp">
                 <h4 class='hover-mouse'><strong>SUBWAY</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/tesla.webp">
+                <img src="../assets/tesla.webp">
                 <h4 class='hover-mouse'><strong>TESLA</strong></h4>
             </a>
         </div>
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
-                <img src="assets/coca_cola.webp">
+                <img src="../assets/coca_cola.webp">
                 <h4 class='hover-mouse'><strong>COCA COLA</strong></h4>
             </a>
         </div>
@@ -426,5 +426,5 @@
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
-<script type="text/javascript" src="shared.js"></script>
-<script src="auto-sliders.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/shared.js"></script>
+<script src="./js/auto-sliders.js" type="text/javascript"></script>

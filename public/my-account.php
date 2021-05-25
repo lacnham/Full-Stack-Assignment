@@ -7,7 +7,7 @@
         <div class="acc-column">
             <div class="prof-pic-nav">
             <div class="prof-pic-name">
-            <img src="image/linh.jpg" alt="Avatar">
+            <img src="../private/database/account_avatar/avatar.jpg" alt="Profile Avatar">
             <p>Linh Vu</p>
             </div>
             
@@ -86,6 +86,6 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 
-<script type="text/javascript" src="shared.js"></script>
-<script type="text/javascript" src="my-account.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>
+<script type="text/javascript" src="./js/my-account.js"></script>
 

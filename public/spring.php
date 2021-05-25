@@ -10,9 +10,9 @@
 
 <body>
     <a href='store1.php'>
-        <img class='logouniqlo' src='pics_nham/logo.jpg'>
+        <img class='logouniqlo' src='../pics_nham/logo.jpg'>
     </a>
-    <img src='pics_nham/Spring-Background-HD-Wallpapers-61991.jpg' class='introimg'>
+    <img src='../pics_nham/Spring-Background-HD-Wallpapers-61991.jpg' class='introimg'>
     <section class ="intro1">
         <h3 style="color:white" class =" title1">
             I N T R O D U C T I O N
@@ -28,28 +28,28 @@
     <section class='product_display'>
         <div class='pic_product_display'>
             <a class="pro" href="detailpage.php">
-                <img class='pic' src="pics_nham/spring1.jpg" alt="Spring Collection" width="340" height="470" >
+                <img class='pic' src="../pics_nham/spring1.jpg" alt="Spring Collection" width="340" height="470" >
                 <p>Tan Pants</p><br>
                 <p class='price'>400.000 VNĐ</p>
             </a>
         </div>
         <div class='pic_product_display'>
             <a class="pro" href="detailpage.php">
-                <img class='pic' src="pics_nham/spring2.jpg" alt="Spring Collection" width="340" height="470" >
+                <img class='pic' src="../pics_nham/spring2.jpg" alt="Spring Collection" width="340" height="470" >
                 <p>Pink Sweater</p> <br>
                 <p class='price'>300.000 VNĐ</p>
             </a>
         </div>
         <div class='pic_product_display'>
             <a class="pro" href="detailpage2.php">
-                <img  class='pic' src="pics_nham/spring3.jpg" alt="Spring Collection" width="340" height="470"  >
+                <img  class='pic' src="../pics_nham/spring3.jpg" alt="Spring Collection" width="340" height="470"  >
                 <p>T - Shirt</p> <br>
                 <p class='price'>350.000 VNĐ</p>
             </a>
         </div>
         <div class='pic_product_display'>
             <a class="pro" href="detailpage2.php">
-                <img   class='pic' src="pics_nham/spring4.jpg" alt="Spring Collection" width="340" height="470"  >
+                <img   class='pic' src="../pics_nham/spring4.jpg" alt="Spring Collection" width="340" height="470"  >
                 <p>Green Cardigan</p> <br>
                 <p class='price'>350.000 VNĐ</p>
             </a>
@@ -59,5 +59,5 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
-<script type="text/javascript" src="shared.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>
 

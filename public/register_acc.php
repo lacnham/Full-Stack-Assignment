@@ -1,14 +1,150 @@
-<?php require_once("../private/initialize.php"); ?>
+<?php 
+
+require_once("../private/initialize.php"); 
+
+//Redirect users back to my account page (if they already logged in)
+if ($_SESSION["login"] == true){
+    redirect_to(url_for("my-account.php"));
+}
+
+$fname = '';
+$lname = '';
+$password = '';
+$re_pass = '';
+$prof_pic = '';
+$address = '';
+$country = '';
+$zipcode = '';
+$email = '';
+$phone = '';
+$account_type = '';
+$error = '';
+
+//Check when user submit the form in method POST
+if  (is_post_request()) {
+    $fname = $_POST["fname"] ?? '';
+    $lname = $_POST['lname'] ?? '';
+    $password = $_POST['password'] ?? '';
+    $re_pass = $_POST['re_pass'];
+    $prof_pic = $_POST['prof_pic'] ?? '';
+    $address = $_POST['address'] ?? '';
+    $country = $_POST['country'] ?? '';
+    $zipcode = $_POST['zipcode'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $phone = $_POST['phone'] ?? '';
+    $account_type = $_POST['account_type'];
+    $error = '';
+
+    if ($account_type == "store_owner") {
+        $business_name = $_POST['business_name'];
+        $store_name = $_POST['store_name'];
+        $store_category = $_POST['store_category'];
+    } else {
+        $business_name = $store_name = $store_category = 'null';
+    }
+
+//Certain requirements for submit/save FORM DATA to EXTERNAL FILES
+    if (
+        has_length_greater_than($fname, 3) &&
+        has_length_greater_than($lname, 3) &&
+        has_valid_email_format($email) &&
+        has_length_greater_than($address, 3) &&
+        has_length_greater_than($zipcode, 3) &&
+        has_length_greater_than($phone, 8) &&
+        $password == $re_pass
+    ){        
+        // if(!detect_identicals($email, $phone)){
+        //     $error = '<label class="text-failed">Email/Phone is already registered</label>';
+
+        // } else {
+        $hash_pass = password_hash($password, PASSWORD_BCRYPT);
+
+        //Avatar upload
+        if ($_FILES["prof_pic"]["error"] == UPLOAD_ERR_OK){
+            //Avatar file name
+            $ava_tempname = $_FILES["prof_pic"]["tmp_name"];
+
+            $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+            //Get the file extension
+            $extensions= array("jpeg","jpg","png");
+        
+            if(in_array($file_ext,$extensions)=== false){
+                $error ='<label class="text-failed">extension not allowed, please choose a JPEG or PNG file.</label>';
+            }
+
+            // store new avatar 
+            //Overwrite file if it already existed
+            $name = basename($_FILES["prof_pic"]["name"]);
+            $ava_src = PRIVATE_PATH . '/database/account_avatar/' . $name; 
+            move_uploaded_file($ava_tempname, $ava_src);
+
+            } else {
+            $ava_src = PRIVATE_PATH . '/database/account_avatar/avatar.jpg';
+        }
+
+        $fp = fopen(PRIVATE_PATH . '/database/registered_account.csv', 'a');        
+
+        // $colname = ["Id", "FirstName", "LastName", "Password", "Address", "Country", "Zipcode", "Email", "PhoneNumber", "AccountType", "BusinessName", "StoreName", "StoreCategory"];
+
+        // $data = [$id_num, $fname, $lname, $hash_pass, $address, $country, $zipcode, $email, $phone, $account_type, $business_name, $store_name, $store_category, $ava_src];
+
+        // if (count(file(PRIVATE_PATH . '/database/registered_account.csv') == 0)) {
+        //     foreach ($colname as $header){
+        //         fputcsv($fp, $header);
+        //     }
+        // }
+
+        $id_num = count(file(PRIVATE_PATH . '/database/registered_account.csv'));
+        if ($id_num > 1){
+            $id_num = $id_num + 1 -1;
+        }
+
+        $form_data = array(
+            "Id" => $id_num,
+            "FirstName" => $fname, 
+            "LastName" => $lname,
+            "Password" => $hash_pass,
+            "Address" => $address,
+            "Country" => $country,
+            "Zipcode" => $zipcode,
+            "Email" => $email,
+            "PhoneNumber" => $phone,
+            "AccountType" => $account_type,
+            "BusinessName" => $business_name,                     
+            "StoreName" => $store_name, 
+            "StoreCategory" => $store_category,
+            "AvatarSrc" => $ava_src
+        );
+       
+            fputcsv($fp, $form_data);
+            $error = '<label class="text-success">Successfully Registered</label>';
+    } else {
+        $error = '<label class="text-failed">Register Failed</label>';
+    }
+        
+} else {
+    //Just display page
+}
+
+?>
 
 <head>
     <meta charset="utf-08">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <link rel="stylesheet" href="stylesheet/css.css">
+    <link rel="stylesheet" href="./stylesheet/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         *{
             box-sizing: border-box;
+        }
+
+        .text-success{
+            color: green;
+        }
+
+        .text-failed{
+            color: red;
         }
     </style>
 </head>
@@ -17,7 +153,7 @@
     <header class="simple-header-container">
         <div class="black-logo"> 
             <a href="index.php">
-                <img class="logo" src="image/shop-logo.png" alt="TaoHu"></a>    
+                <img class="logo" src="../image/shop-logo.png" alt="TaoHu"></a>    
         </div>
         <p>Create your Account</p>
         <div class="home-link">
@@ -26,17 +162,17 @@
     </header>
     
 
-    <form id="registerform" action="register_acc.php" method="get">
+    <form id="registerform" enctype="multipart/form-data" action="<?php echo url_for('/register_acc.php'); ?>" method="post">
     <div class="register-acc-container">
         <div class="column">
         <h3>BASIC INFO:</h3>
     
         <div class="data">
-        <input type="text" placeholder="First name" id="fname" class="form-control" name="fname" pattern="(?=.*[a-z]).{3,}" title="Must contain at least 3 characters" required><br><br>
+        <input type="text" placeholder="First name" id="fname" class="form-control" name="fname" pattern="(?=.*[a-z]).{3,}" title="Must contain at least 3 characters" value="<?php echo $fname; ?>" required><br><br>
         </div>
 
         <div class="data">
-        <input type="text" placeholder="Last name" id="lname" class="form-control" name="lname" pattern="(?=.*[a-z]).{3,}" title="Must contain at least 3 characters" required><br><br>
+        <input type="text" placeholder="Last name" id="lname" class="form-control" name="lname" pattern="(?=.*[a-z]).{3,}" title="Must contain at least 3 characters" value="<?php echo $lname; ?>" required><br><br>
         </div>
 
         <div class="data">
@@ -62,11 +198,11 @@
 
         <div class="data">
         <h4>Profile picture</h4>
-        <input type="file" id="prof-pic" name="prof-pic"><br><br>  
+        <input type="file" id="prof-pic" name="prof_pic"><br><br>  
         </div>
 
         <div class="data">
-        <input type="text" placeholder="Address" id="address" class="form-control" name="address" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}" title="Must contain at least 3 characters" required><br><br>
+        <input type="text" placeholder="Address" id="address" class="form-control" name="address" value="<?php echo $address; ?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}" title="Must contain at least 3 characters" required><br><br>
         </div>
 
         <div class="data">
@@ -329,21 +465,21 @@
         <br>
 
         <div class="data">
-        <input type="text" placeholder="ZIP CODE" id="zipcode" name="zipcode" class="form-control" pattern="^[0-9]{4,6}$" title="Must contain 4-6 digits, no whitespace" required><br><br>
+        <input type="text" placeholder="ZIP CODE" id="zipcode" name="zipcode" class="form-control" pattern="^[0-9]{4,6}$" title="Must contain 4-6 digits, no whitespace" value="<?php echo $zipcode; ?>" required><br><br>
         </div>
     </div>
 
     <div class="column">
         <h3>CONTACT INFO:</h3> 
         <div class="data">         
-        <input type="email" placeholder="Email" id="registerEmail" name="email" class="form-control" required><br><br>
+        <input type="email" placeholder="Email" id="registerEmail" name="email" class="form-control" value="<?php echo $email; ?>" required><br><br>
         <div id="emailMSGcontainer">
             <p id="emailMSG" class="invalid">Valid Email Address</p>
         </div>
     </div>
 
         <div class="data">
-        <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" required><br><br>
+        <input type="text" placeholder="Phone number" id="phone" name="phone" class="form-control" value="<?php echo $phone; ?>" required><br><br>
         <div id="phoneMSGcontainer">
             <p id="phoneMSG" class="invalid">Valid Phone Number</p></div>
         </div>
@@ -388,11 +524,13 @@
         <br>        
         
         <div class="data">
-        <input type="checkbox" id="agree-box" class="agree-checkbox" required>
-        <label for="agree-box">
+        <input type="checkbox" id="agree-box" name="agree_box" class="agree-checkbox" required>
+        <label for="agree_box">
             I accept the <a href="copyright.php" style="text-decoration: underline;">Terms of Service</a>
         </label>
         </div>
+        <span>HELLLO</span>
+        <?php echo $error; ?>
     </div>
 
     <div class="submit-reset-container">
@@ -408,5 +546,5 @@
 </body>
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
-<script type="text/javascript" src="register_acc.js"></script>
-<script type="text/javascript" src="shared.js"></script>
+<script type="text/javascript" src="./js/register_acc.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>

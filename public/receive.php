@@ -19,7 +19,7 @@
                 </p>
             </div>
             <div class="col2">
-                <img src='pics_nham/receive.png' alt="Apologize picture">
+                <img src='../pics_nham/receive.png' alt="Apologize picture">
             </div>
         </div>
     </div>
@@ -27,4 +27,4 @@
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
-<script type="text/javascript" src="shared.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>

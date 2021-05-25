@@ -145,7 +145,6 @@ p{
 .news-roll figure{
     position: relative;
     width: 500%;
-    height: 50%;
     animation-name: slider;
     animation-duration: 10s;
     animation-iteration-count: infinite;

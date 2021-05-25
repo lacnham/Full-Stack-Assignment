@@ -81,7 +81,7 @@ myInput.onchange = matchPassword;
 confirm_password.onkeyup = matchPassword;
 
 
-// Show Store Owner's input information if choose Store owner radio
+// SHOW STORE OWNER's INPUT information if choose Store owner radio
 function acctype(){
     if (document.getElementById("storeowner").checked) {
         document.getElementById("ifOwner").style.display = "block";
@@ -90,31 +90,6 @@ function acctype(){
     }
 }  
 
-// Toggle Password Visibility
-var state = false;
-  function toggleEye(){
-      if(state){
-          document.getElementById("psw").setAttribute("type", "password");
-          document.getElementById("eye").style.color = "#7a797e";
-          state = false;
-      } else {
-          document.getElementById("psw").setAttribute("type", "text");
-          document.getElementById("eye").style.color = "#5887ef";
-          state = true;
-      }
-  }
-
-  function toggleEye2(){
-    if(state){
-        document.getElementById("re_pass").setAttribute("type", "password");
-        document.getElementById("eye2").style.color = "#7a797e";
-        state = false;
-    } else {
-        document.getElementById("re_pass").setAttribute("type", "text");
-        document.getElementById("eye2").style.color = "#5887ef";
-        state = true;
-    }
-}
 
 // VALIDATE PHONE NUMBER & EMAIL ADDRESS
 var phone = document.getElementById("phone");
@@ -123,12 +98,12 @@ var phoneMsg = document.getElementById("phoneMSG");
 var emailMsg = document.getElementById("emailMSG");
 
 
-// When the user's mouse is outside the password field, hide the message box
+// When the user's mouse is outside the phone field, hide the message box
 phone.onblur = function () {
   document.getElementById("phoneMSGcontainer").style.display = "none";
 }
 
-// When the user clicks on the password field, show the message box
+// When the user clicks on the phone field, show the message box
 phone.onfocus = function () {
   document.getElementById("phoneMSGcontainer").style.display = "block";
 }
@@ -142,7 +117,6 @@ email.onfocus = function () {
 }
 
 phone.onkeyup = function () {
-  // Validate lowercase letters
   var re =  /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,5}$/im;
   if(phone.value.match(re)) {
       phoneMsg.classList.remove("invalid");
@@ -154,7 +128,6 @@ phone.onkeyup = function () {
 }
 
 email.onkeyup = function () {
-  // Validate lowercase letters
   var remail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if(email.value.match(remail)) {
       emailMsg.classList.remove("invalid");

@@ -242,8 +242,8 @@
     padding-bottom: 5px;
 }
 
-/* The eye */
-.register-acc-container .column .data{
+/* Toggle eye password*/
+.register-acc-container .column .data, .login-container .data{
  position: relative;
 }
 
@@ -255,8 +255,16 @@
     cursor: pointer;
 }
 
-.register-acc-container .data span i{
-    font-size: 18px;
+.login-container .password-login span{
+    position: absolute;
+    right: 10px;
+    transform: translate(0, -50%);
+    top: 55%;
+    cursor: pointer;
+}
+
+.register-acc-container .data span i, .login-container .password_login span i{
+    font-size: 16px;
     color: #696772;
 }
 

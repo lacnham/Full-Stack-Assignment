@@ -75,6 +75,6 @@
 
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
         
-<script src="orderplacement.js"></script>
-<script src="addtocart.js"></script>
-<script type="text/javascript" src="shared.js"></script>
+<script src="./js/orderplacement.js"></script>
+<script src="./js/addtocart.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>

@@ -14,7 +14,7 @@
                 <p class='hf1'> Everything you need to know about the pricing on our website.</p>
             </div>
             <div class="col2">
-                <img src='pics_nham/fee2.png' alt="Goods picture">
+                <img src='../pics_nham/fee2.png' alt="Goods picture">
             </div>
         </div>
         <div class='rowwf'>
@@ -76,7 +76,7 @@
                     <p class='detailfee'>Around: <span>500$ - 1000$ / month</span></p>
                     <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
-            <div class='col2'> <img class='rent' src='pics_nham/rent.png'>
+            <div class='col2'> <img class='rent' src='../pics_nham/rent.png'>
         </div>  
         <div class='rowwf' id='commissionfee'>
             <div class='col2'>
@@ -92,7 +92,7 @@
                 <p class='detailfee'>Around: <span>3% - 5% / product</span></p>
                 <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
-            <div class='col2'> <img class='rent' src='pics_nham/money.png'></div>
+            <div class='col2'> <img class='rent' src='../pics_nham/money.png'></div>
         <div class='rowwf' id='premiumfee'>
             <div class='col2'>
                 <h1 class='infofee'>Premium member fee</h1> 
@@ -108,7 +108,7 @@
                     <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
             <div class='col2'>
-                    <img class='premiumpic' src='pics_nham/premium.png'>
+                    <img class='premiumpic' src='../pics_nham/premium.png'>
             </div>
         </div>
         </div>
@@ -118,7 +118,7 @@
     </div>
     <br>
     <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
-    <script type="text/javascript" src="shared.js"></script>
+    <script type="text/javascript" src="./js/shared.js"></script>
 </body>
 
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
