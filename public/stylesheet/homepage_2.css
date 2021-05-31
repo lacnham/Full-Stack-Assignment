@@ -113,6 +113,34 @@ body{
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #bebebe;}
+  /* CATEGORIES ADDED */
+.categories_row{
+    padding: 2%;
+    overflow: hidden;
+    display: block;
+}
+.categories_title{
+    text-align: center;
+    font-size: 13;
+}
+.categories_display{
+    width: 16.5%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    width:130;
+     height:100;
+}
+.one_category{
+    /* padding: 2%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    overflow: hidden;
+}
 /* BROWSE */
 .browse{
     height: 70px;
