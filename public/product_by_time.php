@@ -36,6 +36,7 @@ img{
     <h1> All Products in TaoHu </h1>
     <label for="time">Choose time:</label>
     <select id="compare_by" name="compare_by">
+    <option value="">Select Time</option>
     <option value="newest">Newest Time</option>
     <option value="oldest">Oldest Time</option>
     </select>
@@ -53,7 +54,7 @@ img{
   }
 
   $mapping = [
-    'newest' => 'created_time_newest__cmp',
+    'newest' => 'created_time_newest_cmp',
     'oldest' => 'created_time_oldest_cmp',
   ];
 

@@ -71,7 +71,7 @@
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/faq.php'); ?>">
+            <a href="<?php echo url_for('/faqs.php'); ?>">
                 <div class="icon">
                     <i class="fa fa-question-circle" aria-hidden="true"></i>
                     <i class="fa fa-question-circle" aria-hidden="true"></i>
@@ -108,43 +108,16 @@
         </li>
         </ul>      
     </nav>
-    <div class='browse'>
-        <ul>  
-        <li>
-            <a href="#">Browse
-            <i class="fas fa-caret-down"></i>
-            </a>
-            <ul>
-            <li>
-                <a href="#">By Shop
-                    <i class="fas fa-caret-right"></i>
-                </a>
-
-                <ul>
-                <li class = 'browse_by'><a href="store_by_category.php">Category</a>
-                </li>
-
-                <li class = 'browse_by'><a href="store_by_name.php">Name</a>
-                </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="#">By Products
-                <i class="fas fa-caret-right"></i>
-                </a>
-                <ul>
-                <li class = 'browse_by'><a href="product_by_category.php">Category</a>
-                </li>
-
-                <li class = 'browse_by'><a href="product_by_time.php">Created Time</a>
-                </li>
-                </ul>
-            </li>
-
-            </ul>
-        </li>
-        </ul>
-    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Browse <i class="fas fa-angle-down"></i></button>
+  <div class="dropdown-content">
+    <p>Browse Store</p>
+    <a href="<?php echo url_for('/store_by_name.php'); ?>">By Name</a>
+    <a href="<?php echo url_for('/store_by_category.php'); ?>">By Category</a>
+    <p>Browse Product</P>
+    <a href="<?php echo url_for('/product_by_time.php'); ?>">By Time</a>
+    <a href="<?php echo url_for('/product_by_category.php'); ?>">By Category</a>
+  </div>
+</div>
         
 </div>
