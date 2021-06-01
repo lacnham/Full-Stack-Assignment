@@ -6,8 +6,59 @@
     <?php include("stylesheet/product_page.css"); ?>
 </style>
 
-<body>    
-    <img class='logouniqlo' src='../pics_nham/logo.jpg' width=125px;>
+<!-- <body>    
+    <img class='logouniqlo' src='../pics_nham/logo.jpg' width=125px;> -->
+<body>
+    <?php
+        function all_stores(){
+            $file_name = 'csv_files/stores.csv';
+            $file_reading = fopen($file_name, 'r');
+            $first = fgetcsv($file_reading);
+            $stores = [];
+            while ($row = fgetcsv($file_reading)){
+                $count = 0;
+                $product = [];
+                foreach ($first as $col_name) {
+                    $store[$col_name] = $row[$count];
+                    $count++;
+                }
+                $stores[] = $store;
+            }
+            return $stores;
+        }
+
+        function get_store($store_id) {
+                $stores = all_stores();
+                foreach ($stores as $s) {
+                    if ($s['featured'] == 'TRUE') {
+                        return $s;
+                    }
+                }
+                return false;
+        }
+    ?>
+    <?php
+            echo "<div class=\"small-container\">";
+            $stores = all_stores();
+            $count = 0;
+            foreach ($stores as $store) {
+                if ($store['featured'] == 'TRUE') {
+                    $name = $store['name'];
+                    echo "<div class=\"column-3\">
+                    <a class='hover-mouse' href=\"store1.php\">
+                    <img src=\"../assets/amazon-logo-featured-stores.webp\" alt=\"amazon-logo-featured-stores\">
+                    <h3>$name</h3>
+                    </a>
+                    </div>";
+                    $count++;
+                    if ($count == 10) {
+                        break;
+                    }
+                }
+            }
+            echo "</div>";
+        ?>    
+    <img class='logouniqlo' src='pics_nham/logo.jpg' width=125px;>
           
     <video class='introvideo' autoplay controls muted loop>
         <source src="pics_nham/introvideo.mp4" type="video/mp4">

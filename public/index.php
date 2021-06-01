@@ -155,11 +155,62 @@
             </div>
         </div>
         <!------------------------------------featured stores------------------------------------->
-        <div class="categories">
+        <!-- open and read stores csv -->
+        <?php
+            function all_stores(){
+            $file_name = 'csv_files/stores.csv';
+            $file_reading = fopen($file_name, 'r');
+            $first = fgetcsv($file_reading);
+            $stores = [];
+            while ($row = fgetcsv($file_reading)){
+                $count = 0;
+                $product = [];
+                foreach ($first as $col_name) {
+                    $store[$col_name] = $row[$count];
+                    $count++;
+                }
+                $stores[] = $store;
+            }
+            return $stores;
+            }
+
+            function get_store($store_id) {
+                $stores = all_stores();
+                foreach ($stores as $s) {
+                    if ($s['featured'] == 'TRUE') {
+                        return $s;
+                    }
+                }
+                return false;
+            }
+        ?>
+        <div class="small-container-3">
             <div class="title-store">
                 <h1>Featured Stores</h1>
             </div>
-            <div class="small-container">
+        <!-- Display featured stores based on true false value in csv file -->
+        <?php
+            echo "<div class=\"small-container\">";
+            $stores = all_stores();
+            $count = 0;
+            foreach ($stores as $store) {
+                if ($store['featured'] == 'TRUE') {
+                    $name = $store['name'];
+                    echo "<div class=\"column-3\">
+                    <a class='hover-mouse' href=\"store1.php\">
+                    <img src=\"../assets/amazon-logo-featured-stores.webp\" alt=\"amazon-logo-featured-stores\">
+                    <h3>$name</h3>
+                    </a>
+                    </div>";
+                    $count++;
+                    if ($count == 10) {
+                        break;
+                    }
+                }
+            }
+            echo "</div>";
+        ?>
+            <!-- <div class="small-container">
                 <div class="row-2">
                     <div class="column-3">
                         <a class='hover-mouse' href="store1.php">
@@ -180,7 +231,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!--------------------------------------featured categories--------------------------------------->
         <div class="categories">
@@ -211,11 +262,73 @@
             </div>
         </div>
         <!-----------------------------------------featured products---------------------------------------------->
-        <div class="small-container-2">
-             <div class="title-store">
-                 <h1>Featured Products</h1>
-                 </div>
-            <div class="row-3">
+        <!-- open and read products csv -->
+        <?php
+            function all_products(){
+                $file_name = 'csv_files/products.csv';
+                $file_reading = fopen($file_name, 'r');
+                $first = fgetcsv($file_reading);
+                $products = [];
+                while ($row = fgetcsv($file_reading)){
+                    $count = 0;
+                    $product = [];
+                    foreach ($first as $col_name) {
+                        $product[$col_name] = $row[$count];
+                        $count++;
+                    }
+                     $products[] = $product;
+                }
+                return $products;
+            }   
+
+            function get_product($product_id) {
+                $products = all_products();
+                foreach ($products as $p) {
+                    if ($p['id'] == $product_id){
+                        return $p;
+                    }
+        
+                }
+                return false;
+            }
+        ?>
+
+        <div class="small-container-3">
+            <div class="title-store">
+                <h1>Featured Products</h1>
+            </div>
+            <!-- Display featured products based on true false value in csv file -->
+            <?php
+                echo "<div class=\"small-container\">";
+                $products = all_products();
+                $count = 0;
+                foreach ($products as $product) {
+                    if ($product['featured_in_mall'] == 'TRUE') {
+                        $name = $product['name'];
+                        $price = $product['price'];
+                        echo "<div class=\"column-4\">
+                        <a href='detailpage.php'>
+                        <img src=\"assets/autumn4.webp\" alt=\"autumn-outfit-4\">
+                        <h4 class='hover-mouse'>$name</h4>
+                        <div class=\"rating\">
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
+                        </a>
+                        </div>
+                        <p>$price</p>
+                    </div>";
+                        $count++;
+                        if ($count == 10) {
+                            break;
+                        }
+                    }
+                }
+            echo "</div>";
+            ?>
+            <!-- <div class="row-3">
                 <div class="column-4">
                     <a href='detailpage.php'>
                     <img src="../assets/autumn4.webp" alt="autumn-outfit-4">
@@ -272,14 +385,51 @@
                     </div>
                     <p>VND 150,000</p>
                 </div>
-            </div>
+            </div> -->
         </div>
-<!-------------------------------------Latest Products------------------------------------------>
+<!-------------------------------------New Products------------------------------------------>
+
+<!-- sort products from products csv and display them by created time -->
 <div class="small-container-3">
     <div class="title-store">
         <h1>Latest Products</h1>
     </div>
-    <div id="slider_1" class="row-4">
+    <?php
+        function sort_products(){
+            $products = all_products();
+            $p_sort = $products;
+            array_multisort(array_map('strtotime', array_column($p_sort, 'created_time')), SORT_DESC, $p_sort);
+            return $p_sort;
+        }
+        echo "<div id=\"slider_1\" class=\"row-4\"";
+        $p_sort = sort_products();
+        $count = 0;
+        foreach ($p_sort as $sort) {
+            $name = $sort['name'];
+            $price = $sort['price'];
+            echo "<div id=\"slide_store_1\" class=\"column-5\">
+            <a href=\"store1.php\">
+                <img src=\"assets/casual_black_1.webp\" alt=\"spring-outfit-1\">
+                <h4 class=\"hover-mouse\">$name/h4>
+                <div class=\"rating\">
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
+                </div>
+                <p>$price</p>
+            </a>
+            </div>";
+            $count++;
+            if ($count == 10) {
+                break;
+            }
+        }
+        echo "</div>";
+    ?>
+        
+    <!-- <div id="slider_1" class="row-4">
         <div id="slide_store_1" class="column-5">
             <a href="store1.php">
                 <img src="../assets/casual_black_1.webp" alt="spring-outfit-1">
@@ -434,14 +584,43 @@
                 <p>VND 150,000</p>
             </a>
         </div>
-    </div>
+    </div> -->
 </div>
  <!---------------------------------------New Stores-------------------------------->
+<?php
+
+?>
 <div class="small-container-3">
     <div class="title-store">
         <h1>New Stores</h1>
     </div>
-    <div id="slider_2" class="row-4">
+    <?php
+        function sort_stores(){
+            $stores= all_stores();
+            $s_sort = $stores;
+            array_multisort(array_map('strtotime', array_column($s_sort, 'created_time')), SORT_DESC, $s_sort);
+            return $s_sort;
+        }
+        echo "<div id=\"slider_2\" class=\"row-4\"";
+        $s_sort = sort_products();
+        $count = 0;
+        foreach ($s_sort as $sort) {
+            $name = $sort['name'];
+            echo "<div id=\"slide_store_2\" class=\"column-6\">
+            <a href=\"store1.php\">
+                <img src=\"assets/balenciaga.webp\">
+                <h4 class=\"hover-mouse\"><strong>$name</strong></h4>
+            </a>
+            </div>";
+            $count++;
+            if ($count == 10) {
+                break;
+            }
+        }
+        echo "</div>";
+    ?>
+
+    <!-- <div id="slider_2" class="row-4">
         <div id="slide_store_2" class="column-6">
             <a href="store1.php">
                 <img src="../assets/balenciaga.webp">
@@ -508,7 +687,7 @@
                 <h4 class='hover-mouse'><strong>COCA COLA</strong></h4>
             </a>
         </div>
-    </div>
+    </div> -->
 </div>
 </body>
 
