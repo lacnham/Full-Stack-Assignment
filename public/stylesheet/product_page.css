@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Cedarville+Cursive&family=Herr+Von+Muellerhoff&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Monoton&family=Staatliches&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Rye&display=swap');
+.title{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+.coverpage1{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    /* position: center; */
+}
+.spring,.summer,.autumn, .winter,.casual{
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.introvideo{
+    max-width: 80%;
+    display: block; 
+    margin: 0 auto;  
+}
+.heading{
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    font-family: 'Staatliches', cursive;
+    color: rgb(175, 9, 36);
+    font-size:60px;
+}
+.logouniqlo{
+    width: 100px;
+    display: block; 
+    margin: 0 auto;
+    padding-top: 110px;
+}
+.product_display{
+    overflow: hidden;
+    display: block;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    font-family: 'Work Sans', sans-serif;
+    padding:1%;
+}
+.pic_product_display{
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    max-width: 100%;
+    height: auto;
+}
+.title2{
+text-align: center;
+margin: auto;
+width: 50%;
+}
+.title1{
+    font-family: 'Rye', cursive;
+    font-size: 30;
+}
+@media screen and (max-width: 450px){
+    .title1{
+        font-family: 'Rye', cursive;
+        font-size: 20;
+    }
+    .heading{
+        padding: 20px;
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+        font-family: 'Staatliches', cursive;
+        color: rgb(175, 9, 36);
+        font-size:40px;
+    }
+    .season{
+        font-size: 10px;
+    }
+}
+.introimg{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro1{
+    text-align: center;
+    background-color: rgb(243, 197, 204);
+    margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
+
+}
+.intro2{
+    text-align: center;
+    background-color: rgb(252, 170, 77);
+    margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
+}
+.intro3{
+    text-align: center;
+    background-color: rgb(223, 159, 116);
+    margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
+}
+.intro4{
+    text-align: center;
+    background-color: rgb(70, 95, 163);
+    margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
+}
+.intro5{
+    text-align: center;
+    background-color: rgb(127, 206, 189);
+    margin-top: 2%;
+    margin: 5%;
+    padding: 5%;
+}
+.note{
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 40;
+    letter-spacing: 10px;
+}
+.descriptionspring, .descriptionautumn, .descriptioncasual, .descriptionsummer, .descriptionwinter{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+}
+.descriptionspring{background-color:rgb(225, 163, 233);}
+.descriptionsummer{background-color:rgb(243, 188, 137);}
+.descriptionautumn{
+    padding: 10%;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25;
+    background-color:rgb(138, 104, 72);
+}
+.descriptionwinter{background-color:rgb(174, 171, 224);}
+.descriptioncasual{background-color:rgb(64, 150, 155);}
+.titlespring, .titlesummer,.titleautumn, .titlewinter, .titlecasual{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 40;
+    max-width: 100%;
+}
+.titlespring{color:rgb(238, 164, 175);}
+.titlesummer{color:rgb(219, 149, 69);}
+.titleautumn{color:rgb(122, 91, 45);}
+.titlewinter{color:rgb(137, 162, 243);}
+.titlecasual{color:rgb(147, 238, 215);}
+.pro{
+    text-decoration: none;
+}
+.pro:link{
+    color:black;
+}
+.pro:visited{
+    color:black;
+}
+.pro:hover{
+    color:rgb(133, 48, 48);
+    background: rgb(167, 66, 35);
+    -moz-box-shadow: 0 10px 30px rgb(102, 81, 81);
+    -webkit-box-shadow: 0 10px 30px rgb(121, 99, 99);
+    box-shadow: 0 10px 30px rgb(117, 88, 88);
+}
+.price{
+    font-size: 13;
+    color:grey;
+    bottom:18px;
+}
