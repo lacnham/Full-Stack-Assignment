@@ -89,7 +89,7 @@ img{
     <button class='btn_categories' onclick='showfood()'>Food
     </button>
     <div ID="Food" style="display:none">
-    <?
+    <?php
     echo "<ul class='pro_category'>";
     $products = read_all_products();
     $count = 0;
@@ -114,12 +114,12 @@ img{
     }}
     echo '</ul>';?>
 </div>
-</div>
+
 <div class='categories-box'>
     <button class='btn_categories' onclick='showdrink()'>Drink
     </button>
     <div ID="Drink" style="display:none">
-    <?
+    <?php
     echo "<ul class = 'browse'>";
     $products = read_all_products();
     $count = 0;
@@ -149,7 +149,7 @@ img{
     <button class='btn_categories' onclick='showpizza()'>Pizza
     </button>
     <div ID="Pizza" style="display:none">
-    <?
+    <?php
     echo "<ul class = 'browse'>";
     $products = read_all_products();
     $count = 0;
@@ -179,7 +179,7 @@ img{
     <button class='btn_categories' onclick='showmarket()'>Market
     </button>
     <div ID="Market" style="display:none">
-    <?
+    <?php
     echo "<ul class = 'browse'>";
     $products = read_all_products();
     $count = 0;

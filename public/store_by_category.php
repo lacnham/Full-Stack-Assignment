@@ -89,7 +89,7 @@ img{
     <button class='btn_categories' onclick='showdepartment()'>Department Store
     </button>
     <div ID="department" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -117,7 +117,7 @@ img{
     <button class='btn_categories' onclick='showgrocery()'>Grocery stores
     </button>
     <div ID="grocery" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -145,7 +145,7 @@ img{
     <button class='btn_categories' onclick='showres()'>Restaurants
     </button>
     <div ID="res" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -173,7 +173,7 @@ img{
     <button class='btn_categories' onclick='showclothes()'>Clothing stores
     </button>
     <div ID="clothes" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -201,7 +201,7 @@ img{
     <button class='btn_categories' onclick='showaccess()'>Accessory stores
     </button>
     <div ID="access" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -229,7 +229,7 @@ img{
     <button class='btn_categories' onclick='showPharmacies()'>Pharmacies
     </button>
     <div ID="Pharmacies" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -257,7 +257,7 @@ img{
     <button class='btn_categories' onclick='showtech()'>Technology Stores
     </button>
     <div ID="tech" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -285,7 +285,7 @@ img{
     <button class='btn_categories' onclick='showpet()'>Pet stores
     </button>
     <div ID="pet" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -313,7 +313,7 @@ img{
     <button class='btn_categories' onclick='showtoy()'>Toy Stores
     </button>
     <div ID="toy" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -341,7 +341,7 @@ img{
     <button class='btn_categories' onclick='showspecialty()'>Specialty Stores
     </button>
     <div ID="specialty" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -369,7 +369,7 @@ img{
     <button class='btn_categories' onclick='showthrift()'>Thrift Stores
     </button>
     <div ID="thrift" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -397,7 +397,7 @@ img{
     <button class='btn_categories' onclick='showservices()'>Services
     </button>
     <div ID="services" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";
@@ -425,7 +425,7 @@ img{
     <button class='btn_categories' onclick='showkiosks()'>Kiosks
     </button>
     <div ID="kiosks" style="display:none">
-    <?
+    <?php
     $stores = read_all_stores();
     $count = 0;
     echo "<ul class = 'browse'>";

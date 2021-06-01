@@ -22,7 +22,7 @@
 
 <div class="navbar">
     <div class="logo">
-        <img src="../assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px">
+        <a href="index.php"><img src="../assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px"></a>
     </div>
     <div class="taohu">
         <svg width="168" height="28" viewBox="0 0 168 28" fill="none" xmlns="http://www.w3.org/2000/svg">
