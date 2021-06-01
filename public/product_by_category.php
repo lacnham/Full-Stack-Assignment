@@ -150,6 +150,7 @@ img{
     echo '</ul>';
 ?>
 </div>
+</div>
 <div class='categories-box'>
     <button class='btn_categories' onclick='showpizza()'>Pizza
     </button>
@@ -180,6 +181,7 @@ img{
     echo '</ul>';
 ?>
 </div>
+</div>
 <div class='categories-box'>
     <button class='btn_categories' onclick='showmarket()'>Market
     </button>
@@ -209,6 +211,7 @@ img{
     }}
     echo '</ul>';
 ?>
+</div>
 </div>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
 <script src="addtocart.js"></script>
