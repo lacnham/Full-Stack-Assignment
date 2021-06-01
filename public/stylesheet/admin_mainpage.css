@@ -8,6 +8,11 @@ header h1{
     padding: 15px 15px;
 }
 
+nav {
+    float: left;
+    padding-right: 30px;
+}
+
 nav .drop-btn{
     width: 200px;
     /* background: #bebebe; */
@@ -58,11 +63,35 @@ nav .menu-bar li{
 nav .menu-bar li a{
     text-decoration: none;
     color: #666666;
-    font-size: 15px; 
+    font-size: 18px; 
 }
 
 .menu-bar li a.active{
     font-weight: bold;
 }
 
+.edit_content_container iframe{
+    border: none;
+    width: calc(100% - 230px);
+    height: calc(100% - 150px);
+}
 
+.logout_logo{
+    position: absolute;
+    top: 22px;
+    font-size: 25px;
+    color: black;
+}
+.title_logo{
+    width: 200px;
+}
+
+.title_logo::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title_logo h1{
+    float: left;
+}

@@ -2,6 +2,9 @@
 
 require_once("../private/initialize.php"); 
 
+//Turn off unnecessary notices
+error_reporting(0);
+
 //Redirect users back to my account page (if they already logged in)
 if ($_SESSION["login"] == true){
     redirect_to(url_for("my-account.php"));
@@ -57,14 +60,15 @@ if  (is_post_request()) {
         //     $error = '<label class="text-failed">Email/Phone is already registered</label>';
 
         // } else {
-        $hash_pass = password_hash($password, PASSWORD_BCRYPT);
+        $hash_pass = password_hash($password, PASSWORD_DEFAULT);
 
         //Avatar upload
         if ($_FILES["prof_pic"]["error"] == UPLOAD_ERR_OK){
             //Avatar file name
             $ava_tempname = $_FILES["prof_pic"]["tmp_name"];
+            $ava_name = $_FILES['image']['name'];
 
-            $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+            $file_ext=strtolower(end(explode('.', $ava_name)));
             //Get the file extension
             $extensions= array("jpeg","jpg","png");
         
@@ -82,42 +86,58 @@ if  (is_post_request()) {
             $ava_src = PRIVATE_PATH . '/database/account_avatar/avatar.jpg';
         }
 
-        $fp = fopen(PRIVATE_PATH . '/database/registered_account.csv', 'a');        
+            $fp = fopen(PRIVATE_PATH . '/database/registered_account.csv', 'a+');    
 
-        // $colname = ["Id", "FirstName", "LastName", "Password", "Address", "Country", "Zipcode", "Email", "PhoneNumber", "AccountType", "BusinessName", "StoreName", "StoreCategory"];
+            $first = ["Id", "FirstName", "LastName", "Password", "Address", "Country", "Zipcode", "Email", "PhoneNumber", "AccountType", "BusinessName", "StoreName", "StoreCategory", "AvatarSrc", "PicName"];
 
-        // $data = [$id_num, $fname, $lname, $hash_pass, $address, $country, $zipcode, $email, $phone, $account_type, $business_name, $store_name, $store_category, $ava_src];
 
-        // if (count(file(PRIVATE_PATH . '/database/registered_account.csv') == 0)) {
-        //     foreach ($colname as $header){
-        //         fputcsv($fp, $header);
-        //     }
-        // }
+            // $data_array = [];
+            $id_num = 1;
+            $row = count(file(PRIVATE_PATH . '/database/registered_account.csv'));
+            
+            //If CSV is Empty
+            if ($row < 1) {
+                //Insert column name into CSV file
+                    fputcsv($fp, $first);
+            } 
 
-        $id_num = count(file(PRIVATE_PATH . '/database/registered_account.csv'));
-        if ($id_num > 1){
-            $id_num = $id_num + 1 -1;
-        }
+            if ($row >= 1) {
+                $id_num = $row;
+            }
 
-        $form_data = array(
-            "Id" => $id_num,
-            "FirstName" => $fname, 
-            "LastName" => $lname,
-            "Password" => $hash_pass,
-            "Address" => $address,
-            "Country" => $country,
-            "Zipcode" => $zipcode,
-            "Email" => $email,
-            "PhoneNumber" => $phone,
-            "AccountType" => $account_type,
-            "BusinessName" => $business_name,                     
-            "StoreName" => $store_name, 
-            "StoreCategory" => $store_category,
-            "AvatarSrc" => $ava_src
-        );
-       
-            fputcsv($fp, $form_data);
-            $error = '<label class="text-success">Successfully Registered</label>';
+            $data = array(
+                "Id" => $id_num,
+                "FirstName" => $fname, 
+                "LastName" => $lname,
+                "Password" => $hash_pass,
+                "Address" => $address,
+                "Country" => $country,
+                "Zipcode" => $zipcode,
+                "Email" => $email,
+                "PhoneNumber" => $phone,
+                "AccountType" => $account_type,
+                "BusinessName" => $business_name,                 
+                "StoreName" => $store_name, 
+                "StoreCategory" => $store_category,
+                "AvatarSrc" => $ava_src,
+                "PicName" => $name
+            );
+     
+            //HOW TO PRINT DATA ARRAY
+            // $data_array[] = $data;
+            // print_r($data_array);
+
+            //DETECT INDENTICAL here to stop input info to csv
+            if (detect_identicals(PRIVATE_PATH . '/database/registered_account.csv', $email, $phone) == true){
+                fputcsv($fp, $data);
+                $_SESSION["login"] = true;
+                $a_info = $email;
+                $_SESSION["account"] = $a_info;
+                header("refresh: 3, url=my-account.php");
+                $error = '<label class="text-success">Successfully Registered <br> You will be redirected after 3 seconds </label>';
+            } else {
+                $error = '<label class="text-failed">Register Failed <br> Phone/Email is Already Taken</label>';
+            }   
     } else {
         $error = '<label class="text-failed">Register Failed</label>';
     }
@@ -528,9 +548,10 @@ if  (is_post_request()) {
         <label for="agree_box">
             I accept the <a href="copyright.php" style="text-decoration: underline;">Terms of Service</a>
         </label>
-        </div>
-        <span>HELLLO</span>
-        <?php echo $error; ?>
+        </div><br>
+        <span style="font-family: 'Work Sans', sans-serif;
+        font-size: 20px;"><?php echo $error;?></span>
+        
     </div>
 
     <div class="submit-reset-container">
