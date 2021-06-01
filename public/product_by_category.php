@@ -82,13 +82,12 @@ img{
         left: 0px;
     }
 }
-
 </style>
 
 
 <?php $page_title="Category"; ?>
 
-<div class='pro_by_category_title'><h1>Product by categories</h1></div>
+<div class='pro_by_category_title'><h1>Product by categories</h1>
 <div class='categories-box'>
     <button class='btn_categories' onclick='showfood()'>Food
     </button>
@@ -211,6 +210,7 @@ img{
     }}
     echo '</ul>';
 ?>
+</div>
 </div>
 </div>
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
