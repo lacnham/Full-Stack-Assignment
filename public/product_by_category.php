@@ -39,15 +39,19 @@ img{
 }
 #Food{
     height: 550px;
+    text-align: center;
 }
 #Drink{
     height: 300px;
+    text-align: center;
 }
 #Pizza{
     height: 400px;
+    text-align: center;
 }
 #Market{
     height: 550px;
+    text-align: center;
 }
 .categories-box{
     text-align:center;

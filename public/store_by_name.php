@@ -5,7 +5,7 @@
 <style>
 .browse{
     padding: 4%;
-    height: 5400px;
+    height: 5500px;
 }
 .store_title{
     margin-top: 150px;

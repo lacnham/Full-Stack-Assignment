@@ -45,22 +45,22 @@ img{
     border: none;
 }
 #department{
-    height: 300px;
+    height: 340px;
 }
 #grocery{
-    height: 350px;
+    height: 390px;
 }
 #res {
-    height: 550px;
+    height: 590px;
 }
 #clothes {
-    height: 350px;
+    height: 390px;
 }
 #access, #tech{
-    height: 450px;
+    height: 490px;
 }
 #Pharmacies, #pet{
-    height: 850px;
+    height: 890px;
 }
 
 @media screen and (max-width: 733px){
