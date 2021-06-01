@@ -43,16 +43,6 @@ function read_all_stores(){
   return $stores;
 }
 
-function get_product($product_id) {
-  $products = read_all_products();
-  foreach ($products as $p) {
-    if ($p['id'] == $product_id) {
-      return $p;
-    }
-  }
-  return false;
-};
-
 function u($string="") {
   return urlencode($string);
 }
@@ -184,7 +174,7 @@ function login_validation($loginKey, $password){
 
 <?php
   function all_products(){
-    $file_name = 'csv_files/products.csv';
+    $file_name = 'products.csv';
     $file_reading = fopen($file_name, 'r');
     $first = fgetcsv($file_reading);
     $products = [];
