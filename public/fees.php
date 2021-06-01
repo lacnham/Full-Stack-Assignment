@@ -73,7 +73,7 @@
                     <p class='detailfee'> Ho Chi Minh address: 22 TaoHu Street, 22 District, Ho Chi Minh City.</p>
                     <p class='detailfee'> Ha Noi address: 22 TaoHu Street, 22 District, Hanoi. </p>
                 <h2 class='hfee' >Price</h2>
-                    <p class='detailfee'>Around: <span>500$ - 1000$ / month</span></p>
+                    <p class='detailfee'>Around: <span class='nham'>500$ - 1000$ / month</span></p>
                     <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
             <div class='col2'> <img class='rent' src='../pics_nham/rent.png'>
@@ -89,7 +89,7 @@
                         before any vouchers or promotional discounts from Taohu are applied. Commission fee
                         varies according to the product category. </p>
                         <h2 class='hfee' >Price</h2>
-                <p class='detailfee'>Around: <span>3% - 5% / product</span></p>
+                <p class='detailfee'>Around: <span class='nham'3% - 5% / product</span></p>
                 <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
             <div class='col2'> <img class='rent' src='../pics_nham/money.png'></div>
@@ -104,7 +104,7 @@
                     You will have free advertisement on our large signboard outside the mall two days every month.
                 </p>
                 <h2 class='hfee' >Price</h2>
-                    <p class='detailfee'>Around: <span>100$ - 500$/ month</span></p>
+                    <p class='detailfee'>Around: <span class='nham'>100$ - 500$/ month</span></p>
                     <p class='detailfee'>Tel: (+84) 2222222. Please contact us for detail information and contract.</p>
             </div>
             <div class='col2'>

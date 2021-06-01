@@ -1,5 +1,8 @@
 <?php require_once("../../private/initialize.php"); ?> 
 <?php
+// Turn off unnecessary notices
+error_reporting(0);
+
 if (isset($_POST['submit'])) {
     //collect form data
     $username = $_POST['username'];
@@ -20,7 +23,7 @@ if (isset($_POST['submit'])) {
         $file_open = fopen(PRIVATE_PATH . "/database/admin_account.csv", "a");
         $num_rows = count(file(PRIVATE_PATH . "/database/admin_account.csv"));
         if($num_rows > 1){
-            $num_rows = ($num_rows - 1) + 1;
+            $num_rows = $num_rows - 1 + 1;
         }
 
         $form_data = array(
@@ -35,8 +38,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<!doctype html>
-<html lang="en">
+
 <head>
     <title>Admin Account</title>
     <meta charset="utf-8">
@@ -48,20 +50,35 @@ if (isset($_POST['submit'])) {
         .text-success{
             color: green;
         }
+
+        body{
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .admin_reg input[type="text"], .admin_reg input[type="password"]{
+            padding: 7px 25px;
+            font-size: 16px;
+        }
+
+        .submit_btn{
+            padding: 6px 15px;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body>
     <h2>Create your Admin Account</h2>
     <?php echo $error; ?>
-    <form method="post">
+    <form class="admin_reg" method="post">
         <label for="username">Username</label>
-        <input type="text" name="username" required><br>
+        <input type="text" name="username" required><br><br>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required><br>
+        <input type="password" id="password" name="password" required><br><br>
         <label for="cPassword">Re-type Password</label>
-        <input type="password" name="cPassword" required><br>
-        <input type="submit" name="submit" value="Submit"></input>
+        <input type="password" name="cPassword" required><br><br>
+        <input type="submit" class="submit_btn" name="submit" value="Submit"></input>
 </body>
 
-</html>

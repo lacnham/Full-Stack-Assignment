@@ -23,7 +23,15 @@ if(is_post_request() && isset($_POST["update"])){
     file_put_contents($filepath, $_POST["page_textarea"]);
 }
 ?>
+<head>
+<style>
+  .page-edit-container{
+      text-align: center;
+  }
+</style>
+</head>
 
+<body>
 <div class="page-edit-container">
     <form id="editor_form" method="post" target="_self">
         <h2>Edit</h2>
@@ -33,4 +41,4 @@ if(is_post_request() && isset($_POST["update"])){
         <input class="update_btn" type="submit" name="update" value="Update">
     </form>
 </div>
-
+</body>

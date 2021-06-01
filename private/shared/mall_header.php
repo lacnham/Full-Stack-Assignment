@@ -22,7 +22,7 @@
 
 <div class="navbar">
     <div class="logo">
-        <img src="../assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px">
+        <a href="index.php"><img src="../assets/tom's file extrawork-1.svg " alt="Black Lotus logo" width="70px"></a>
     </div>
     <div class="taohu">
         <svg width="168" height="28" viewBox="0 0 168 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,43 +138,16 @@
         </li>
         </ul>      
     </nav>
-    <div class='browse'>
-        <ul>  
-        <li>
-            <a href="#">Browse
-            <i class="fas fa-caret-down"></i>
-            </a>
-            <ul>
-            <li>
-                <a href="#">By Shop
-                    <i class="fas fa-caret-right"></i>
-                </a>
-
-                <ul>
-                <li class = 'browse_by'><a href="store_by_category.php">Category</a>
-                </li>
-
-                <li class = 'browse_by'><a href="store_by_name.php">Name</a>
-                </li>
-                </ul>
-            </li>
-
-            <li>
-                <a href="#">By Products
-                <i class="fas fa-caret-right"></i>
-                </a>
-                <ul>
-                <li class = 'browse_by'><a href="product_by_category.php">Category</a>
-                </li>
-
-                <li class = 'browse_by'><a href="product_by_time.php">Created Time</a>
-                </li>
-                </ul>
-            </li>
-
-            </ul>
-        </li>
-        </ul>
-    </div>
+    <div class="dropdown">
+  <button class="dropbtn">Browse <i class="fas fa-angle-down"></i></button>
+  <div class="dropdown-content">
+    <p>Browse Store</p>
+    <a href="<?php echo url_for('/store_by_name.php'); ?>">By Name</a>
+    <a href="<?php echo url_for('/store_by_category.php'); ?>">By Category</a>
+    <p>Browse Product</P>
+    <a href="<?php echo url_for('/product_by_time.php'); ?>">By Time</a>
+    <a href="<?php echo url_for('/product_by_category.php'); ?>">By Category</a>
+  </div>
+</div>
         
 </div>

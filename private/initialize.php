@@ -30,9 +30,9 @@
     require_once('validation_functions.php');
 
     // Display ErrorMessage and Stop executing all other files when install.php exists
-    // $file_pointer = PUBLIC_PATH . "/admin/install.php";
-    // if (!file_exists($file_pointer)){
-    //     header("Location: PUBLIC_PATH . '/error.php'");
-    // }
+    $file_pointer = PUBLIC_PATH . "/admin/install.php";
+    if (!file_exists($file_pointer)){
+        redirect_to(url_for('/error.php'));
+    }
 ?>
 

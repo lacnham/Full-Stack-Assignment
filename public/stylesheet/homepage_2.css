@@ -75,7 +75,72 @@ body{
     color: black;
     padding: 5px;
 }
-
+.dropbtn {
+    background-color: #EDEDED;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content p{
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 18px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #bebebe;}
+  /* CATEGORIES ADDED */
+.categories_row{
+    padding: 2%;
+    overflow: hidden;
+    display: block;
+}
+.categories_title{
+    text-align: center;
+    font-size: 13;
+}
+.categories_display{
+    width: 16.5%;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+}
+.pic{
+    width:130;
+     height:100;
+}
+.one_category{
+    /* padding: 2%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    overflow: hidden;
+}
 /* BROWSE */
 .browse{
     height: 70px;
