@@ -1,91 +1,46 @@
 <?php require_once("../private/initialize.php"); ?>
 
 <?php include(SHARED_PATH . "/mall_header.php"); ?>
-<button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
+
 <style>
-.browse{
-    padding: 4%;
-    height: 5400px;
-}
-.store_title{
-    margin-top: 150px;
-    text-align: center;
+    <?php include("stylesheet/browse.css")?>
+</style>
 
-}
-.line {
-  display:inline-block;
-  font-size: 15px;
-  margin-left: 45px;
-}
-.browse_a{
-    display: inline-block;
-    width: 70px;
-    text-decoration: none;
-}
-img{
-    margin-right: 50px;
-    margin-left: 60px;
-    width: 50px;
-}
+<?php $page_title="Order Placement"; ?>
 
-@media screen and (max-width: 733px){
-    .description, .time{
-        display:none;
-    }
-    .pro_category, .line{
-        left: 0px;
-    }
-}
-@media screen and (max-width: 400px){
-    .description, .time, .pprice{
-        display:none;
-    }
-    .pro_category, .line{
-        left: 0px;
-    }
-}
-</style> 
- <h1 class="store_title"> All Stores in TaoHu </h1>
+<body>
+<center>
+        <div class = 'product_database'>
+        <h1 class='browse_title'> All Shop In TaoHu </h1>
+        <?php
+        echo "<html><body><center><table>\n\n";
+  
+        
+        $file = fopen("stores.csv", "r");
+        $idsColumnsNotWanted = array(2,3,4);
+        
+        while (($data = fgetcsv($file)) !== false) {
+  
+            
+            echo "<tr>";
+            $numcolumn=0;
+            foreach ($data as $i) {
+                if(!in_array($numcolumn,$idsColumnsNotWanted))
+                echo "<td>" . htmlspecialchars($i) . "</td>";
+                $numcolumn++;
+            }
+            echo "</tr> \n";
+        }
 
-<?php 
- function name_cmp($p1, $p2) {
-    // use the built-in string comparison
-    return strcmp($p1['Name'], $p2['Name']);
-  }
+        fclose($file);
+  
+        echo "\n</table></center></body></html>";
+        ?>
+        </div>
+</center>
+</body>
 
 
-$stores = read_all_stores();
-$count = 0;
-usort($stores, "name_cmp");
-
-echo "<ul class = 'browse'>";
-foreach ($stores as $p) {
-    $id = $p['Id'];
-    $name = $p['Name'];
-    $date = $p['created_time'];
-    $categories = $p['category_id'];
-    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/rmitogo.png' alt='logo'></a></li>";
-    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\">$name</a></li>";
-    echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/winter.jpg'></a></li>";
-    echo  "<li class = 'line description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>";
-    echo "<li class='time line'>$date</li>";
-    echo "<br>";
-    $count++;
-    if ($count == 100) {
-        break;
-    }
-}
-echo '</ul>';
-?>
-<script>
-  i = 0;
-  let select_ele = document.querySelector("#compare_by");
-  select_ele.addEventListener("change", function() {
-    let selected_value = select_ele.value;
-    location.href = "product_by_time.php?compare_by=" + selected_value;
-  });
-
-</script>
 
 
 <button id="up-arrow" onclick="topfunction()" title="Go to top"><i class="fa fa-arrow-circle-up"></i></button>
