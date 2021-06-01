@@ -117,6 +117,7 @@ img{
     }
     }}
     echo '</ul>';?>
+    </div>
 </div>
 
 <div class='categories-box'>
