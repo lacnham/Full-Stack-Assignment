@@ -9,6 +9,9 @@
     margin-top: 150px;
     text-align: center;
 }
+.browse{
+    padding: 3%;
+}
 .line {
   display:inline-block;
   font-size: 15px;
@@ -50,15 +53,16 @@ img{
 #res {
     height: 550px;
 }
-#clothes, #tech{
+#clothes {
     height: 350px;
 }
-#access{
+#access, #tech{
     height: 450px;
 }
-#Pharmacies{
+#Pharmacies, #pet{
     height: 850px;
 }
+
 @media screen and (max-width: 733px){
     .description, .time{
         display:none;
@@ -228,7 +232,6 @@ img{
     <div ID="Pharmacies" style="display:none">
     <?php
     $stores = read_all_stores();
-    $count = 0;
     echo "<ul class = 'browse'>";
     foreach ($stores as $p) {
         $id = $p['Id'];
@@ -242,11 +245,7 @@ img{
         echo  "<li class = 'line description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>";
         echo "<li class='time line'>$date</li>";
         echo "<br>";
-        $count++;
-        if ($count == 20) {
-            break;
-        }}
-    }
+    }}
     echo '</ul>';
 ?>
 </div>
