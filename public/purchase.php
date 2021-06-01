@@ -37,7 +37,7 @@
             
         </table>
         <p id='alertcartinfo' hidden> Your cart is empty now</p>
-        <form method="post" action="add_product.php">
+        <form >
         <div class='total'>
             <div class='voucher'>
                 <label class= 'voucher'>Voucher</label>
@@ -60,8 +60,7 @@
             </table>
             
         </div>
-        <br>   
-        
+        <br>    
         <div class='buttonshop'>
             <a href='store1.php'>
                 <button class= 'buttonnham'>Continue Shopping</button>

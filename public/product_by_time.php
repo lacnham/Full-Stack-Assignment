@@ -9,7 +9,6 @@
 } 
 .browse{
     display: flex;
-    
   
 }
 .line {
@@ -29,6 +28,33 @@ img{
     margin-left: 40px;
     width: 100px;
 }
+.pagination{
+  width: 400px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: block;
+}
+
+@media screen and (max-width: 733px){
+    .description, .time{
+        display:none;
+    }
+    .pro_category, .line{
+        left: 0px;
+    }
+}
+@media screen and (max-width: 400px){
+    .description, .time, .pprice{
+        display:none;
+    }
+    .pro_category, .line{
+        left: 0px;
+    }
+}
 </style>
 
 
@@ -44,12 +70,10 @@ img{
 
 <?php 
  function created_time_oldest_cmp($p1, $p2) {
-    // Convert date/time string to Unix timestamp
     return strtotime($p1['created_time']) - strtotime($p2['created_time']);
   }
 
   function created_time_newest_cmp($p1, $p2) {
-    // Convert date/time string to Unix timestamp
     return strtotime($p2['created_time']) - strtotime($p1['created_time']);
   }
 
@@ -69,35 +93,36 @@ $products = read_all_products();
 $count = 0;
 usort($products, $selected_func);
 
-
 echo "<ul class = 'browse'>";
 foreach ($products as $p) {
     $id = $p['id'];
     $name = $p['name'];
     $price = $p['price'];
     $date = $p['created_time'];
-    
     echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/rmitogo.png' alt='logo'></a></li>";
     echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\">$name</a></li>";
     echo "<li class='line'><a class='browse_a' href=\"product.php?id=$id\"><img src='../pics_nham/winter.jpg'></a></li>";
     echo  "<li class = 'line description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>";
     echo "<li class='pprice line'>$price</li>";
-    echo "<li class='line'>$date</li>";
+    echo "<li class='time line'>$date</li>";
     echo "<br>";
     $count++;
-    if ($count == 1000) {
+    if ($count == 20) {
         break;
     }
-
 }
 echo '</ul>';
 ?>
+  <button class='pagination' onclick='next()'>Next</button>
+  <button class='pagination' onclick='previous()'>Previous</button>
 <script>
+  i = 0;
   let select_ele = document.querySelector("#compare_by");
   select_ele.addEventListener("change", function() {
     let selected_value = select_ele.value;
     location.href = "product_by_time.php?compare_by=" + selected_value;
   });
+
 </script>
 
 

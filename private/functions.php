@@ -8,7 +8,7 @@ function url_for($script_path) {
   return WWW_ROOT . $script_path;
 }
 function read_all_products(){
-  $file_name = 'products.csv';
+  $file_name = 'prodata/products.csv';
   $fp = fopen($file_name, 'r');
   $first = fgetcsv($fp);
   $products = [];
@@ -23,6 +23,24 @@ function read_all_products(){
       $products[] = $product;
   }
   return $products;
+}
+
+function read_all_stores(){
+  $file_name = 'prodata/stores.csv';
+  $fp = fopen($file_name, 'r');
+  $first = fgetcsv($fp);
+  $stores = [];
+  while ($row = fgetcsv($fp)){
+      $i = 0;
+      $store = [];
+      foreach ($first as $colname){
+          $store[$colname] = $row[$i];
+          $i++;
+          echo '<pre>';
+      }
+      $stores[] = $store;
+  }
+  return $stores;
 }
 
 function get_product($product_id) {
