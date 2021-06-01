@@ -4,10 +4,7 @@
 
 <style>
     <?php include("stylesheet/browse.css")?>
-.browse{
-    padding: 3%;
-    height: 5400px;
-}
+
 .pro_by_category_title{
     margin-top: 150px;
     text-align: center;

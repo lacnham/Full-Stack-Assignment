@@ -108,11 +108,11 @@ body{
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;}
   
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #bebebe;}
+.dropdown:hover .dropbtn {background-color: #bebebe;}
   /* CATEGORIES ADDED */
 .categories_row{
     padding: 2%;
