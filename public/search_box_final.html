@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Responsive Dropdown Searchbox</title>
+        <link rel="stylesheet" href="search_box_final.css">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">        
+        <script src="https://kit.fontawesome.com/22a98fafde.js" crossorigin="anonymous"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $(".default_option").click(function(){
+                    $(".dropdown ul").toggleClass("active");
+                });
+                $(".dropdown ul li").click(function(){
+                    var text = ($(this).text());
+                    $(".default_option").text(text);
+                    $(".dropdown ul").removeClass("active");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="search_box">
+                <div class="dropdown">
+                    <div class="default_option">Shops</div>
+                    <ul>
+                        <li>Shops</li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+                <div class="search_field">
+                    <input type="text" class="input" placeholder="Search Black Lotus">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

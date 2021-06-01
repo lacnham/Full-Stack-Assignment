@@ -192,11 +192,11 @@ a:hover{
 }
 .row-4{
     padding-bottom: 5rem;
-    display: flex;    
+    display:flex;    
     margin: 0 auto;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
     width: 100%;
 
@@ -223,7 +223,7 @@ a:hover{
     padding-top: 5px;
 }
 .categories .small-container{
-    width: 100%;
+    width: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -267,7 +267,7 @@ h4{
 #slide_store_1, #slide_store_2
 {
    display: flex;
-   flex-direction: row;
+   flex-direction:row;
    justify-content: space-evenly;
    margin: 15px;
    height: 300px;

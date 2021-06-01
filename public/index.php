@@ -57,41 +57,43 @@
         <div class="container-news-roll">
             <div class="news-roll">
                 <figure>
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
-                    <img src="assets/slider_image_2.webp" alt="slider_image_2">
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
-                    <img src="assets/slider_image_3.webp" alt="slider_image_3">
-                    <img src="assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_2.webp" alt="slider_image_2">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
+                    <img src="../assets/slider_image_3.webp" alt="slider_image_3">
+                    <img src="../assets/slider_image_1.webp" alt="slider_image_1">
                 </figure>
             </div>
         </div>
         <!------------------------------------featured stores------------------------------------->
-        <div class="categories">
+        <!-- open and read stores csv -->
+        
+        <div class="small-container-3">
             <div class="title-store">
                 <h1>Featured Stores</h1>
             </div>
-            <div class="small-container">
-                <div class="row-2">
-                    <div class="column-3">
-                        <a class='hover-mouse' href="store1.php">
-                            <img src="assets/amazon-logo-featured-stores.webp" alt="amazon-logo-featured-stores">
-                            <h3>Amazon</h3>
-                        </a>
-                    </div>
-                    <div class="column-3">
-                        <a class='hover-mouse' href="Yeet.php">
-                            <img src="assets/chanel-featured stores.webp" alt="gaming-mouse">
-                            <h3>Chanel</h3>
-                        </a>
-                    </div>
-                    <div class="column-3">
-                        <a class='hover-mouse' href="store1.php">
-                            <img src="assets/Louis Vuiton.webp" alt="shoes-category-3">
-                            <h3>Louis Vuiton</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!-- Display featured stores based on true false value in csv file -->
+        <?php
+            echo "<div class=\"row-2\">";
+            $stores = all_stores();
+            $count = 0;
+            foreach ($stores as $store) {
+                if ($store['featured'] == 'TRUE') {
+                    $name = $store['name'];
+                    echo "<div class=\"column-3\">
+                    <a class='hover-mouse' href=\"store1.php\">
+                    <img src=\"../assets/amazon-logo-featured-stores.webp\" alt=\"amazon-logo-featured-stores\">
+                    <h3>$name</h3>
+                    </a>
+                    </div>";
+                    $count++;
+                    if ($count == 10) {
+                        break;
+                    }
+                }
+            }
+            echo "</div>";
+        ?>
         </div>
         <!--------------------------------------featured categories--------------------------------------->
         <div class="categories">
@@ -102,19 +104,19 @@
                 <div class="row-2">
                     <div class="column-3">
                         <a class='hover-mouse' href='spring.php'>
-                        <img src="assets/fashion-men-category-4.webp" alt="autumn-outfit-1">
+                        <img src="../assets/fashion-men-category-4.webp" alt="autumn-outfit-1">
                         <h3>FASHION</h3>
                         </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href='autumn.php'>
-                        <img src="assets/razer_category_2.webp" alt="gaming-mouse">
+                        <img src="../assets/razer_category_2.webp" alt="gaming-mouse">
                         <h3>GAMING TECH</h3>
                     </a>
                     </div>
                     <div class="column-3">
                         <a class='hover-mouse' href='winter.php'>
-                        <img src="assets/shoes-category-3.webp" alt="shoes-category-3">
+                        <img src="../assets/shoes-category-3.webp" alt="shoes-category-3">
                         <h3>FOOTWEAR</h3>
                         </a>
                     </div>
@@ -122,304 +124,119 @@
             </div>
         </div>
         <!-----------------------------------------featured products---------------------------------------------->
-        <div class="small-container-2">
-             <div class="title-store">
-                 <h1>Featured Products</h1>
-                 </div>
-            <div class="row-3">
-                <div class="column-4">
-                    <a href='detailpage.php'>
-                    <img src="assets/autumn4.webp" alt="autumn-outfit-4">
-                    <h4 class='hover-mouse'>BLACK AUTUMN JACKET </h4>
-                    <div class="rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    <p>VND 560,000</p>
-                </div>
-                <div class="column-4">
-                    <a href='detailpage.php'>
-                        <img src="assets/autumn1.webp" alt="autumn-outfit-1">
-                        <h4 class='hover-mouse'> BLACK JEAN JACKET</h4>
-                        <div class="rating">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    <p>VND 480,000</p>
-                </div>
-                <div class="column-4">
-                    <a href='detailpage.php'>
-                        <img src="assets/autumn3.webp" alt="autumn-outfit-3">
-                        <h4 class='hover-mouse'>LONG BLACK FUR COAT</h4>
-                        <div class="rating">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    <p>VND 355,000</p>
-                </div>
-                <div class="column-4">
-                    <a href='detailpage.php'>
-                        <img src="assets/autumn2.webp" alt="autumn-outfit-4">
-                        <h4 class='hover-mouse'>CASUAL ORANGE TURTLE NECK</h4>
-                        <div class="rating">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    <p>VND 150,000</p>
-                </div>
+        <!-- open and read products csv -->
+
+        <div class="small-container-3">
+            <div class="title-store">
+                <h1>Featured Products</h1>
             </div>
+            <!-- Display featured products based on true false value in csv file -->
+            <?php
+                echo "<div class=\"row-2\">";
+                $products = all_products();
+                $count = 0;
+                foreach ($products as $product) {
+                    if ($product['featured_in_mall'] == 'TRUE') {
+                        $name = $product['name'];
+                        $price = $product['price'];
+                        echo "<div class=\"column-4\">
+                        <a href='detailpage.php'>
+                        <img src=\"../assets/autumn4.webp\" alt=\"autumn-outfit-4\">
+                        <h4 class='hover-mouse'>$name</h4>
+                        <div class=\"rating\">
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                            <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
+                        </a>
+                        </div>
+                        <p>$price</p>
+                    </div>";
+                        $count++;
+                        if ($count == 10) {
+                            break;
+                        }
+                    }
+                }
+            echo "</div>";
+            ?> 
         </div>
-<!-------------------------------------Latest Products------------------------------------------>
+<!-------------------------------------New Products------------------------------------------>
+
+<!-- sort products from products csv and display them by created time -->
 <div class="small-container-3">
     <div class="title-store">
         <h1>Latest Products</h1>
     </div>
-    <div id="slider_1" class="row-4">
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/casual_black_1.webp" alt="spring-outfit-1">
-                <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <?php
+        function sort_products(){
+            $products = all_products();
+            $p_sort = $products;
+            array_multisort(array_map('strtotime', array_column($p_sort, 'created_time')), SORT_DESC, $p_sort);
+            return $p_sort;
+        }
+        echo "<div id=\"slider_1\" class=\"row-4\"";
+        $p_sort = sort_products();
+        $count = 0;
+        foreach ($p_sort as $sort) {
+            $name = $sort['name'];
+            $price = $sort['price'];
+            echo "<div id=\"slide_store_1\" class=\"column-5\">
+            <a href=\"store1.php\">
+                <img src=\"../assets/casual_black_1.webp\" alt=\"spring-outfit-1\">
+                <h4 class=\"hover-mouse\">$name/h4>
+                <div class=\"rating\">
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
+                    <i class=\"fa fa-star-o\" aria-hidden=\"true\"></i>
                 </div>
-                <p>VND 188,000</p>
+                <p>$price</p>
             </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-                <a href="store1.php">
-                    <img src="assets/casual_black_2.webp" alt="spring-outfit-2">
-                    <h4 class='hover-mouse'>DARK GREEN SHIRT</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                    <p>VND 280,000</p>
-                </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-                <a href="store1.php">
-                    <img src="assets/casual_white_1.webp" alt="spring-outfit-3">
-                    <h4 class='hover-mouse'>NEON GREEN T-SHIRT</h4>
-                    <div class="rating">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                    <p>VND 150,000</p>
-                </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/casual_white_2.webp" alt="spring-outfit-4">
-                <h4 class='hover-mouse'>WHITE COTTON SHIRT</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-                <p>VND 245,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/casual_black_3.webp" alt="spring-outfit-5">
-                <h4 class='hover-mouse'>BLACK SWEATER</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 185,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/casual_black_1.webp" alt="spring-outfit-1">
-                <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 188,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/autumn5.webp" alt="autumn-5">
-                <h4 class='hover-mouse'>BEIGE BLAZER</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 545,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/autumn6.webp" alt="autumn-outfit-6">
-                <h4 class='hover-mouse'>LONG NEPETA DRESS</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 230,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/summer4.webp" alt="summer-outfit-4">
-                <h4 class='hover-mouse'>SHORT SLEEVE BLOUSE</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                </div>
-                <p>VND 424,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/summer7.webp" alt="summer-outfit-7">
-                <h4 class='hover-mouse'>CASUAL BLACK BLOUSE</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 265,000</p>
-            </a>
-        </div>
-        <div id="slide_store_1" class="column-5">
-            <a href="store1.php">
-                <img src="assets/winter6.webp" alt="winter-outfit-6">
-                <h4 class='hover-mouse'>GREY LOOSE SWEATER</h4>
-                <div class="rating">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                </div>
-                <p>VND 150,000</p>
-            </a>
-        </div>
-    </div>
+            </div>";
+            $count++;
+            if ($count == 10) {
+                break;
+            }
+        }
+        echo "</div>";
+    ?>
 </div>
  <!---------------------------------------New Stores-------------------------------->
+<?php
+
+?>
 <div class="small-container-3">
     <div class="title-store">
         <h1>New Stores</h1>
     </div>
-    <div id="slider_2" class="row-4">
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/balenciaga.webp">
-                <h4 class='hover-mouse'><strong>BALENCIAGA</strong></h4>
+    <?php
+        function sort_stores(){
+            $stores= all_stores();
+            $s_sort = $stores;
+            array_multisort(array_map('strtotime', array_column($s_sort, 'created_time')), SORT_DESC, $s_sort);
+            return $s_sort;
+        }
+        echo "<div id=\"slider_2\" class=\"row-4\"";
+        $s_sort = sort_products();
+        $count = 0;
+        foreach ($s_sort as $sort) {
+            $name = $sort['name'];
+            echo "<div id=\"slide_store_2\" class=\"column-6\">
+            <a href=\"store1.php\">
+                <img src=\"../assets/balenciaga.webp\">
+                <h4 class=\"hover-mouse\"><strong>$name</strong></h4>
             </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/seven-eleven.webp">
-                <h4 class='hover-mouse'><strong>SEVEN-ELEVEN</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/McDonalds.webp">
-                <h4 class='hover-mouse'><strong>MCDONALDS</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/GUCCI.webp">
-                <h4 class='hover-mouse'><strong>GUCCI</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/H&M.webp">
-                <h4 class='hover-mouse'><strong>H&M</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/balenciaga.webp">
-                <h4 class='hover-mouse'><strong>BALENCIAGA</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/patagonia.webp">
-                <h4 class='hover-mouse'><strong>PATAGONIA</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/xiaomi.webp">
-                <h4 class='hover-mouse'><strong>XIAOMI</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/subway.webp">
-                <h4 class='hover-mouse'><strong>SUBWAY</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/tesla.webp">
-                <h4 class='hover-mouse'><strong>TESLA</strong></h4>
-            </a>
-        </div>
-        <div id="slide_store_2" class="column-6">
-            <a href="store1.php">
-                <img src="assets/coca_cola.webp">
-                <h4 class='hover-mouse'><strong>COCA COLA</strong></h4>
-            </a>
-        </div>
-    </div>
+            </div>";
+            $count++;
+            if ($count == 10) {
+                break;
+            }
+        }
+        echo "</div>";
+    ?>
 </div>
 </body>
 
