@@ -9,7 +9,7 @@
 
 #logoutBtn{
     position: absolute;
-    display: none;
+    /* display: none; */
     right: 19px;
     bottom: 42.5px;
     font-size: 25px;  

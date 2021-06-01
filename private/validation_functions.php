@@ -33,7 +33,6 @@ function has_length_exactly($value, $exact){
 
 
 // has_valid_email_format('nobody@nowhere.com')
-// * validate correct format for email addresses
 // * format: [chars]@[chars].[2+ letters]
 //    returns 1 for a match, 0 for no match
 //    http://php.net/manual/en/function.preg-match.php

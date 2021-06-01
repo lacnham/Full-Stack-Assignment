@@ -1,9 +1,15 @@
-<!DOCTYPE php>
-<php>
+<?php
+    // Turn off unnecessary notices
+    error_reporting(0);
+
+    if ($_SESSION["login"] == true){
+        $a_info = $_SESSION['account'];
+        $acc = get_account($a_info);
+    }
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title></title>
     <link href="<?php echo url_for('/stylesheet/homepage_2.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php echo url_for('/stylesheet/homepage_2_2.css'); ?>" type="text/css" rel="stylesheet">
     <link href="<?php echo url_for('/stylesheet/css.css'); ?>" type="text/css" rel="stylesheet">  
@@ -24,14 +30,23 @@
         </svg>
             
     </div>
-    <div class="search-box">
+    <!-- <div class="search-box">
         <input class="search-txt" type="text" name="search-text" placeholder="Type to search">
         <a class="search-btn" href="#"></a> 
         <i class="fas fa-search"></i>
-    </div> 
+    </div>  -->
+
+   
+
     <div>
-        <a href="Login_box.php" id="logoutBtn" onclick="logout()"><i class="fas fa-sign-in-alt"></i></a>  
-        <span id="cicrle_logoutbtn"></span>
+    <?php
+        if($_SESSION['login'] == true){
+            echo '<a href="Login_box.php?do=logout" id="logoutBtn">
+            <i class="fas fa-sign-in-alt"></i></a>;'; 
+        } else {
+            echo '<a style="display:none;"></a>';
+        } 
+    ?>
     </div>
     
     <nav>
@@ -41,68 +56,125 @@
         <input type="checkbox" name="btn" id="btn">
         <ul class="sub-menu">
         <li>
-            <a href="<?php echo url_for('/index.php'); ?>">
-                <div class="icon">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Home">Home</span></div>
+            <a href='index.php'>
+            <div class="icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Home">Home</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/purchase.php'); ?>" id="cartLink">
-                <div class="icon">
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Cart">Cart</span></div>
+        <?php 
+            if ($_SESSION['login'] == true){
+                echo "<a href='purchase.php'>";
+            } else {
+                echo "<a href='#' onclick='cart_func()'>";
+            }
+        ?>
+            <div class="icon">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Cart">Cart</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/copyright.php'); ?>">
-                <div class="icon">
-                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Policy">Policy</span></div>
+            <a href='copyright.php'>
+            <div class="icon">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Policy">Policy</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/faq.php'); ?>">
-                <div class="icon">
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="FAQs">FAQs</span></div>
+            <a href='faqs.php'>
+            <div class="icon">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="FAQs">FAQs</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/about_us.php'); ?>">
-                <div class="icon">
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Team">Team</span></div>
+            <a href='about_us.php'>
+            <div class="icon">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Team">Team</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/contactform.php'); ?>">
-                <div class="icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Contact">Contact</span></div>
+            <a href='contactform.php'>
+            <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Contact">Contact</span></div>
             </a>
         </li>
         <li>
-            <a href="<?php echo url_for('/my-account.php'); ?>">
+            <?php
+                if ($_SESSION["login"] == true){
+                    echo "<a href='my-account.php'>";
+                } else {
+                    echo "<a href='Login_box.php'>";
+                }
+            ?>
                 <div class="icon">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <i class="fa fa-user" aria-hidden="true"></i>
                 </div>
-                <div class="name"><span data-text="Sign In" id="Account_Signin">Sign In</span></div>
+                <?php 
+                    if ($_SESSION["login"] == true){
+                        echo "<div class='name'><span data-text='MyAccount' id='Account_Signin'>MyAccount</span></div>";
+                    } else {
+                        echo "<div class='name'><span data-text='Sign In' id='Account_Signin'>Sign In</span></div>";
+                    }
+                ?>         
             </a>
         </li>
         </ul>      
-    </nav>        
+    </nav>
+    <div class='browse'>
+        <ul>  
+        <li>
+            <a href="#">Browse
+            <i class="fas fa-caret-down"></i>
+            </a>
+            <ul>
+            <li>
+                <a href="#">By Shop
+                    <i class="fas fa-caret-right"></i>
+                </a>
+
+                <ul>
+                <li class = 'browse_by'><a href="store_by_category.php">Category</a>
+                </li>
+
+                <li class = 'browse_by'><a href="store_by_name.php">Name</a>
+                </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">By Products
+                <i class="fas fa-caret-right"></i>
+                </a>
+                <ul>
+                <li class = 'browse_by'><a href="product_by_category.php">Category</a>
+                </li>
+
+                <li class = 'browse_by'><a href="product_by_time.php">Created Time</a>
+                </li>
+                </ul>
+            </li>
+
+            </ul>
+        </li>
+        </ul>
+    </div>
+        
 </div>

@@ -13,7 +13,7 @@
         <div class='rowwf'>
             <div class="col2">
                 <h1 class='hf'>THANK YOU!</h1>
-                <p class='hf1'>Your dellivery will be confirmed soon through email. Thank you for your purchase.</p>
+                <p class='hf1'>Your dellivery will be confirmed soon through email. Thank you for your purchase!</p>
             </div>
             <div class="col2">
                 <img src='../pics_nham/thankyou.png' alt="Goods picture">

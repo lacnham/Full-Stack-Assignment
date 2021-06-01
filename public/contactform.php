@@ -105,3 +105,4 @@
 <?php include(SHARED_PATH . "/mall_footer.php"); ?>
 
 <script src="./js/nham.js"></script>
+<script type="text/javascript" src="./js/shared.js"></script>

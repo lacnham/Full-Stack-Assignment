@@ -1,7 +1,7 @@
 <?php
     //Initialize session
     session_start();
-    
+
     //Set ADMIN default login status to False (not logged in)
     if (!isset($_SESSION["admin_login"])) {
         $_SESSION["admin_login"] = false;
@@ -11,7 +11,6 @@
     if (!isset($_SESSION["login"])) {
         $_SESSION["login"] = false;
     }
-
 
     //__FILE__ :return the current path to this file
     //dirname: return the path to the parent directory
@@ -29,7 +28,6 @@
 
     require_once('functions.php');
     require_once('validation_functions.php');
-
 
     // Display ErrorMessage and Stop executing all other files when install.php exists
     // $file_pointer = PUBLIC_PATH . "/admin/install.php";

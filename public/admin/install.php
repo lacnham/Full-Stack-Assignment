@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     if($error == ''){
         //admin account will be saved in admin_account.csv
         $file_open = fopen(PRIVATE_PATH . "/database/admin_account.csv", "a");
-        $num_rows = count(file(PRIVAE_PATH . "/database/admin_account.csv"));
+        $num_rows = count(file(PRIVATE_PATH . "/database/admin_account.csv"));
         if($num_rows > 1){
             $num_rows = ($num_rows - 1) + 1;
         }
