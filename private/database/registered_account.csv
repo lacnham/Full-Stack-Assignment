@@ -1,2 +1,0 @@
-Id,FirstName,LastName,Password,Address,Country,Zipcode,Email,PhoneNumber,AccountType,BusinessName,StoreName,StoreCategory,AvatarSrc,PicName
-1,Linh,"Vu Bui Khanh",$2y$10$PXZGLglvh4dgJyjo/Rt5aOKEoIansmSrNiJpCUBiRwmhuRPEB6.rK,"568/2 Lac Long Quan Ward 5 District 11",VN,700000,vlinh271001@gmail.com,0817036892,shopper,null,null,null,"C:\xampp\htdocs\HTML-CSS-Assignment\private/database/account_avatar/FB_IMG_1588999025214.jpg",FB_IMG_1588999025214.jpg
